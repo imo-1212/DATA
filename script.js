@@ -5,8 +5,6 @@ const songData = [
 
 let songs = [];
 let activeFilters = { type: null, vocal: null, oke: null };
-let songs = [];
-let activeFilters = { type: null, vocal: null, oke: null };
 let searchQuery = "";
 let currentSort = "date-desc";
 
