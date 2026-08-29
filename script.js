@@ -1,3 +1,10 @@
+const songData = [
+  { title: "曲名1", artist: "歌手1", ... },
+  { title: "曲名2", artist: "歌手2", ... }
+];
+
+let songs = [];
+let activeFilters = { type: null, vocal: null, oke: null };
 let songs = [];
 let activeFilters = { type: null, vocal: null, oke: null };
 let searchQuery = "";
