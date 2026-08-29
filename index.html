@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歌唱曲データベース</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>歌唱曲データベース</h1>
+  </header>
+
+  <div class="container">
+    <!-- 左側：フィルター＆ソート -->
+    <aside class="sidebar">
+      <div class="filter-group">
+        <h3>並べ替え</h3>
+        <select id="sort-select">
+          <option value="date-desc">日付：新しい順</option>
+          <option value="date-asc">日付：古い順</option>
+          <option value="title-asc">曲名：昇順 (A-Z/あ-ん)</option>
+          <option value="title-desc">曲名：降順 (Z-A/ん-あ)</option>
+          <option value="artist-asc">アーティスト：昇順</option>
+          <option value="artist-desc">アーティスト：降順</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <h3>キーワード検索</h3>
+        <input type="text" id="search-input" placeholder="曲名・アーティスト名で検索">
+      </div>
+
+      <div class="filter-group">
+        <h3>形態</h3>
+        <div id="filter-type" class="button-group"></div>
+      </div>
+
+      <div class="filter-group">
+        <h3>歌唱</h3>
+        <div id="filter-vocal" class="button-group"></div>
+      </div>
+
+      <div class="filter-group">
+        <h3>オケ有無</h3>
+        <div id="filter-oke" class="button-group"></div>
+      </div>
+
+      <button id="reset-btn" class="reset-btn">フィルターをリセット</button>
+    </aside>
+
+    <!-- 右側：メインコンテンツ -->
+    <main class="main-content">
+      <div class="status-bar">
+        ヒット件数: <span id="count">0</span> 件
+      </div>
+      <div id="song-list" class="song-list"></div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
