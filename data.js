@@ -1,11 +1,11 @@
 const songsData = [
   {
-    "日付": "2018/09/25",
-    "形態": "動画",
-    "歌唱": "",
-    "オケ有無": "●",
-    "曲名": "死にたくないから生きている(MV)",
-    "アーティスト名": "夢追翔",
+    "date": "2018/09/25",
+    "type": "動画",
+    "sing": "",
+    "oke": "●",
+    "title": "死にたくないから生きている(MV)",
+    "artist": "夢追翔",
     "url": "https://www.youtube.com/watch?v=XVVXrJQQuNs",
     "video": "夢追翔 MV「死にたくないから生きている」（Kakeru Yumeoi - Dying To Live）",
     "memo": "デビュー曲"
