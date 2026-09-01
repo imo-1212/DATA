@@ -18,6 +18,7 @@
     </div>
   </header>
 
+  <!-- プレーヤーは最初に一度だけ生成し、その後は動画だけを切り替えます -->
   <section id="player-panel" class="player-panel" hidden>
     <div class="player-inner">
       <div class="player-info">
@@ -25,10 +26,12 @@
         <strong id="player-title">選択した楽曲</strong>
         <span id="player-artist"></span>
       </div>
+
       <div class="player-frame-wrap">
-        <iframe id="youtube-player" title="YouTube player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <div id="youtube-player"></div>
       </div>
-      <button id="close-player" class="icon-button" type="button" aria-label="プレイヤーを閉じる">×</button>
+
+      <button id="close-player" class="icon-button" type="button" aria-label="プレーヤーを閉じる">×</button>
     </div>
   </section>
 
@@ -74,10 +77,19 @@
 
     <section class="results" aria-live="polite">
       <div class="results-header">
-        <p><strong id="count">0</strong> 曲</p>
-        <p id="active-summary" class="active-summary">すべて表示中</p>
+        <div>
+          <p><strong id="count">0</strong> 曲</p>
+          <p id="active-summary" class="active-summary">すべて表示中</p>
+        </div>
+
+        <!-- 現在の検索・絞り込み結果の中から選びます -->
+        <button id="shuffle-btn" class="primary-button" type="button" aria-pressed="false">
+          シャッフル再生
+        </button>
       </div>
+
       <div id="song-list" class="song-grid"></div>
+
       <div id="empty-state" class="empty-state" hidden>
         <p>条件に一致する楽曲がありません。</p>
         <button class="primary-button" type="button" data-reset>条件をリセット</button>
@@ -87,7 +99,9 @@
 
   <footer class="site-footer">非公式ファンサイトです。各コンテンツの権利は権利者に帰属します。</footer>
 
+  <!-- data.jsは変更不要。順番だけ data.js → script.js → YouTube API にします -->
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
