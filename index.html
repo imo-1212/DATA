@@ -1,62 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="夢追翔の歌唱曲を検索・絞り込みできる非公式データベース">
   <title>歌唱曲データベース</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>歌唱曲データベース</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <p class="eyebrow">UNOFFICIAL SONG ARCHIVE</p>
+        <h1>歌唱曲データベース</h1>
+      </div>
+      <p class="header-note">曲名・アーティスト・配信名から検索できます</p>
+    </div>
   </header>
 
-  <div class="container">
-    <!-- 左側：フィルター＆ソート -->
-    <aside class="sidebar">
-      <div class="filter-group">
-        <h3>並べ替え</h3>
+  <section id="player-panel" class="player-panel" hidden>
+    <div class="player-inner">
+      <div class="player-info">
+        <p class="eyebrow">NOW PLAYING</p>
+        <strong id="player-title">選択した楽曲</strong>
+        <span id="player-artist"></span>
+      </div>
+      <div class="player-frame-wrap">
+        <iframe id="youtube-player" title="YouTube player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <button id="close-player" class="icon-button" type="button" aria-label="プレイヤーを閉じる">×</button>
+    </div>
+  </section>
+
+  <main class="layout">
+    <aside class="filters" aria-label="検索と絞り込み">
+      <div class="filter-heading">
+        <h2>絞り込み</h2>
+        <button id="reset-btn" class="text-button" type="button">リセット</button>
+      </div>
+
+      <label class="field">
+        <span>キーワード検索</span>
+        <input id="search-input" type="search" placeholder="曲名、アーティスト、配信名…">
+      </label>
+
+      <label class="field">
+        <span>並べ替え</span>
         <select id="sort-select">
           <option value="date-desc">日付：新しい順</option>
           <option value="date-asc">日付：古い順</option>
-          <option value="title-asc">曲名：昇順 (A-Z/あ-ん)</option>
-          <option value="title-desc">曲名：降順 (Z-A/ん-あ)</option>
+          <option value="title-asc">曲名：昇順</option>
+          <option value="title-desc">曲名：降順</option>
           <option value="artist-asc">アーティスト：昇順</option>
           <option value="artist-desc">アーティスト：降順</option>
         </select>
-      </div>
+      </label>
 
-      <div class="filter-group">
-        <h3>キーワード検索</h3>
-        <input type="text" id="search-input" placeholder="曲名・アーティスト名で検索">
-      </div>
-
-      <div class="filter-group">
-        <h3>形態</h3>
+      <fieldset class="filter-group">
+        <legend>形態</legend>
         <div id="filter-type" class="button-group"></div>
-      </div>
+      </fieldset>
 
-      <div class="filter-group">
-        <h3>歌唱</h3>
-        <div id="filter-vocal" class="button-group"></div>
-      </div>
+      <fieldset class="filter-group">
+        <legend>歌唱</legend>
+        <div id="filter-sing" class="button-group"></div>
+      </fieldset>
 
-      <div class="filter-group">
-        <h3>オケ有無</h3>
+      <fieldset class="filter-group">
+        <legend>オケ</legend>
         <div id="filter-oke" class="button-group"></div>
-      </div>
-
-      <button id="reset-btn" class="reset-btn">フィルターをリセット</button>
+      </fieldset>
     </aside>
 
-    <!-- 右側：メインコンテンツ -->
-    <main class="main-content">
-      <div class="status-bar">
-        ヒット件数: <span id="count">0</span> 件
+    <section class="results" aria-live="polite">
+      <div class="results-header">
+        <p><strong id="count">0</strong> 曲</p>
+        <p id="active-summary" class="active-summary">すべて表示中</p>
       </div>
-      <div id="song-list" class="song-list"></div>
-    </main>
-  </div>
+      <div id="song-list" class="song-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <p>条件に一致する楽曲がありません。</p>
+        <button class="primary-button" type="button" data-reset>条件をリセット</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">非公式ファンサイトです。各コンテンツの権利は権利者に帰属します。</footer>
 
   <script src="data.js"></script>
   <script src="script.js"></script>
