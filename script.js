@@ -216,22 +216,23 @@ function render({ resetLimit = false } = {}) {
 function renderCards() {
   const displayed = filteredSongs.slice(0, renderedLimit);
   $("#song-list").replaceChildren(...displayed.map(createCard));
- const loadMore = $("#load-more");
-const loadMoreWrap = loadMore.closest(".load-more-wrap");
-const hasMore = renderedLimit < filteredSongs.length;
 
-loadMore.hidden = !hasMore;
-loadMoreWrap.hidden = !hasMore;
+  const loadMore = $("#load-more");
+  const loadMoreWrap = loadMore.closest(".load-more-wrap");
+  const hasMore = renderedLimit < filteredSongs.length;
 
-if (hasMore) {
-  const remaining = filteredSongs.length - renderedLimit;
+  loadMore.hidden = !hasMore;
+  loadMoreWrap.hidden = !hasMore;
 
-  loadMore.textContent =
-    `さらに表示（残り${remaining.toLocaleString("ja-JP")}件）`;
+  if (hasMore) {
+    const remaining = filteredSongs.length - renderedLimit;
+
+    loadMore.textContent =
+      `さらに表示（残り${remaining.toLocaleString("ja-JP")}件）`;
   }
 }
 
-function matchesFilters(song) {
+function matchesFilters(song) {function matchesFilters(song) {
   if (state.mode === "quick" && !isQuickPlayable(song)) return false;
   if (state.favoritesOnly && !favorites.has(song.id)) return false;
   if (state.selectedTypes.size && !hasAll(asArray(song.type), state.selectedTypes)) return false;
