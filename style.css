@@ -334,3 +334,7 @@ input[type="search"], select {
   .player-button { font-size: .82rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+[hidden] {
+  display: none !important;
+}
