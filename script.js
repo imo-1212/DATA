@@ -217,10 +217,17 @@ function renderCards() {
   const displayed = filteredSongs.slice(0, renderedLimit);
   $("#song-list").replaceChildren(...displayed.map(createCard));
   const loadMore = $("#load-more");
-  loadMore.hidden = displayed.length >= filteredSongs.length;
-  if (!loadMore.hidden) {
-    loadMore.textContent = `さらに表示（残り${(filteredSongs.length - displayed.length).toLocaleString("ja-JP")}件）`;
-  }
+const loadMoreWrap = loadMore.closest(".load-more-wrap");
+const hasMore = renderedLimit < filteredSongs.length;
+
+loadMore.hidden = !hasMore;
+loadMoreWrap.hidden = !hasMore;
+
+if (hasMore) {
+  const remaining = filteredSongs.length - renderedLimit;
+
+  loadMore.textContent =
+    `さらに表示（残り${remaining.toLocaleString("ja-JP")}件）`;
 }
 
 function matchesFilters(song) {
