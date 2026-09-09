@@ -232,7 +232,7 @@ function renderCards() {
   }
 }
 
-function matchesFilters(song) {function matchesFilters(song) {
+function matchesFilters(song)  {
   if (state.mode === "quick" && !isQuickPlayable(song)) return false;
   if (state.favoritesOnly && !favorites.has(song.id)) return false;
   if (state.selectedTypes.size && !hasAll(asArray(song.type), state.selectedTypes)) return false;
