@@ -36,6 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
   bindEvents();
   updateModeButtons();
   updateFavoriteCount();
+  updateSelectedFilters();
   render({ resetLimit: true });
 });
 
@@ -131,11 +132,58 @@ function createFilterButtons(selector, values, selectedSet) {
       else selectedSet.add(value);
       button.classList.toggle("active", selectedSet.has(value));
       button.setAttribute("aria-pressed", String(selectedSet.has(value)));
+      updateSelectedFilters();
       render({ resetLimit: true });
     });
     container.appendChild(button);
   });
 }
+
+function updateSelectedFilters() {
+  const container = $("#selected-filters");
+  const selections = [
+    ...[...state.selectedTypes].map(value => ({ value, group: "type" })),
+    ...[...state.selectedSings].map(value => ({ value, group: "sing" }))
+  ];
+
+  $("#selected-filter-count").textContent = selections.length;
+  container.hidden = selections.length === 0;
+  container.replaceChildren(...selections.map(({ value, group }) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "selected-filter";
+    button.textContent = `${value} ×`;
+    button.addEventListener("click", () => {
+      const targetSet = group === "type" ? state.selectedTypes : state.selectedSings;
+      targetSet.delete(value);
+      document.querySelectorAll(".filter-btn").forEach(item => {
+        if (item.dataset.value !== value) return;
+        item.classList.remove("active");
+        item.setAttribute("aria-pressed", "false");
+      });
+      updateSelectedFilters();
+      render({ resetLimit: true });
+    });
+    return button;
+  }));
+}
+
+function applyTagSearch(tag) {
+  state.query = normalize(tag);
+  $("#search-input").value = tag;
+  state.selectedTypes.clear();
+  state.selectedSings.clear();
+  state.favoritesOnly = false;
+  $("#favorites-only").checked = false;
+  document.querySelectorAll(".filter-btn").forEach(button => {
+    button.classList.remove("active");
+    button.setAttribute("aria-pressed", "false");
+  });
+  updateSelectedFilters();
+  render({ resetLimit: true });
+  $(".results").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 
 function resetFilters() {
   state.query = "";
@@ -151,6 +199,7 @@ function resetFilters() {
     button.classList.remove("active");
     button.setAttribute("aria-pressed", "false");
   });
+  updateSelectedFilters();
   render({ resetLimit: true });
 }
 
@@ -177,8 +226,8 @@ function renderCards() {
 function matchesFilters(song) {
   if (state.mode === "quick" && !isQuickPlayable(song)) return false;
   if (state.favoritesOnly && !favorites.has(song.id)) return false;
-  if (state.selectedTypes.size && !hasAny(asArray(song.type), state.selectedTypes)) return false;
-  if (state.selectedSings.size && !hasAny(asArray(song.sing), state.selectedSings)) return false;
+  if (state.selectedTypes.size && !hasAll(asArray(song.type), state.selectedTypes)) return false;
+  if (state.selectedSings.size && !hasAll(asArray(song.sing), state.selectedSings)) return false;
   if (!state.query) return true;
 
   const searchable = [
@@ -198,8 +247,12 @@ function matchesFilters(song) {
   return normalize(searchable).includes(state.query);
 }
 
-function hasAny(values, selectedSet) {
-  return values.some(value => selectedSet.has(value));
+function hasAll(values, selectedSet) {
+  return [...selectedSet].every(selected => values.includes(selected));
+}
+
+function isBlockedSource(source) {
+  return ["deleted", "private", "regionBlocked"].includes(source.availability);
 }
 
 function isQuickPlayable(song) {
@@ -239,7 +292,7 @@ function createCard(song) {
   if (youtubeSource) {
     const youtube = getYouTubeInfo(youtubeSource.url);
     media = `<button class="thumbnail-button" type="button" data-play aria-label="${escapeHtml(song.title)}をサイト内で再生">
-      <img class="thumbnail" src="https://i.ytimg.com/vi/${escapeAttribute(youtube.id)}/mqdefault.jpg" alt="" loading="lazy">
+      <img class="thumbnail" src="${escapeAttribute(youtubeThumbnailUrl(youtube.id, "hqdefault.jpg"))}" alt="" loading="lazy" data-thumbnail-id="${escapeAttribute(youtube.id)}">
       <span class="play-mark" aria-hidden="true">▶</span>
     </button>`;
   } else {
@@ -248,20 +301,24 @@ function createCard(song) {
   }
 
   const typeBadges = asArray(song.type).slice(0, 4)
-    .map(value => `<span class="badge">${escapeHtml(value)}</span>`).join("");
+    .map(value => `<button class="badge tag-button" type="button" data-search-tag="${escapeAttribute(value)}">${escapeHtml(value)}</button>`).join("");
   const statusBadge = openableSource ? "" : `<span class="badge warning">${escapeHtml(song.recordStatus || "現在視聴不可")}</span>`;
   const tags = [...asArray(song.sing), ...asArray(song.collabo), ...asArray(song.keyword)];
-  const tagHtml = tags.slice(0, 10).map(value => `<span class="tag">${escapeHtml(value)}</span>`).join("");
+  const tagHtml = tags.slice(0, 10).map(value =>
+    `<button class="tag tag-button" type="button" data-search-tag="${escapeAttribute(value)}">${escapeHtml(value)}</button>`
+  ).join("");
   const isFavorite = favorites.has(song.id);
 
-  const sourceAction = openableSource
-    ? `<a class="action-button" href="${escapeAttribute(openableSource.url)}" target="_blank" rel="noopener noreferrer">元ページ</a>`
-    : "";
+  const sourceAction = youtubeSource
+    ? `<button class="action-button icon-action" type="button" data-play-bottom aria-label="${escapeHtml(song.title)}をサイト内で再生">▶</button>`
+    : openableSource
+      ? `<a class="action-button" href="${escapeAttribute(openableSource.url)}" target="_blank" rel="noopener noreferrer">元ページ</a>`
+      : "";
   const lyricsAction = song.kasi
     ? `<a class="action-button" href="${escapeAttribute(song.kasi)}" target="_blank" rel="noopener noreferrer">歌詞</a>`
     : "";
   const streamingAction = song.link
-    ? `<a class="action-button" href="${escapeAttribute(song.link)}" target="_blank" rel="noopener noreferrer">配信</a>`
+    ? `<a class="action-button" href="${escapeAttribute(song.link)}" target="_blank" rel="noopener noreferrer">LINK</a>`
     : "";
 
   article.innerHTML = `${media}
@@ -282,11 +339,24 @@ function createCard(song) {
     </div>`;
 
   const image = article.querySelector(".thumbnail");
-  image?.addEventListener("error", () => image.remove());
+  image?.addEventListener("error", () => {
+    if (image.dataset.fallbackApplied === "true") {
+      image.remove();
+      return;
+    }
+    image.dataset.fallbackApplied = "true";
+    image.src = youtubeThumbnailUrl(image.dataset.thumbnailId, "0.jpg");
+  });
 
-  article.querySelector("[data-play]")?.addEventListener("click", () => {
-    setShuffleEnabled(false);
-    playSong(song);
+  article.querySelectorAll("[data-play], [data-play-bottom]").forEach(button => {
+    button.addEventListener("click", () => {
+      setShuffleEnabled(false);
+      playSong(song);
+    });
+  });
+
+  article.querySelectorAll("[data-search-tag]").forEach(button => {
+    button.addEventListener("click", () => applyTagSearch(button.dataset.searchTag));
   });
 
   article.querySelector("[data-favorite]").addEventListener("click", () => {
@@ -307,15 +377,14 @@ function getYouTubeSource(song) {
     source.platform === "youtube" &&
     Boolean(source.url) &&
     source.embed === true &&
-    source.availability === "available" &&
+    !isBlockedSource(source) &&
     getYouTubeInfo(source.url)
   ) || null;
 }
 
 function getOpenableSource(song) {
-  const blockedStatuses = new Set(["deleted", "private", "regionBlocked"]);
   const sources = getSortedSources(song).filter(source =>
-    Boolean(source.url) && !blockedStatuses.has(source.availability)
+    Boolean(source.url) && !isBlockedSource(source)
   );
   return sources.find(source => source.quickPlay === true) || sources[0] || null;
 }
@@ -559,6 +628,10 @@ function closePlayer() {
 function getSourceStartSeconds(source) {
   if (Number.isFinite(source.startSeconds)) return source.startSeconds;
   return getYouTubeInfo(source.url)?.start || 0;
+}
+
+function youtubeThumbnailUrl(videoId, fileName) {
+  return "https:" + "//i.ytimg.com/vi/" + encodeURIComponent(videoId) + "/" + fileName;
 }
 
 function getYouTubeInfo(urlString) {
