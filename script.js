@@ -1,43 +1,441 @@
 /* global songsData, YT */
 
 const songs = Array.isArray(songsData) ? [...songsData] : [];
-const state = { type: null, sing: null, oke: null, query: "", sort: "date-desc" };
+const PAGE_SIZE = 60;
+const FAVORITES_KEY = "yumeoi-song-favorites-v1";
 
-let visibleSongs = [];
+const state = {
+  mode: "quick",
+  query: "",
+  sort: "date-desc",
+  selectedTypes: new Set(),
+  selectedSings: new Set(),
+  favoritesOnly: false
+};
+
+let filteredSongs = [];
+let renderedLimit = PAGE_SIZE;
+let favorites = loadFavorites();
+
 let player = null;
 let playerReady = false;
 let playerCreating = false;
 let youtubeApiReady = false;
 let queuedSong = null;
 let currentSong = null;
+let currentSource = null;
 let pendingSeekSeconds = null;
+let endMonitor = null;
 let shuffleEnabled = false;
 let shuffleHistory = [];
 
-const $ = (selector) => document.querySelector(selector);
+const $ = selector => document.querySelector(selector);
 
 window.addEventListener("DOMContentLoaded", () => {
   buildFilters();
   bindEvents();
-  render();
-  loadYouTubeApi();
+  updateModeButtons();
+  updateFavoriteCount();
+  render({ resetLimit: true });
 });
 
-/*
- * YouTube IFrame Player APIが読み込み終わると自動で呼ばれます。
- * youtube-nocookie.comは使用せず、通常のYouTubeプレーヤーを生成します。
- */
-window.onYouTubeIframeAPIReady = function onYouTubeIframeAPIReady() {
-  youtubeApiReady = true;
-  if (queuedSong) createYouTubePlayer();
-};
+function bindEvents() {
+  $("#mode-all").addEventListener("click", () => changeMode("all"));
+  $("#mode-quick").addEventListener("click", () => changeMode("quick"));
+
+  $("#sort-select").addEventListener("change", event => {
+    state.sort = event.target.value;
+    render({ resetLimit: true });
+  });
+
+  $("#search-input").addEventListener("input", event => {
+    state.query = normalize(event.target.value);
+    render({ resetLimit: true });
+  });
+
+  $("#favorites-only").addEventListener("change", event => {
+    state.favoritesOnly = event.target.checked;
+    render({ resetLimit: true });
+  });
+
+  $("#reset-btn").addEventListener("click", resetFilters);
+  document.addEventListener("click", event => {
+    if (event.target.closest("[data-reset]")) resetFilters();
+  });
+
+  $("#load-more").addEventListener("click", () => {
+    renderedLimit += PAGE_SIZE;
+    renderCards();
+  });
+
+  $("#shuffle-btn").addEventListener("click", () => {
+    if (shuffleEnabled) {
+      setShuffleEnabled(false);
+      return;
+    }
+    setShuffleEnabled(true);
+    playNextShuffleSong();
+  });
+
+  $("#next-player").addEventListener("click", () => {
+    playNextShuffleSong(true);
+  });
+
+  $("#close-player").addEventListener("click", closePlayer);
+}
+
+function changeMode(mode) {
+  state.mode = mode;
+  updateModeButtons();
+  render({ resetLimit: true });
+}
+
+function updateModeButtons() {
+  const isAll = state.mode === "all";
+  $("#mode-all").classList.toggle("active", isAll);
+  $("#mode-quick").classList.toggle("active", !isAll);
+  $("#mode-all").setAttribute("aria-pressed", String(isAll));
+  $("#mode-quick").setAttribute("aria-pressed", String(!isAll));
+  $("#mode-description").textContent = isAll
+    ? "視聴できない記録を含む、すべての歌唱記録を表示します"
+    : "現在すぐ視聴できる歌唱記録だけを表示します";
+}
+
+function buildFilters() {
+  createFilterButtons("#filter-type", uniqueValues("type"), state.selectedTypes);
+  createFilterButtons("#filter-sing", uniqueValues("sing"), state.selectedSings);
+}
+
+function uniqueValues(key) {
+  return [...new Set(songs.flatMap(song => asArray(song[key])))]
+    .filter(Boolean)
+    .sort((a, b) => a.localeCompare(b, "ja", { numeric: true }));
+}
+
+function createFilterButtons(selector, values, selectedSet) {
+  const container = $(selector);
+  if (!values.length) {
+    container.closest("fieldset").hidden = true;
+    return;
+  }
+
+  values.forEach(value => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "filter-btn";
+    button.textContent = value;
+    button.dataset.value = value;
+    button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", () => {
+      if (selectedSet.has(value)) selectedSet.delete(value);
+      else selectedSet.add(value);
+      button.classList.toggle("active", selectedSet.has(value));
+      button.setAttribute("aria-pressed", String(selectedSet.has(value)));
+      render({ resetLimit: true });
+    });
+    container.appendChild(button);
+  });
+}
+
+function resetFilters() {
+  state.query = "";
+  state.sort = "date-desc";
+  state.selectedTypes.clear();
+  state.selectedSings.clear();
+  state.favoritesOnly = false;
+
+  $("#search-input").value = "";
+  $("#sort-select").value = "date-desc";
+  $("#favorites-only").checked = false;
+  document.querySelectorAll(".filter-btn").forEach(button => {
+    button.classList.remove("active");
+    button.setAttribute("aria-pressed", "false");
+  });
+  render({ resetLimit: true });
+}
+
+function render({ resetLimit = false } = {}) {
+  if (resetLimit) renderedLimit = PAGE_SIZE;
+  filteredSongs = songs.filter(matchesFilters).sort(compareSongs);
+  $("#count").textContent = filteredSongs.length.toLocaleString("ja-JP");
+  $("#active-summary").textContent = getActiveSummary();
+  $("#empty-state").hidden = filteredSongs.length !== 0;
+  updateShuffleButton();
+  renderCards();
+}
+
+function renderCards() {
+  const displayed = filteredSongs.slice(0, renderedLimit);
+  $("#song-list").replaceChildren(...displayed.map(createCard));
+  const loadMore = $("#load-more");
+  loadMore.hidden = displayed.length >= filteredSongs.length;
+  if (!loadMore.hidden) {
+    loadMore.textContent = `さらに表示（残り${(filteredSongs.length - displayed.length).toLocaleString("ja-JP")}件）`;
+  }
+}
+
+function matchesFilters(song) {
+  if (state.mode === "quick" && !isQuickPlayable(song)) return false;
+  if (state.favoritesOnly && !favorites.has(song.id)) return false;
+  if (state.selectedTypes.size && !hasAny(asArray(song.type), state.selectedTypes)) return false;
+  if (state.selectedSings.size && !hasAny(asArray(song.sing), state.selectedSings)) return false;
+  if (!state.query) return true;
+
+  const searchable = [
+    song.title,
+    song.titleYomi,
+    song.artist,
+    song.artistYomi,
+    song.sourceTitle,
+    song.memo,
+    song.recordStatus,
+    ...asArray(song.type),
+    ...asArray(song.sing),
+    ...asArray(song.collabo),
+    ...asArray(song.keyword)
+  ].join(" ");
+
+  return normalize(searchable).includes(state.query);
+}
+
+function hasAny(values, selectedSet) {
+  return values.some(value => selectedSet.has(value));
+}
+
+function isQuickPlayable(song) {
+  return asArray(song.sources).some(source =>
+    Boolean(source.url) &&
+    source.quickPlay === true &&
+    source.availability === "available"
+  );
+}
+
+function compareSongs(a, b) {
+  const titleA = normalizeSortText(a.titleYomi || a.title);
+  const titleB = normalizeSortText(b.titleYomi || b.title);
+  const artistA = normalizeSortText(a.artistYomi || a.artist);
+  const artistB = normalizeSortText(b.artistYomi || b.artist);
+  const dateA = parseDate(a.date);
+  const dateB = parseDate(b.date);
+  const options = { sensitivity: "base", numeric: true };
+
+  switch (state.sort) {
+    case "date-asc": return dateA - dateB || titleA.localeCompare(titleB, "ja", options);
+    case "title-asc": return titleA.localeCompare(titleB, "ja", options) || dateB - dateA;
+    case "title-desc": return titleB.localeCompare(titleA, "ja", options) || dateB - dateA;
+    case "artist-asc": return artistA.localeCompare(artistB, "ja", options) || titleA.localeCompare(titleB, "ja", options);
+    case "artist-desc": return artistB.localeCompare(artistA, "ja", options) || titleA.localeCompare(titleB, "ja", options);
+    default: return dateB - dateA || titleA.localeCompare(titleB, "ja", options);
+  }
+}
+
+function createCard(song) {
+  const article = document.createElement("article");
+  const youtubeSource = getYouTubeSource(song);
+  const openableSource = getOpenableSource(song);
+  article.className = `song-card${openableSource ? "" : " record-only"}`;
+
+  let media;
+  if (youtubeSource) {
+    const youtube = getYouTubeInfo(youtubeSource.url);
+    media = `<button class="thumbnail-button" type="button" data-play aria-label="${escapeHtml(song.title)}をサイト内で再生">
+      <img class="thumbnail" src="https://i.ytimg.com/vi/${escapeAttribute(youtube.id)}/mqdefault.jpg" alt="" loading="lazy">
+      <span class="play-mark" aria-hidden="true">▶</span>
+    </button>`;
+  } else {
+    const label = openableSource ? platformLabel(openableSource.platform) : "記録のみ";
+    media = `<div class="thumbnail-placeholder">${escapeHtml(label)}</div>`;
+  }
+
+  const typeBadges = asArray(song.type).slice(0, 4)
+    .map(value => `<span class="badge">${escapeHtml(value)}</span>`).join("");
+  const statusBadge = openableSource ? "" : `<span class="badge warning">${escapeHtml(song.recordStatus || "現在視聴不可")}</span>`;
+  const tags = [...asArray(song.sing), ...asArray(song.collabo), ...asArray(song.keyword)];
+  const tagHtml = tags.slice(0, 10).map(value => `<span class="tag">${escapeHtml(value)}</span>`).join("");
+  const isFavorite = favorites.has(song.id);
+
+  const sourceAction = openableSource
+    ? `<a class="action-button" href="${escapeAttribute(openableSource.url)}" target="_blank" rel="noopener noreferrer">元ページ</a>`
+    : "";
+  const lyricsAction = song.kasi
+    ? `<a class="action-button" href="${escapeAttribute(song.kasi)}" target="_blank" rel="noopener noreferrer">歌詞</a>`
+    : "";
+  const streamingAction = song.link
+    ? `<a class="action-button" href="${escapeAttribute(song.link)}" target="_blank" rel="noopener noreferrer">配信</a>`
+    : "";
+
+  article.innerHTML = `${media}
+    <div class="card-body">
+      <div class="card-meta">
+        <time>${escapeHtml(song.date || "日付不明")}</time>
+        ${typeBadges}${statusBadge}
+      </div>
+      <h2 class="song-title">${escapeHtml(song.title || "タイトルなし")}</h2>
+      <p class="song-artist">${escapeHtml(song.artist || "アーティスト不明")}</p>
+      ${song.sourceTitle ? `<p class="song-source">${escapeHtml(song.sourceTitle)}</p>` : ""}
+      ${tagHtml ? `<div class="tag-list">${tagHtml}</div>` : ""}
+      ${song.memo ? `<p class="memo">${renderMemo(song.memo)}</p>` : ""}
+      <div class="card-actions">
+        ${sourceAction}${lyricsAction}${streamingAction}
+        <button class="favorite-button${isFavorite ? " active" : ""}" type="button" data-favorite aria-pressed="${isFavorite}" aria-label="お気に入り${isFavorite ? "から削除" : "に追加"}">★</button>
+      </div>
+    </div>`;
+
+  const image = article.querySelector(".thumbnail");
+  image?.addEventListener("error", () => image.remove());
+
+  article.querySelector("[data-play]")?.addEventListener("click", () => {
+    setShuffleEnabled(false);
+    playSong(song);
+  });
+
+  article.querySelector("[data-favorite]").addEventListener("click", () => {
+    toggleFavorite(song.id);
+  });
+
+  return article;
+}
+
+function getSortedSources(song) {
+  return [...asArray(song.sources)].sort((a, b) =>
+    (a.priority ?? 999) - (b.priority ?? 999)
+  );
+}
+
+function getYouTubeSource(song) {
+  return getSortedSources(song).find(source =>
+    source.platform === "youtube" &&
+    Boolean(source.url) &&
+    source.embed === true &&
+    source.availability === "available" &&
+    getYouTubeInfo(source.url)
+  ) || null;
+}
+
+function getOpenableSource(song) {
+  const blockedStatuses = new Set(["deleted", "private", "regionBlocked"]);
+  const sources = getSortedSources(song).filter(source =>
+    Boolean(source.url) && !blockedStatuses.has(source.availability)
+  );
+  return sources.find(source => source.quickPlay === true) || sources[0] || null;
+}
+
+function platformLabel(platform) {
+  const labels = {
+    youtube: "YOUTUBE",
+    niconico: "ニコニコ動画",
+    twitter: "X / TWITTER",
+    tiktok: "TIKTOK",
+    twitcasting: "ツイキャス",
+    bilibili: "BILIBILI",
+    spotify: "SPOTIFY",
+    appleMusic: "APPLE MUSIC",
+    other: "外部サイト"
+  };
+  return labels[platform] || "外部サイト";
+}
+
+function toggleFavorite(id) {
+  if (favorites.has(id)) favorites.delete(id);
+  else favorites.add(id);
+  saveFavorites();
+  updateFavoriteCount();
+  render();
+}
+
+function loadFavorites() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(FAVORITES_KEY) || "[]");
+    return new Set(Array.isArray(parsed) ? parsed : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveFavorites() {
+  try {
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify([...favorites]));
+  } catch {
+    // localStorageが使えない環境でも一覧表示は継続します。
+  }
+}
+
+function updateFavoriteCount() {
+  $("#favorite-count").textContent = favorites.size.toLocaleString("ja-JP");
+}
+
+function updateShuffleButton() {
+  const button = $("#shuffle-btn");
+  button.disabled = getShuffleCandidates().length === 0;
+  if (button.disabled) setShuffleEnabled(false);
+}
+
+function setShuffleEnabled(enabled) {
+  shuffleEnabled = enabled;
+  if (!enabled) shuffleHistory = [];
+  const button = $("#shuffle-btn");
+  button.textContent = enabled ? "シャッフル停止" : "シャッフル再生";
+  button.setAttribute("aria-pressed", String(enabled));
+}
+
+function getShuffleCandidates() {
+  return filteredSongs.filter(song => Boolean(getYouTubeSource(song)));
+}
+
+function playNextShuffleSong(force = false) {
+  if (!shuffleEnabled && !force) return;
+  const candidates = getShuffleCandidates();
+  if (!candidates.length) return;
+
+  let remaining = candidates.filter(song => !shuffleHistory.includes(song.id));
+  if (!remaining.length) {
+    shuffleHistory = [];
+    remaining = [...candidates];
+  }
+  if (remaining.length > 1 && currentSong) {
+    const withoutCurrent = remaining.filter(song => song.id !== currentSong.id);
+    if (withoutCurrent.length) remaining = withoutCurrent;
+  }
+
+  const nextSong = remaining[Math.floor(Math.random() * remaining.length)];
+  shuffleHistory.push(nextSong.id);
+  playSong(nextSong, { preserveShuffle: true });
+}
+
+function playSong(song, { preserveShuffle = false } = {}) {
+  const source = getYouTubeSource(song);
+  if (!source) return;
+  if (!preserveShuffle) setShuffleEnabled(false);
+
+  currentSong = song;
+  currentSource = source;
+  pendingSeekSeconds = getSourceStartSeconds(source);
+  queuedSong = song;
+
+  $("#player-panel").hidden = false;
+  $("#player-title").textContent = `${song.title || "タイトルなし"}（準備中…）`;
+  $("#player-artist").textContent = song.artist || "";
+  $("#player-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+
+  if (!youtubeApiReady) {
+    loadYouTubeApi();
+    return;
+  }
+  if (!playerReady) {
+    createYouTubePlayer();
+    return;
+  }
+  queuedSong = null;
+  loadSongIntoPlayer(song);
+}
 
 function loadYouTubeApi() {
   if (window.YT?.Player) {
-    window.onYouTubeIframeAPIReady();
+    youtubeApiReady = true;
+    createYouTubePlayer();
     return;
   }
-  if (document.querySelector('script[data-youtube-api]')) return;
+  if (document.querySelector("script[data-youtube-api]")) return;
 
   const tag = document.createElement("script");
   tag.src = "https://www.youtube.com/iframe_api";
@@ -49,6 +447,11 @@ function loadYouTubeApi() {
   };
   document.head.appendChild(tag);
 }
+
+window.onYouTubeIframeAPIReady = function onYouTubeIframeAPIReady() {
+  youtubeApiReady = true;
+  createYouTubePlayer();
+};
 
 function createYouTubePlayer() {
   if (!youtubeApiReady || player || playerCreating || !queuedSong) return;
@@ -74,7 +477,6 @@ function createYouTubePlayer() {
 function handlePlayerReady() {
   playerReady = true;
   playerCreating = false;
-
   if (queuedSong) {
     const song = queuedSong;
     queuedSong = null;
@@ -82,14 +484,35 @@ function handlePlayerReady() {
   }
 }
 
+function loadSongIntoPlayer(song) {
+  const source = getYouTubeSource(song);
+  const youtube = source && getYouTubeInfo(source.url);
+  if (!youtube || !playerReady) return;
+
+  currentSong = song;
+  currentSource = source;
+  pendingSeekSeconds = getSourceStartSeconds(source);
+  $("#player-title").textContent = song.title || "タイトルなし";
+  $("#player-artist").textContent = song.artist || "";
+
+  player.loadVideoById({
+    videoId: youtube.id,
+    startSeconds: pendingSeekSeconds || 0
+  });
+}
+
 function handlePlayerStateChange(event) {
-  if (event.data === YT.PlayerState.PLAYING && pendingSeekSeconds !== null) {
-    // 配信アーカイブで開始位置が無視される場合への補正です。
-    const seconds = pendingSeekSeconds;
-    pendingSeekSeconds = null;
-    if (seconds > 0 && Math.abs(player.getCurrentTime() - seconds) > 2) {
-      player.seekTo(seconds, true);
+  if (event.data === YT.PlayerState.PLAYING) {
+    if (pendingSeekSeconds !== null) {
+      const seconds = pendingSeekSeconds;
+      pendingSeekSeconds = null;
+      if (seconds > 0 && Math.abs(player.getCurrentTime() - seconds) > 2) {
+        player.seekTo(seconds, true);
+      }
     }
+    startEndMonitor();
+  } else {
+    stopEndMonitor();
   }
 
   if (event.data === YT.PlayerState.ENDED && shuffleEnabled) {
@@ -98,279 +521,60 @@ function handlePlayerStateChange(event) {
 }
 
 function handlePlayerError() {
+  stopEndMonitor();
   $("#player-title").textContent = "この動画は埋め込み再生できません";
-  $("#player-artist").textContent = "「元ページを開く」から視聴してください";
-
-  // シャッフル中に再生不可動画へ当たった場合は次の曲へ進みます。
-  if (shuffleEnabled) {
-    window.setTimeout(playNextShuffleSong, 900);
-  }
+  $("#player-artist").textContent = "「元ページ」から視聴してください";
+  if (shuffleEnabled) window.setTimeout(playNextShuffleSong, 900);
 }
 
-function bindEvents() {
-  $("#sort-select").addEventListener("change", (event) => {
-    state.sort = event.target.value;
-    render();
-  });
+function startEndMonitor() {
+  stopEndMonitor();
+  const endSeconds = currentSource?.endSeconds;
+  if (!Number.isFinite(endSeconds)) return;
 
-  $("#search-input").addEventListener("input", (event) => {
-    state.query = normalize(event.target.value);
-    render();
-  });
-
-  $("#reset-btn").addEventListener("click", resetFilters);
-  document.addEventListener("click", (event) => {
-    if (event.target.closest("[data-reset]")) resetFilters();
-  });
-
-  $("#shuffle-btn").addEventListener("click", () => {
-    if (shuffleEnabled) {
-      setShuffleEnabled(false);
-      return;
+  endMonitor = window.setInterval(() => {
+    if (!playerReady || player.getPlayerState() !== YT.PlayerState.PLAYING) return;
+    if (player.getCurrentTime() >= endSeconds) {
+      stopEndMonitor();
+      if (shuffleEnabled) playNextShuffleSong();
+      else player.pauseVideo();
     }
-
-    setShuffleEnabled(true);
-    playNextShuffleSong();
-  });
-
-  $("#close-player").addEventListener("click", () => {
-    setShuffleEnabled(false);
-    queuedSong = null;
-    pendingSeekSeconds = null;
-    if (playerReady) player.stopVideo();
-    $("#player-panel").hidden = true;
-  });
+  }, 500);
 }
 
-function buildFilters() {
-  createFilterButtons("#filter-type", "type", uniqueValues("type"));
-  createFilterButtons("#filter-sing", "sing", uniqueValues("sing"));
-
-  const okeValues = [];
-  if (songs.some(song => song.oke === "●")) okeValues.push({ value: "●", label: "あり" });
-  if (songs.some(song => !song.oke)) okeValues.push({ value: "__NONE__", label: "なし" });
-  createFilterButtons("#filter-oke", "oke", okeValues);
+function stopEndMonitor() {
+  if (endMonitor) window.clearInterval(endMonitor);
+  endMonitor = null;
 }
 
-function uniqueValues(key) {
-  return [...new Set(songs.map(song => String(song[key] ?? "").trim()))]
-    .filter(Boolean)
-    .sort((a, b) => a.localeCompare(b, "ja"));
+function closePlayer() {
+  setShuffleEnabled(false);
+  stopEndMonitor();
+  queuedSong = null;
+  pendingSeekSeconds = null;
+  if (playerReady) player.stopVideo();
+  $("#player-panel").hidden = true;
 }
 
-function createFilterButtons(selector, key, values) {
-  const container = $(selector);
-  const entries = values.map(item => typeof item === "string" ? { value: item, label: item } : item);
-
-  if (!entries.length) {
-    container.closest("fieldset").hidden = true;
-    return;
-  }
-
-  entries.forEach(({ value, label }) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "filter-btn";
-    button.textContent = label;
-    button.setAttribute("aria-pressed", "false");
-    button.addEventListener("click", () => {
-      state[key] = state[key] === value ? null : value;
-      container.querySelectorAll("button").forEach(item => {
-        const active = item === button && state[key] === value;
-        item.classList.toggle("active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
-      render();
-    });
-    container.appendChild(button);
-  });
-}
-
-function resetFilters() {
-  Object.assign(state, { type: null, sing: null, oke: null, query: "", sort: "date-desc" });
-  $("#search-input").value = "";
-  $("#sort-select").value = "date-desc";
-  document.querySelectorAll(".filter-btn").forEach(button => {
-    button.classList.remove("active");
-    button.setAttribute("aria-pressed", "false");
-  });
-  render();
-}
-
-function render() {
-  visibleSongs = songs.filter(matchesFilters).sort(compareSongs);
-  $("#count").textContent = visibleSongs.length;
-  $("#active-summary").textContent = getActiveSummary();
-  $("#song-list").replaceChildren(...visibleSongs.map(createCard));
-  $("#empty-state").hidden = visibleSongs.length !== 0;
-
-  const playableCount = getPlayableVisibleSongs().length;
-  $("#shuffle-btn").disabled = playableCount === 0;
-  if (playableCount === 0) setShuffleEnabled(false);
-}
-
-function matchesFilters(song) {
-  if (state.type && song.type !== state.type) return false;
-  if (state.sing && song.sing !== state.sing) return false;
-  if (state.oke === "●" && song.oke !== "●") return false;
-  if (state.oke === "__NONE__" && song.oke) return false;
-  if (!state.query) return true;
-
-  return normalize([
-    song.title,
-    song.artist,
-    song.video,
-    song.memo,
-    song.type,
-    song.sing
-  ].join(" ")).includes(state.query);
-}
-
-function compareSongs(a, b) {
-  const titleA = a.title || "";
-  const titleB = b.title || "";
-  const artistA = a.artist || "";
-  const artistB = b.artist || "";
-  const dateA = parseDate(a.date);
-  const dateB = parseDate(b.date);
-
-  switch (state.sort) {
-    case "date-asc": return dateA - dateB;
-    case "title-asc": return titleA.localeCompare(titleB, "ja");
-    case "title-desc": return titleB.localeCompare(titleA, "ja");
-    case "artist-asc": return artistA.localeCompare(artistB, "ja");
-    case "artist-desc": return artistB.localeCompare(artistA, "ja");
-    default: return dateB - dateA;
-  }
-}
-
-function createCard(song) {
-  const article = document.createElement("article");
-  article.className = "song-card";
-
-  const youtube = getYouTubeInfo(song.url);
-  const media = youtube
-    ? `<button class="thumbnail-button" type="button" aria-label="${escapeHtml(song.title)}をページ内で再生" data-play>
-         <img class="thumbnail" src="https://i.ytimg.com/vi/${youtube.id}/mqdefault.jpg" alt="" loading="lazy" onerror="this.remove()">
-         <span class="play-mark" aria-hidden="true">▶</span>
-       </button>`
-    : `<div class="thumbnail-placeholder">${escapeHtml(song.type || "楽曲")}</div>`;
-
-  const badges = [song.type, song.sing, song.oke === "●" ? "オケあり" : ""]
-    .filter(Boolean)
-    .map(value => `<span class="badge">${escapeHtml(value)}</span>`)
-    .join("");
-
-  article.innerHTML = `${media}
-    <div class="card-body">
-      <div class="card-meta"><time>${escapeHtml(song.date || "日付不明")}</time>${badges}</div>
-      <h2 class="song-title">${escapeHtml(song.title || "タイトルなし")}</h2>
-      <p class="song-artist">${escapeHtml(song.artist || "アーティスト不明")}</p>
-      ${song.video ? `<p class="song-source">${escapeHtml(song.video)}</p>` : ""}
-      ${song.memo ? `<p class="memo">${escapeHtml(song.memo)}</p>` : ""}
-      <div class="card-actions">
-        <a class="secondary-button" href="${escapeAttribute(song.url || "#")}" target="_blank" rel="noopener noreferrer">元ページを開く</a>
-      </div>
-    </div>`;
-
-  if (youtube) {
-    article.querySelector("[data-play]").addEventListener("click", () => {
-      setShuffleEnabled(false);
-      playSong(song);
-    });
-  }
-
-  return article;
-}
-
-function playSong(song) {
-  const youtube = getYouTubeInfo(song.url);
-  if (!youtube) return;
-
-  currentSong = song;
-  pendingSeekSeconds = youtube.start;
-  $("#player-title").textContent = song.title || "タイトルなし";
-  $("#player-artist").textContent = song.artist || "";
-  $("#player-panel").hidden = false;
-  $("#player-panel").scrollIntoView({ behavior: "smooth", block: "start" });
-
-  if (!playerReady) {
-    queuedSong = song;
-    $("#player-title").textContent = `${song.title || "タイトルなし"}（準備中…）`;
-    if (youtubeApiReady) createYouTubePlayer();
-    return;
-  }
-
-  loadSongIntoPlayer(song);
-}
-
-function loadSongIntoPlayer(song) {
-  const youtube = getYouTubeInfo(song.url);
-  if (!youtube || !playerReady) return;
-
-  pendingSeekSeconds = youtube.start;
-  player.loadVideoById({
-    videoId: youtube.id,
-    startSeconds: youtube.start
-  });
-}
-
-function setShuffleEnabled(enabled) {
-  shuffleEnabled = enabled;
-  if (!enabled) shuffleHistory = [];
-
-  const button = $("#shuffle-btn");
-  button.textContent = enabled ? "シャッフル停止" : "シャッフル再生";
-  button.setAttribute("aria-pressed", String(enabled));
-}
-
-function playNextShuffleSong() {
-  if (!shuffleEnabled) return;
-
-  const candidates = getPlayableVisibleSongs();
-  if (!candidates.length) {
-    setShuffleEnabled(false);
-    return;
-  }
-
-  // 全曲を一巡するまで同じ曲を選びにくくします。
-  let remaining = candidates.filter(song => !shuffleHistory.includes(song));
-  if (!remaining.length) {
-    shuffleHistory = [];
-    remaining = [...candidates];
-  }
-
-  if (remaining.length > 1 && currentSong) {
-    const withoutCurrent = remaining.filter(song => song !== currentSong);
-    if (withoutCurrent.length) remaining = withoutCurrent;
-  }
-
-  const nextSong = remaining[Math.floor(Math.random() * remaining.length)];
-  shuffleHistory.push(nextSong);
-  playSong(nextSong);
-}
-
-function getPlayableVisibleSongs() {
-  return visibleSongs.filter(song => getYouTubeInfo(song.url));
+function getSourceStartSeconds(source) {
+  if (Number.isFinite(source.startSeconds)) return source.startSeconds;
+  return getYouTubeInfo(source.url)?.start || 0;
 }
 
 function getYouTubeInfo(urlString) {
   if (!urlString) return null;
-
   try {
     const url = new URL(urlString);
     const hostname = url.hostname.replace(/^www\./, "");
     let id = "";
 
-    if (hostname === "youtu.be") {
-      id = url.pathname.split("/").filter(Boolean)[0] || "";
-    } else if (hostname === "youtube.com" || hostname === "m.youtube.com") {
+    if (hostname === "youtu.be") id = url.pathname.split("/").filter(Boolean)[0] || "";
+    if (hostname === "youtube.com" || hostname === "m.youtube.com") {
       if (url.pathname === "/watch") id = url.searchParams.get("v") || "";
       if (url.pathname.startsWith("/live/")) id = url.pathname.split("/")[2] || "";
       if (url.pathname.startsWith("/shorts/")) id = url.pathname.split("/")[2] || "";
       if (url.pathname.startsWith("/embed/")) id = url.pathname.split("/")[2] || "";
     }
-
     if (!id) return null;
 
     const rawStart = url.searchParams.get("t") || url.searchParams.get("start") || "0";
@@ -383,11 +587,26 @@ function getYouTubeInfo(urlString) {
 function parseYouTubeTime(value) {
   const text = String(value || "0");
   if (/^\d+$/.test(text)) return Number(text);
-
   const hours = Number(text.match(/(\d+)h/)?.[1] || 0);
   const minutes = Number(text.match(/(\d+)m/)?.[1] || 0);
   const seconds = Number(text.match(/(\d+)s/)?.[1] || 0);
   return hours * 3600 + minutes * 60 + seconds;
+}
+
+function getActiveSummary() {
+  const parts = [];
+  parts.push(state.mode === "quick" ? "すぐ聴ける曲" : "全記録");
+  if (state.selectedTypes.size) parts.push([...state.selectedTypes].join("・"));
+  if (state.selectedSings.size) parts.push([...state.selectedSings].join("・"));
+  if (state.favoritesOnly) parts.push("お気に入り");
+  if (state.query) parts.push(`「${state.query}」`);
+  return `${parts.join(" / ")}を表示中`;
+}
+
+function asArray(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (!value) return [];
+  return String(value).split(",").map(item => item.trim()).filter(Boolean);
 }
 
 function parseDate(value) {
@@ -395,14 +614,18 @@ function parseDate(value) {
   return Number.isNaN(timestamp) ? 0 : timestamp;
 }
 
-function getActiveSummary() {
-  const okeLabel = state.oke === "●" ? "オケあり" : state.oke === "__NONE__" ? "オケなし" : "";
-  const labels = [state.type, state.sing, okeLabel, state.query ? `「${state.query}」` : ""].filter(Boolean);
-  return labels.length ? `${labels.join("・")}で絞り込み中` : "すべて表示中";
-}
-
 function normalize(value) {
   return String(value || "").normalize("NFKC").toLocaleLowerCase("ja").trim();
+}
+
+function normalizeSortText(value) {
+  return normalize(value).replace(/\s+/g, "");
+}
+
+function renderMemo(text) {
+  return escapeHtml(text || "")
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+    .replace(/\n/g, "<br>");
 }
 
 function escapeHtml(value) {
