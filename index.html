@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="夢追翔の歌唱曲を検索・絞り込みできる非公式データベース">
+  <meta name="description" content="夢追翔の歌唱曲を検索・視聴できる非公式データベース">
   <title>歌唱曲データベース</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,15 +14,14 @@
         <p class="eyebrow">UNOFFICIAL SONG ARCHIVE</p>
         <h1>歌唱曲データベース</h1>
       </div>
-      <p class="header-note">曲名・アーティスト・配信名から検索できます</p>
+      <p class="header-note">曲名・アーティスト・配信名・タグから検索できます</p>
     </div>
   </header>
 
-  <!-- プレーヤーは最初に一度だけ生成し、その後は動画だけを切り替えます -->
   <section id="player-panel" class="player-panel" hidden>
     <div class="player-inner">
       <div class="player-info">
-        <p class="eyebrow">🔻NOW PLAYING🔻</p>
+        <p class="eyebrow">NOW PLAYING</p>
         <strong id="player-title">選択した楽曲</strong>
         <span id="player-artist"></span>
       </div>
@@ -31,75 +30,95 @@
         <div id="youtube-player"></div>
       </div>
 
-      <button id="close-player" class="icon-button" type="button" aria-label="プレーヤーを閉じる">×</button>
+      <div class="player-controls">
+        <button id="next-player" class="player-button" type="button">次の曲</button>
+        <button id="close-player" class="icon-button" type="button" aria-label="プレーヤーを閉じる">×</button>
+      </div>
     </div>
   </section>
 
-  <main class="layout">
-    <aside class="filters" aria-label="検索と絞り込み">
-      <div class="filter-heading">
-        <h2>絞り込み</h2>
-        <button id="reset-btn" class="text-button" type="button">リセット</button>
+  <main class="page-shell">
+    <section class="mode-panel" aria-label="表示モード">
+      <div>
+        <strong>表示モード</strong>
+        <p id="mode-description">すぐ視聴できる歌唱記録だけを表示します</p>
       </div>
-
-      <label class="field">
-        <span>キーワード検索</span>
-        <input id="search-input" type="search" placeholder="曲名、アーティスト、配信名…">
-      </label>
-
-      <label class="field">
-        <span>並べ替え</span>
-        <select id="sort-select">
-          <option value="date-desc">日付：新しい順</option>
-          <option value="date-asc">日付：古い順</option>
-          <option value="title-asc">曲名：昇順</option>
-          <option value="title-desc">曲名：降順</option>
-          <option value="artist-asc">アーティスト：昇順</option>
-          <option value="artist-desc">アーティスト：降順</option>
-        </select>
-      </label>
-
-      <fieldset class="filter-group">
-        <legend>形態</legend>
-        <div id="filter-type" class="button-group"></div>
-      </fieldset>
-
-      <fieldset class="filter-group">
-        <legend>歌唱</legend>
-        <div id="filter-sing" class="button-group"></div>
-      </fieldset>
-
-      <fieldset class="filter-group">
-        <legend>オケ</legend>
-        <div id="filter-oke" class="button-group"></div>
-      </fieldset>
-    </aside>
-
-    <section class="results" aria-live="polite">
-      <div class="results-header">
-        <div>
-          <p><strong id="count">0</strong> 曲</p>
-          <p id="active-summary" class="active-summary">すべて表示中</p>
-        </div>
-
-        <!-- 現在の検索・絞り込み結果の中から選びます -->
-        <button id="shuffle-btn" class="primary-button" type="button" aria-pressed="false">
-          シャッフル再生
-        </button>
-      </div>
-
-      <div id="song-list" class="song-grid"></div>
-
-      <div id="empty-state" class="empty-state" hidden>
-        <p>条件に一致する楽曲がありません。</p>
-        <button class="primary-button" type="button" data-reset>条件をリセット</button>
+      <div class="segmented-control">
+        <button id="mode-all" type="button" data-mode="all" aria-pressed="false">全記録</button>
+        <button id="mode-quick" type="button" data-mode="quick" aria-pressed="true">すぐ聴く</button>
       </div>
     </section>
+
+    <div class="layout">
+      <aside class="filters" aria-label="検索と絞り込み">
+        <div class="filter-heading">
+          <h2>絞り込み</h2>
+          <button id="reset-btn" class="text-button" type="button">リセット</button>
+        </div>
+
+        <label class="field">
+          <span>キーワード検索</span>
+          <input id="search-input" type="search" placeholder="曲名、アーティスト、コラボ…">
+        </label>
+
+        <label class="field">
+          <span>並べ替え</span>
+          <select id="sort-select">
+            <option value="date-desc">日付：新しい順</option>
+            <option value="date-asc">日付：古い順</option>
+            <option value="title-asc">曲名：昇順</option>
+            <option value="title-desc">曲名：降順</option>
+            <option value="artist-asc">アーティスト：昇順</option>
+            <option value="artist-desc">アーティスト：降順</option>
+          </select>
+        </label>
+
+        <label class="favorite-toggle">
+          <input id="favorites-only" type="checkbox">
+          <span>お気に入りのみ</span>
+          <small id="favorite-count">0</small>
+        </label>
+
+        <fieldset class="filter-group">
+          <legend>形態・種類</legend>
+          <div id="filter-type" class="button-group"></div>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend>歌唱</legend>
+          <div id="filter-sing" class="button-group"></div>
+        </fieldset>
+      </aside>
+
+      <section class="results" aria-live="polite">
+        <div class="results-header">
+          <div>
+            <p class="result-count"><strong id="count">0</strong> 曲</p>
+            <p id="active-summary" class="active-summary">すべて表示中</p>
+          </div>
+          <button id="shuffle-btn" class="primary-button" type="button" aria-pressed="false">
+            シャッフル再生
+          </button>
+        </div>
+
+        <div id="song-list" class="song-grid"></div>
+
+        <div id="empty-state" class="empty-state" hidden>
+          <p>条件に一致する楽曲がありません。</p>
+          <button class="primary-button" type="button" data-reset>条件をリセット</button>
+        </div>
+
+        <div class="load-more-wrap">
+          <button id="load-more" class="secondary-button" type="button" hidden>さらに表示</button>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer class="site-footer">非公式ファンサイトです。各コンテンツの権利は権利者に帰属します。</footer>
+  <footer class="site-footer">
+    非公式ファンサイトです。各コンテンツの権利は権利者に帰属します。
+  </footer>
 
-  <!-- data.jsは変更不要。YouTube APIはscript.jsが必要なタイミングで読み込みます -->
   <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
