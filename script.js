@@ -228,6 +228,7 @@ if (hasMore) {
 
   loadMore.textContent =
     `さらに表示（残り${remaining.toLocaleString("ja-JP")}件）`;
+  }
 }
 
 function matchesFilters(song) {
