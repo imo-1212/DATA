@@ -98,8 +98,8 @@ function updateModeButtons() {
   $("#mode-all").setAttribute("aria-pressed", String(isAll));
   $("#mode-quick").setAttribute("aria-pressed", String(!isAll));
   $("#mode-description").textContent = isAll
-    ? "視聴できない記録を含む、すべての歌唱記録を表示します"
-    : "現在すぐ視聴できる歌唱記録だけを表示します";
+    ? "現在視聴できない楽曲を含む、すべての歌唱記録を表示します"
+    : "現在Youtube上で視聴できる楽曲を主に表示します";
 }
 
 function buildFilters() {
