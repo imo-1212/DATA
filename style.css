@@ -159,7 +159,37 @@ input[type="search"], select {
 .favorite-toggle input { width: 18px; height: 18px; accent-color: var(--accent); }
 .favorite-toggle span { flex: 1; font-size: .88rem; font-weight: 700; }
 .favorite-toggle small { color: var(--muted); }
-.filter-group { margin: 22px 0 0; padding: 0; border: 0; }
+.selected-filters { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.selected-filter {
+  min-height: 34px;
+  padding: 5px 9px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  font-size: .8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tag-filter-panel { margin-top: 18px; border: 1px solid var(--line); border-radius: 9px; background: #fff; }
+.tag-filter-panel summary {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 11px;
+  cursor: pointer;
+  font-size: .88rem;
+  font-weight: 750;
+  list-style: none;
+}
+.tag-filter-panel summary::-webkit-details-marker { display: none; }
+.tag-filter-panel summary::after { content: "＋"; color: var(--muted); }
+.tag-filter-panel[open] summary::after { content: "−"; }
+.filter-count { display: grid; min-width: 24px; height: 24px; margin-left: auto; place-items: center; border-radius: 12px; color: var(--accent-dark); background: var(--accent-soft); font-size: .72rem; }
+.tag-filter-content { max-height: 430px; overflow: auto; padding: 0 11px 13px; border-top: 1px solid var(--line); }
+.filter-group { margin: 16px 0 0; padding: 0; border: 0; }
 .filter-group legend { margin-bottom: 9px; }
 .button-group { display: flex; flex-wrap: wrap; gap: 7px; }
 .filter-btn {
@@ -229,7 +259,7 @@ input[type="search"], select {
 }
 .card-body { padding: 16px; }
 .card-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; color: var(--muted); font-size: .75rem; }
-.badge { padding: 3px 7px; border-radius: 6px; color: #315a47; background: var(--accent-soft); font-weight: 750; }
+.badge { padding: 3px 7px; border: 0; border-radius: 6px; color: #315a47; background: var(--accent-soft); font-weight: 750; }
 .badge.warning { color: var(--warning); background: var(--warning-soft); }
 .song-title { margin: 10px 0 3px; font-size: 1.12rem; line-height: 1.35; }
 .song-artist { margin: 0; color: #55524e; }
@@ -244,7 +274,10 @@ input[type="search"], select {
   -webkit-line-clamp: 2;
 }
 .tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 11px; }
-.tag { padding: 3px 7px; border-radius: 6px; color: #66635e; background: var(--soft); font-size: .72rem; }
+.tag { padding: 3px 7px; border: 0; border-radius: 6px; color: #66635e; background: var(--soft); font-size: .72rem; }
+.tag-button { cursor: pointer; }
+.tag-button:hover { color: var(--accent-dark); background: #dcebe2; }
+.icon-action { width: 44px; padding: 0; color: #fff; border-color: var(--accent); background: var(--accent); font-size: 1rem; }
 .memo { margin: 11px 0 0; color: #605d58; font-size: .82rem; }
 .memo a { color: #276fb0; text-decoration: underline; text-underline-offset: 2px; }
 .card-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
