@@ -79,15 +79,25 @@
           <small id="favorite-count">0</small>
         </label>
 
-        <fieldset class="filter-group">
-          <legend>形態・種類</legend>
-          <div id="filter-type" class="button-group"></div>
-        </fieldset>
+        <div id="selected-filters" class="selected-filters" hidden></div>
 
-        <fieldset class="filter-group">
-          <legend>歌唱</legend>
-          <div id="filter-sing" class="button-group"></div>
-        </fieldset>
+        <details id="tag-filter-panel" class="tag-filter-panel">
+          <summary>
+            <span>タグを選ぶ</span>
+            <span id="selected-filter-count" class="filter-count">0</span>
+          </summary>
+          <div class="tag-filter-content">
+            <fieldset class="filter-group">
+              <legend>形態・種類</legend>
+              <div id="filter-type" class="button-group"></div>
+            </fieldset>
+
+            <fieldset class="filter-group">
+              <legend>歌唱・ライブ名</legend>
+              <div id="filter-sing" class="button-group"></div>
+            </fieldset>
+          </div>
+        </details>
       </aside>
 
       <section class="results" aria-live="polite">
