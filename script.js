@@ -333,24 +333,18 @@ const sourceAction = openableSource
     </a>
   `
   : "";
-  const lyricsAction = song.kasi
-    ? `<a class="action-button" href="${escapeAttribute(song.kasi)}" target="_blank" rel="noopener noreferrer">歌詞</a>`
-    : "";const streamingAction = song.link
+ const lyricsAction = song.kasi
   ? `
     <a
-      class="action-button link-icon-button"
-      href="${escapeAttribute(song.link)}"
+      class="action-button"
+      href="${escapeAttribute(song.kasi)}"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="配信リンクを開く"
-      title="配信リンクを開く"
-      data-tooltip="楽曲配信ページを開く"
+      aria-label="歌詞ページを開く"
+      title="歌詞ページを開く"
+      data-tooltip="歌詞ページを開く"
     >
-      <img
-        src="./link-icon.svg"
-        alt=""
-        aria-hidden="true"
-      >
+      歌詞
     </a>
   `
   : "";
