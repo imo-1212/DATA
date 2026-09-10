@@ -325,11 +325,25 @@ function createCard(song) {
       : "";
   const lyricsAction = song.kasi
     ? `<a class="action-button" href="${escapeAttribute(song.kasi)}" target="_blank" rel="noopener noreferrer">歌詞</a>`
-    : "";
-  const streamingAction = song.link
-    ? `<a class="action-button" href="${escapeAttribute(song.link)}" target="_blank" rel="noopener noreferrer">LINK</a>`
-    : "";
-
+    : "";const streamingAction = song.link
+  ? `
+    <a
+      class="action-button link-icon-button"
+      href="${escapeAttribute(song.link)}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="配信リンクを開く"
+      title="配信リンクを開く"
+    >
+      <img
+        src="./link-icon.svg"
+        alt=""
+        aria-hidden="true"
+      >
+    </a>
+  `
+  : "";
+  
   article.innerHTML = `${media}
     <div class="card-body">
       <div class="card-meta">
