@@ -429,3 +429,22 @@ input[type="search"], select {
   height: 26px;
   object-fit: contain;
 }
+
+.favorite-star {
+  display: block;
+  width: 23px;
+  height: 23px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+
+  /* 星の角と線の端を丸くする */
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+/* お気に入り登録後は星を塗りつぶす */
+.favorite-button.active .favorite-star {
+  fill: currentColor;
+}
