@@ -344,6 +344,7 @@ const sourceAction = openableSource
       rel="noopener noreferrer"
       aria-label="配信リンクを開く"
       title="配信リンクを開く"
+      data-tooltip="楽曲配信ページを開く"
     >
       <img
         src="./link-icon.svg"
@@ -372,7 +373,9 @@ const sourceAction = openableSource
   type="button"
   data-favorite
   aria-pressed="${isFavorite}"
-  aria-label="お気に入り${isFavorite ? "から削除" : "に追加"}"
+  aria-label="${isFavorite ? "お気に入りから削除" : "お気に入りに追加"}"
+  title="${isFavorite ? "お気に入りから削除" : "お気に入りに追加"}"
+  data-tooltip="${isFavorite ? "お気に入りから削除" : "お気に入りに追加"}"
 >
   <svg
     class="favorite-star"
