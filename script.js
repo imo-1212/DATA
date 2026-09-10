@@ -357,8 +357,33 @@ function createCard(song) {
       ${song.memo ? `<p class="memo">${renderMemo(song.memo)}</p>` : ""}
       <div class="card-actions">
         ${sourceAction}${lyricsAction}${streamingAction}
-        <button class="favorite-button${isFavorite ? " active" : ""}" type="button" data-favorite aria-pressed="${isFavorite}" aria-label="お気に入り${isFavorite ? "から削除" : "に追加"}">★</button>
-      </div>
+<button
+  class="favorite-button${isFavorite ? " active" : ""}"
+  type="button"
+  data-favorite
+  aria-pressed="${isFavorite}"
+  aria-label="お気に入り${isFavorite ? "から削除" : "に追加"}"
+>
+  <svg
+    class="favorite-star"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path d="M12 3.5
+             L14.7 8.9
+             L20.7 9.8
+             L16.3 14
+             L17.4 20
+             L12 17.2
+             L6.6 20
+             L7.7 14
+             L3.3 9.8
+             L9.3 8.9
+             Z">
+    </path>
+  </svg>
+</button>
+</div>
     </div>`;
 
   const image = article.querySelector(".thumbnail");
