@@ -448,3 +448,19 @@ input[type="search"], select {
 .favorite-button.active .favorite-star {
   fill: currentColor;
 }
+
+.song-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.card-actions {
+  margin-top: auto;
+  padding-top: 15px;
+}
