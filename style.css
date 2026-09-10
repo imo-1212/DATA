@@ -19,7 +19,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--canvas);
-  font-family: "Noto Sans JP", sans-serif;
+  font-family:"Zen Kaku Gothic New", sans-serif;
   font-size: 16px;
   line-height: 1.55;
 }
