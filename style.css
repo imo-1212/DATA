@@ -413,3 +413,18 @@ input[type="search"], select {
     transition: none;
   }
 }
+
+/* 配信リンクのアイコンボタン */
+.link-icon-button {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.link-icon-button img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
