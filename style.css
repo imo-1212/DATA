@@ -1,10 +1,10 @@
 :root {
   --ink: #3b3b3b;
   --muted: #74716c;
-  --canvas: #f7f6f3;
-  --surface: #ffffff;
+  --canvas: #fff1f1;
+  --surface: #fdfdfd;
   --soft: #efeeeb;
-  --line: #977c45;
+  --line: #95797f;
   --accent: #D67185;
   --accent-dark: #AC324B;
   --accent-soft: #ffe3e8;
@@ -24,7 +24,7 @@ body {
   line-height: 1.55;
 }
 button, input, select { font: inherit; }
-button, a { -webkit-tap-highlight-color: transparent; }
+button, a { -webkit-tap-highlight-color: #00000000; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
   outline: 3px solid #ffe3e899;
   outline-offset: 2px;
@@ -33,7 +33,7 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 
 .site-header {
   padding: 40px 24px 32px;
-  color: #fff;
+  color: #fdfdfd;
   background: var(--accent-dark);
 }
 .header-inner {
@@ -70,7 +70,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   width: min(1160px, 100%);
   margin: auto;
   padding: 12px 24px;
-  color: #fff;
+  color: #fdfdfd;
 }
 .player-info { display: grid; gap: 3px; min-width: 0; }
 .player-info strong, .player-info span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -82,7 +82,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   min-height: 44px;
   border: 0;
   border-radius: 8px;
-  color: #fff;
+  color: #fdfdfd;
   background: rgba(255, 255, 255, .11);
   cursor: pointer;
 }
@@ -115,7 +115,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
 }
 .segmented-control button.active {
   color: var(--accent-dark);
-  background: #fff;
+  background: #fdfdfd;
   box-shadow: 0 1px 5px rgba(0, 0, 0, .12);
 }
 
@@ -135,15 +135,15 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
 .filter-heading h2 { margin: 0; font-size: 1.08rem; }
 .text-button { min-height: 44px; padding: 0 7px; border: 0; color: var(--accent); background: transparent; cursor: pointer; }
 .field { display: grid; gap: 7px; margin-top: 20px; }
-.field > span, legend { color: #55524e; font-size: .82rem; font-weight: 750; }
+.field > span, legend { color: #6d604e; font-size: .82rem; font-weight: 750; }
 input[type="search"], select {
   width: 100%;
   min-height: 44px;
   padding: 9px 11px;
-  border: 1px solid #cbc8c3;
+  border: 1px solid #ac324b;
   border-radius: 8px;
   color: var(--ink);
-  background: #fff;
+  background: #fdfdfd;
 }
 .favorite-toggle {
   display: flex;
@@ -226,7 +226,7 @@ input[type="search"], select {
   border: 0;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: linear-gradient(135deg, #d9ddd9, #bfcac4);
+  background: linear-gradient(135deg, #d2c4c6, #ffe3e8);
   cursor: pointer;
 }
 .thumbnail { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -242,7 +242,7 @@ input[type="search"], select {
   letter-spacing: .04em;
   text-align: center;
 }
-.record-only .thumbnail-placeholder { color: #fefefe; background: rgba(0,0,0,.5); }
+.record-only .thumbnail-placeholder { color: #fdfdfd; background: rgba(0,0,0,.5); }
 .play-mark {
   position: absolute;
   right: 12px;
@@ -256,7 +256,7 @@ input[type="search"], select {
   color: #fff;
   background: rgb(172 50 75);
   font-size: 1rem;
-  border: 5px solid #fff;
+  border: 5px solid #fdfdfd;
   box-shadow: 0px 0px 15px -5px #777777;
   border-radius: 100px;
 }
@@ -281,7 +281,7 @@ input[type="search"], select {
 .tag { padding: 3px 7px; border: 0; border-radius: 6px; color: #66635e; background: var(--soft); font-size: .72rem; }
 .tag-button { cursor: pointer; }
 .tag-button:hover { color: var(--accent-dark); background: #f2d4da5c; }
-.icon-action { width: 44px; padding: 0; color: #ffffff; border-color: var(--accent); background: var(--accent); font-size: 1rem; }
+.icon-action { width: 44px; padding: 0; color: #fdfdfd; border-color: var(--accent); background: var(--accent); font-size: 1rem; }
 .memo { margin: 11px  0; color: #605d58; font-size: .82rem; }
 .memo a { color: #ac324bd1; text-decoration: underline; text-underline-offset: 2px; }
 .card-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
@@ -294,7 +294,7 @@ input[type="search"], select {
   text-decoration: none;
   cursor: pointer;
 }
-.primary-button { padding: 8px 14px; border: 1px solid var(--accent); color: #fff; background: var(--accent); }
+.primary-button { padding: 8px 14px; border: 1px solid var(--accent); color: #fdfdfd; background: var(--accent); }
 .secondary-button, .action-button { padding: 8px 12px; border: 1px solid var(--line); color: var(--ink); background: #fff; }
 .favorite-button {
   width: 44px;
@@ -302,10 +302,10 @@ input[type="search"], select {
   border: 1px solid var(--line);
   border-radius: 50px;
   color: #756b5d;
-  background: #fff;
+  background: #fdfdfd;
   font-size: 1.28rem;
     color: #a29b9b;
-  background: #ffffff;
+  background: #fdfdfd;
   box-shadow: 1px 1px 1px #ac324b;
 }
 .favorite-button.active { color: #ffbb47; border-color: #ffbb47; background: #ffbb472b; }
@@ -356,10 +356,10 @@ input[type="search"], select {
   padding: 0;
   place-items: center;
 
-  border: 4px solid #fffefe;
+  border: 4px solid #fdfdfd;
   border-radius: 50%;
 
-  color: #ffffff;
+  color: #fdfdfd;
   background: #ac324b;
   box-shadow: 1px 1px 1px #ac324b;
 
@@ -385,7 +385,7 @@ input[type="search"], select {
 }
 
 .page-top-button:hover {
-  background: #f2f2f2;
+  background: #fdfdfd;
 }
 
 /* 上向きの矢印 */
@@ -463,64 +463,4 @@ input[type="search"], select {
 .card-actions {
   margin-top: auto;
   padding-top: 15px;
-}
-
-/* PC用ツールチップ */
-@media (hover: hover) and (pointer: fine) {
-  [data-tooltip] {
-    position: relative;
-  }
-
-  [data-tooltip]::before {
-    content: attr(data-tooltip);
-
-    position: absolute;
-    left: 50%;
-    bottom: calc(100% + 9px);
-    z-index: 100;
-
-    width: max-content;
-    max-width: 220px;
-    padding: 7px 10px;
-
-    border-radius: 6px;
-
-    color: #fff;
-    background: rgba(36, 36, 35, 0.94);
-
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.4;
-    white-space: nowrap;
-
-    pointer-events: none;
-
-    opacity: 0;
-    visibility: hidden;
-    transform: translate(-50%, 5px);
-
-    transition:
-      opacity 0.15s ease,
-      visibility 0.15s ease,
-      transform 0.15s ease;
-  }
-
-  [data-tooltip]:hover::before,
-  [data-tooltip]:focus-visible::before {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%, 0);
-  }
-
-  /* 右端のお気に入りは、吹き出しがカード外へ出ないようにする */
-  .favorite-button[data-tooltip]::before {
-    right: 0;
-    left: auto;
-    transform: translateY(5px);
-  }
-
-  .favorite-button[data-tooltip]:hover::before,
-  .favorite-button[data-tooltip]:focus-visible::before {
-    transform: translateY(0);
-  }
 }
