@@ -723,3 +723,28 @@ function escapeHtml(value) {
 function escapeAttribute(value) {
   return escapeHtml(value);
 }
+
+const pageTopButton = document.querySelector("#page-top");
+
+function updatePageTopButton() {
+  const shouldShow = window.scrollY > 300;
+
+  pageTopButton.classList.toggle("is-visible", shouldShow);
+}
+
+window.addEventListener("scroll", updatePageTopButton, {
+  passive: true
+});
+
+pageTopButton.addEventListener("click", () => {
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  window.scrollTo({
+    top: 0,
+    behavior: reduceMotion ? "auto" : "smooth"
+  });
+});
+
+updatePageTopButton();
