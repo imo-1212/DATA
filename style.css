@@ -1,5 +1,5 @@
 :root {
-  --ink: #242423;
+  --ink: #3b3b3b;
   --muted: #74716c;
   --canvas: #f7f6f3;
   --surface: #ffffff;
@@ -59,7 +59,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   top: 0;
   z-index: 30;
   border-bottom: 1px solid rgba(255, 255, 255, .12);
-  background: rgba(28, 33, 30, .97);
+  background: #150609eb;
   backdrop-filter: blur(10px);
 }
 .player-inner {
@@ -308,7 +308,7 @@ input[type="search"], select {
   background: #ffffff;
   box-shadow: 1px 1px 1px #ac324b;
 }
-.favorite-button.active { color: #AC324B; border-color: #AC324B; background: #ac324b38; }
+.favorite-button.active { color: #ffbb47; border-color: #ffbb47; background: #ffbb472b; }
 .empty-state { padding: 64px 24px; border: 1px dashed #c9c6c1; border-radius: 12px; text-align: center; }
 .empty-state p { margin: 0 0 16px; }
 .load-more-wrap { display: flex; justify-content: center; margin-top: 24px; }
@@ -437,7 +437,7 @@ input[type="search"], select {
 
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.8;
+  stroke-width: 2.6;
 
   /* 星の角と線の端を丸くする */
   stroke-linejoin: round;
