@@ -4,7 +4,7 @@
   --canvas: #f7f6f3;
   --surface: #ffffff;
   --soft: #efeeeb;
-  --line: #e2e0dc;
+  --line: #977c45;
   --accent: #D67185;
   --accent-dark: #AC324B;
   --accent-soft: #ffe3e8;
@@ -26,7 +26,7 @@ body {
 button, input, select { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
-  outline: 3px solid rgba(51, 115, 87, .27);
+  outline: 3px solid #ffe3e899;
   outline-offset: 2px;
 }
 button:disabled { cursor: not-allowed; opacity: .48; }
@@ -87,7 +87,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   cursor: pointer;
 }
 .player-button { padding: 0 13px; }
-.icon-button { width: 44px; font-size: 1.25rem; }
+.icon-button { width: 20px; font-size: 1.25rem; }
 
 .page-shell { width: min(1160px, calc(100% - 48px)); margin: 28px auto 64px; }
 .mode-panel {
@@ -108,7 +108,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   padding: 7px 15px;
   border: 0;
   border-radius: 8px;
-  color: #5d5a55;
+  color: #60222f;
   background: transparent;
   font-weight: 700;
   cursor: pointer;
@@ -242,7 +242,7 @@ input[type="search"], select {
   letter-spacing: .04em;
   text-align: center;
 }
-.record-only .thumbnail-placeholder { color: #8c8983; background: #e9e8e4; }
+.record-only .thumbnail-placeholder { color: #fefefe; background: rgba(0,0,0,.5); }
 .play-mark {
   position: absolute;
   right: 12px;
@@ -347,17 +347,17 @@ input[type="search"], select {
   z-index: 50;
 
   display: grid;
-  width: 44px;
-  height: 44px;
+  width: 70px;
+  height: 70px;
   padding: 0;
   place-items: center;
 
-  border: 1px solid #222;
+  border: 4px solid #fffefe;
   border-radius: 50%;
 
-  color: #222;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  background: #ac324b;
+  box-shadow: 1px 1px 1px #ac324b;
 
   cursor: pointer;
 
@@ -387,11 +387,11 @@ input[type="search"], select {
 /* 上向きの矢印 */
 .page-top-icon {
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
 
-  border-top: 1px solid currentColor;
-  border-left: 1px solid currentColor;
+  border-top: 3px solid currentColor;
+  border-left: 3px solid currentColor;
 
   transform: rotate(45deg) translate(3px, 3px);
 }
