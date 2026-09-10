@@ -464,3 +464,63 @@ input[type="search"], select {
   margin-top: auto;
   padding-top: 15px;
 }
+
+/* PC用ツールチップ */
+@media (hover: hover) and (pointer: fine) {
+  [data-tooltip] {
+    position: relative;
+  }
+
+  [data-tooltip]::before {
+    content: attr(data-tooltip);
+
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 9px);
+    z-index: 100;
+
+    width: max-content;
+    max-width: 220px;
+    padding: 7px 10px;
+
+    border-radius: 6px;
+
+    color: #fff;
+    background: rgba(36, 36, 35, 0.94);
+
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+
+    pointer-events: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 5px);
+
+    transition:
+      opacity 0.15s ease,
+      visibility 0.15s ease,
+      transform 0.15s ease;
+  }
+
+  [data-tooltip]:hover::before,
+  [data-tooltip]:focus-visible::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+
+  /* 右端のお気に入りは、吹き出しがカード外へ出ないようにする */
+  .favorite-button[data-tooltip]::before {
+    right: 0;
+    left: auto;
+    transform: translateY(5px);
+  }
+
+  .favorite-button[data-tooltip]:hover::before,
+  .favorite-button[data-tooltip]:focus-visible::before {
+    transform: translateY(0);
+  }
+}
