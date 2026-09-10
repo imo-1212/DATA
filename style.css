@@ -277,13 +277,13 @@ input[type="search"], select {
   -webkit-line-clamp: 2;
   
 }
-.tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 11px; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 11px; }
 .tag { padding: 3px 7px; border: 0; border-radius: 6px; color: #66635e; background: var(--soft); font-size: .72rem; }
 .tag-button { cursor: pointer; }
-.tag-button:hover { color: var(--accent-dark); background: #dcebe2; }
-.icon-action { width: 44px; padding: 0; color: #fff; border-color: var(--accent); background: var(--accent); font-size: 1rem; }
-.memo { margin: 11px 0 0; color: #605d58; font-size: .82rem; }
-.memo a { color: #AC324B; text-decoration: underline; text-underline-offset: 2px; }
+.tag-button:hover { color: var(--accent-dark); background: #f2d4da5c; }
+.icon-action { width: 44px; padding: 0; color: #ffffff; border-color: var(--accent); background: var(--accent); font-size: 1rem; }
+.memo { margin: 11px  0; color: #605d58; font-size: .82rem; }
+.memo a { color: #ac324bd1; text-decoration: underline; text-underline-offset: 2px; }
 .card-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
 .primary-button, .secondary-button, .action-button, .favorite-button {
   display: inline-flex;
@@ -300,11 +300,14 @@ input[type="search"], select {
   width: 44px;
   margin-left: auto;
   border: 1px solid var(--line);
-  color: #77736d;
+  color: #756b5d;
   background: #fff;
   font-size: 1.28rem;
+    color: #a29b9b;
+  background: #ffffff;
+  box-shadow: 1px 1px 1px #ac324b;
 }
-.favorite-button.active { color: #bd8128; border-color: #e8c784; background: #fff7df; }
+.favorite-button.active { color: #AC324B; border-color: #AC324B; background: #ac324b38; }
 .empty-state { padding: 64px 24px; border: 1px dashed #c9c6c1; border-radius: 12px; text-align: center; }
 .empty-state p { margin: 0 0 16px; }
 .load-more-wrap { display: flex; justify-content: center; margin-top: 24px; }
