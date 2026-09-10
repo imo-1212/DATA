@@ -300,6 +300,7 @@ input[type="search"], select {
   width: 44px;
   margin-left: auto;
   border: 1px solid var(--line);
+  border-radius: 50px;
   color: #756b5d;
   background: #fff;
   font-size: 1.28rem;
