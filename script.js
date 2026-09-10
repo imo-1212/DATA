@@ -406,12 +406,10 @@ const sourceAction = openableSource
     image.src = youtubeThumbnailUrl(image.dataset.thumbnailId, "0.jpg");
   });
 
-  article.querySelectorAll("[data-play], [data-play-bottom]").forEach(button => {
-    button.addEventListener("click", () => {
-      setShuffleEnabled(false);
-      playSong(song);
-    });
-  });
+article.querySelector("[data-play]")?.addEventListener("click", () => {
+  setShuffleEnabled(false);
+  playSong(song);
+});
 
   article.querySelectorAll("[data-search-tag]").forEach(button => {
     button.addEventListener("click", () => applyTagSearch(button.dataset.searchTag));
