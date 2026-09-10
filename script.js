@@ -318,11 +318,21 @@ function createCard(song) {
   ).join("");
   const isFavorite = favorites.has(song.id);
 
-  const sourceAction = youtubeSource
-    ? `<button class="action-button icon-action" type="button" data-play-bottom aria-label="${escapeHtml(song.title)}をサイト内で再生">▶</button>`
-    : openableSource
-      ? `<a class="action-button" href="${escapeAttribute(openableSource.url)}" target="_blank" rel="noopener noreferrer">元ページ</a>`
-      : "";
+const sourceAction = openableSource
+  ? `
+    <a
+      class="action-button icon-action"
+      href="${escapeAttribute(openableSource.url)}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="元配信を開く"
+      title="元配信を開く"
+      data-tooltip="元配信を開く"
+    >
+      ▶
+    </a>
+  `
+  : "";
   const lyricsAction = song.kasi
     ? `<a class="action-button" href="${escapeAttribute(song.kasi)}" target="_blank" rel="noopener noreferrer">歌詞</a>`
     : "";const streamingAction = song.link
