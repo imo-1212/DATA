@@ -338,3 +338,75 @@ input[type="search"], select {
 [hidden] {
   display: none !important;
 }
+
+/* ページトップボタン */
+.page-top-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 50;
+
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  place-items: center;
+
+  border: 1px solid #222;
+  border-radius: 50%;
+
+  color: #222;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+
+  /* 最初は非表示 */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* スクロールしたら表示 */
+.page-top-button.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.page-top-button:hover {
+  background: #f2f2f2;
+}
+
+/* 上向きの矢印 */
+.page-top-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  border-top: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+/* スマホでは少し内側にする */
+@media (max-width: 640px) {
+  .page-top-button {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+/* 動きを減らす設定を使用している場合 */
+@media (prefers-reduced-motion: reduce) {
+  .page-top-button {
+    transition: none;
+  }
+}
