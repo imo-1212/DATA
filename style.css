@@ -195,7 +195,7 @@ input[type="search"], select {
 }
 .tag-filter-panel {
   margin-top: 18px;
-border: 1px solid #ac324b;
+  border: 1px solid #ac324b;
   border-radius: 8px;
   background: #fff; 
   box-shadow: 1px 1px 1px #ac324b;
@@ -218,16 +218,16 @@ border: 1px solid #ac324b;
 .tag-filter-panel summary::after { content: "＋"; color: var(--muted); }
 .tag-filter-panel[open] summary::after { content: "−"; }
 .filter-count { display: grid; min-width: 24px; height: 24px; margin-left: auto; place-items: center; border-radius: 12px; color: var(--accent-dark); background: var(--accent-soft); font-size: .72rem; }
-.tag-filter-content { max-height: 350px; overflow: auto; padding: 0px 11px 13px; border-top: 1px solid var(--line); }
+.tag-filter-content { max-height: 350px; overflow: auto; padding: 0px 11px 13px; border-top: 1px solid #ac324b;}
 .filter-group { margin: 12px 0 0; padding: 0px; border: 0; }
 .filter-group legend { margin-bottom: 2px; }
 .button-group { display: flex; flex-wrap: wrap; gap: 5px 5px; }
 .filter-btn {
   min-height: 36px;
-  padding: 6px 10px;
+  padding: 8px 10px;
   border: px solid var(--line);
-  border-radius: 8px;
-  color: #55524e;
+  border-radius: 12px;
+  color: #74716c;
   background: var(--soft);
   cursor: pointer;
   
@@ -240,7 +240,7 @@ border: 1px solid #ac324b;
 .results-header p { margin: 0; }
 .result-count strong { font-size: 1.45rem; }
 .active-summary { color: var(--muted); font-size: .82rem; }
-.song-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.song-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .song-card {
   position: relative;
   overflow: hidden;
@@ -301,7 +301,7 @@ border: 1px solid #ac324b;
 .song-source {
   display: -webkit-box;
   min-height: 2.7em;
-  margin: 11px 0 0;
+  margin:8px 0 0;
   overflow: hidden;
   color: var(--muted);
   font-size: .75rem;
@@ -331,10 +331,6 @@ border: 1px solid #ac324b;
 .favorite-button {
   width: 44px;
   margin-left: auto;
-  border: 1px solid var(--line);
-  border-radius: 50px;
-  color: #756b5d;
-  background: #fdfdfd;
   font-size: 1.28rem;
     color: #a29b9b;
   background: #fdfdfd;
