@@ -348,7 +348,28 @@ const sourceAction = openableSource
     </a>
   `
   : "";
-  
+
+/* ここを追加 */
+const streamingAction = song.link
+  ? `
+    <a
+      class="action-button link-icon-button"
+      href="${escapeAttribute(song.link)}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="楽曲配信ページを開く"
+      title="楽曲配信ページを開く"
+      data-tooltip="楽曲配信ページを開く"
+    >
+      <img
+        src="./link-icon.svg"
+        alt=""
+        aria-hidden="true"
+      >
+    </a>
+  `
+  : "";
+
   article.innerHTML = `${media}
     <div class="card-body">
       <div class="card-meta">
