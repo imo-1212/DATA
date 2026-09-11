@@ -318,16 +318,25 @@ function createCard(song) {
   ).join("");
   const isFavorite = favorites.has(song.id);
 
+const isYouTubeSource = openableSource?.platform === "youtube";
+
+const sourceLabel = isYouTubeSource
+  ? "YouTubeで開く"
+  : "元配信を開く";
+
+const targetAttributes = isYouTubeSource
+  ? ""
+  : `target="_blank" rel="noopener noreferrer"`;
+
 const sourceAction = openableSource
   ? `
     <a
       class="action-button icon-action"
       href="${escapeAttribute(openableSource.url)}"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="元配信を開く"
-      title="元配信を開く"
-      data-tooltip="元配信を開く"
+      ${targetAttributes}
+      aria-label="${sourceLabel}"
+      title="${sourceLabel}"
+      data-tooltip="${sourceLabel}"
     >
       ▶
     </a>
