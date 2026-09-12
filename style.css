@@ -492,3 +492,203 @@ input[type="search"], select {
   margin-top: auto;
   padding-top: 15px;
 }
+
+/* ========================================
+   楽曲カードを横長・縦一列にする
+======================================== */
+
+/* 一覧は縦一列 */
+.song-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 1枚のカード：左に画像、右に情報 */
+.song-card {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: stretch;
+
+  width: 100%;
+  min-height: 170px;
+}
+
+/* 左側のサムネイル */
+.song-card .thumbnail-button,
+.song-card .thumbnail-placeholder {
+  align-self: start;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  border-radius: 0;
+}
+
+/* 画像は領域いっぱいに表示 */
+.song-card .thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 右側の楽曲情報 */
+.song-card .card-body {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+
+  display: flex;
+  min-width: 0;
+  padding: 14px 72px 14px 18px;
+  flex-direction: column;
+}
+
+/* 日付と上部タグ */
+.song-card .card-meta {
+  margin: 0;
+}
+
+/* 曲名 */
+.song-card .song-title {
+  margin: 7px 0 2px;
+  font-size: 1.12rem;
+}
+
+/* アーティスト名 */
+.song-card .song-artist {
+  margin: 0;
+}
+
+/* 配信タイトル */
+.song-card .song-source {
+  min-height: 0;
+  margin-top: 7px;
+}
+
+/* タグ */
+.song-card .tag-list {
+  margin-top: 9px;
+}
+
+/* メモ */
+.song-card .memo {
+  margin: 9px 0 0;
+}
+
+/* 操作ボタンをカードの右端に縦並び */
+.song-card .card-actions {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  bottom: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* お気に入りボタンを右下へ */
+.song-card .card-actions .favorite-button {
+  margin-top: auto;
+  margin-left: 0;
+}
+
+/* 操作アイコンのサイズを統一 */
+.song-card .icon-action,
+.song-card .link-icon-button,
+.song-card .favorite-button {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+}
+
+/* ========================================
+   スマホ表示
+======================================== */
+
+@media (max-width: 640px) {
+  .song-grid {
+    gap: 10px;
+  }
+
+  .song-card {
+    grid-template-columns: 115px minmax(0, 1fr);
+    min-height: 150px;
+  }
+
+  .song-card .thumbnail-button,
+  .song-card .thumbnail-placeholder {
+    min-height: 150px;
+  }
+
+  .song-card .card-body {
+    padding: 10px 51px 10px 11px;
+  }
+
+  .song-card .song-title {
+    margin-top: 5px;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .song-card .song-artist {
+    font-size: 0.86rem;
+  }
+
+  .song-card .song-source {
+    margin-top: 5px;
+    font-size: 0.76rem;
+  }
+
+  .song-card .tag-list {
+    gap: 4px;
+    margin-top: 7px;
+  }
+
+  .song-card .tag {
+    padding: 2px 5px;
+    font-size: 0.68rem;
+  }
+
+  .song-card .badge {
+    padding: 2px 5px;
+    font-size: 0.68rem;
+  }
+
+  .song-card .memo {
+    margin-top: 7px;
+    font-size: 0.75rem;
+  }
+
+  .song-card .card-actions {
+    top: 10px;
+    right: 8px;
+    bottom: 10px;
+    gap: 7px;
+  }
+
+  .song-card .icon-action,
+  .song-card .link-icon-button,
+  .song-card .favorite-button {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+    min-height: 38px;
+  }
+
+  /* サムネイル上の丸い再生ボタン */
+  .song-card .play-mark {
+    right: 7px;
+    bottom: 7px;
+    width: 34px;
+    height: 34px;
+    border-width: 3px;
+  }
+}
