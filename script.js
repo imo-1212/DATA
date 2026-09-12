@@ -819,6 +819,9 @@ pageTopButton.addEventListener("click", () => {
     top: 0,
     behavior: reduceMotion ? "auto" : "smooth"
   });
+
+  /* タップ後のフォーカス状態を解除 */
+  pageTopButton.blur();
 });
 
 updatePageTopButton();
