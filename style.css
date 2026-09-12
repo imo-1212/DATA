@@ -522,7 +522,6 @@ input[type="search"], select {
   height: auto;
   min-height: 0;
   aspect-ratio: 16 / 9;
-  border-radius: 0;
 }
 
 /* 画像は領域いっぱいに表示 */
