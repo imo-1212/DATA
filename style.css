@@ -433,10 +433,6 @@ input[type="search"], select {
   transform: translateY(0);
 }
 
-.page-top-button:hover {
-  background: #fdfdfd;
-}
-
 /* 上向きの矢印 */
 .page-top-icon {
   display: block;
@@ -463,8 +459,25 @@ input[type="search"], select {
     transition: none;
   }
 }
+/* マウスを使えるPCだけホバー色を適用 */
+@media (hover: hover) and (pointer: fine) {
+  .page-top-button:hover {
+    color: #ffffff;
+    background: #d67185;
+  }
+}
 
-/* 配信リンクのアイコンボタン */
+/* スマホでタップしても元の色を維持 */
+.page-top-button:active {
+  color: #ffffff;
+  background: #ac324b;
+}
+
+.page-top-button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+//* 配信リンクのアイコンボタン *//
 .link-icon-button {
   width: 44px;
   height: 44px;
