@@ -1,16 +1,19 @@
 :root {
-  --ink: #3b3b3b;
-  --muted: #74716c;
-  --canvas: #fff1f1;
-  --surface: #fdfdfd;
-  --soft: #efeeeb;
-  --line: #95797f;
-  --accent: #D67185;
-  --accent-dark: #AC324B;
-  --accent-soft: #ffe3e8;
-  --warning: #a4602e;
-  --warning-soft: #faebdc;
-  --shadow: 0 1px 2px rgba(0, 0, 0, .04), 0 8px 24px rgba(0, 0, 0, .05);
+  --ink: #302328;
+  --muted: #796b6e;
+  --canvas: #fff9e7;
+  --surface: #fffdf7;
+  --soft: #f4eee9;
+  --accent: #ac324b;
+  --accent-dark: #7f1f32;
+  --accent-hover: #92273f;
+  --accent-soft: #f8e5ea;
+  --coral: #ff7068;
+  --yellow: #ffe47c;
+  --line: #c994a0;
+  --shadow:
+    0 2px 3px rgba(89, 27, 40, 0.08),
+    4px 5px 0 rgba(172, 50, 75, 0.13);
 }
 
 * { box-sizing: border-box; }
@@ -32,9 +35,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 button:disabled { cursor: not-allowed; opacity: .48; }
 
 .site-header {
-  padding: 40px 24px 32px;
-  color: #fdfdfd;
-  background: var(--accent-dark);
+  color: #fff9e7;
+  background: #ac324b;
+}
+.header-decoration {
+  color: #ff7068;
 }
 .header-inner {
   display: flex;
@@ -61,6 +66,9 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   border-bottom: 1px solid rgba(255, 255, 255, .12);
   background: #150609eb;
   backdrop-filter: blur(10px);
+  color: #fff9e7;
+  background: #351b23;
+  border-color: var(--accent);
 }
 .player-inner {
   display: grid;
@@ -70,7 +78,9 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   width: min(1160px, 100%);
   margin: auto;
   padding: 12px 24px;
-  color: #fdfdfd;
+  color: #fff9e7;
+  background: #351b23;
+  border-color: var(--accent);
 }
 .player-info { display: grid; gap: 3px; min-width: 0; }
 .player-info strong, .player-info span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -235,48 +245,35 @@ input[type="search"], select {
   
 }
 .filter-btn:hover { border-color: #b8b5b0; }
-.filter-btn.active { border-color: var(--accent); color: #AC324B; background: var(--accent-soft); font-weight: 750; }
-
+.filter-btn.active, .selected-filter {
+  color: var(--accent-dark);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
 .results-header { min-height: 52px; margin-bottom: 15px; }
 .results-header p { margin: 0; }
 .result-count strong { font-size: 1.45rem; }
 .active-summary { color: var(--muted); font-size: .82rem; }
 .song-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-.song-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  background: var(--surface);
-  border: 1.8px solid #ac324b;
-  box-shadow: 3px 3px 3px #60222f;
+.song-card .thumbnail-button,
+.song-card .thumbnail-placeholder {
+  align-self: start;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
 }
-.song-card.record-only { background: #faf9f7; }
-.thumbnail-button {
-  position: relative;
+
+.song-card .thumbnail {
   display: block;
   width: 100%;
-  margin-top: 14px;
-  margin-left: 14px;
-  padding: 0px;
-  border: 1.8px solid #fdfdfd;
-  box-shadow: 0px 0px 5px #60222f;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 2%;
-  background: linear-gradient(135deg, #d2c4c6, #ffe3e8);
-  cursor: pointer;
+  height: 100%;
+  object-fit: cover;
 }
-.thumbnail { display: block; width: 100%; height: 100%; object-fit: cover; }
-.thumbnail-placeholder {
-  display: grid;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  place-items: center;
-  color: #AC324B;
-  background: linear-gradient(135deg, #e8ebe8, #d7dcd8);
-  font-weight: 800;
-  letter-spacing: .04em;
-  text-align: center;
+.song-card {
+  border: 2px solid var(--accent);
+  background: var(--surface);
+  box-shadow: var(--shadow);
 }
 .record-only .thumbnail-placeholder { color: #fdfdfd; background: rgba(0,0,0,.5); }
 .play-mark {
@@ -329,7 +326,16 @@ input[type="search"], select {
   text-decoration: none;
   cursor: pointer;
 }
-.primary-button { padding: 8px 14px; border: 1px solid var(--accent); color: #fdfdfd; background: var(--accent); }
+.primary-button, .shuffle-button {
+  color: #fff;
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.primary-button:hover, .shuffle-button:hover {
+  background: var(--accent-hover);
+}
+
 .secondary-button,
   min-height: 35px; 
   padding: 6px 8px; 
