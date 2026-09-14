@@ -316,7 +316,7 @@ input[type="search"], select {
 .icon-action { width: 44px; padding: 0; color: #fdfdfd; border-color: var(--accent); background: var(--accent); font-size: 1rem; }
 .memo { margin: 11px  0; color: #605d58; font-size: .82rem; }
 .memo a { color: #ac324bd1; text-decoration: underline; text-underline-offset: 2px; }
-.card-actions { display: flex; align-items: center; flex-wrap: wrap; gap: px; margin-top: 15px; }
+.card-actions { display: flex; align-items: center; flex-wrap: wrap; gap: px; margin-top: 15px; min-height: 44px; }
 .primary-button, .secondary-button, .action-button, .favorite-button {
   display: inline-flex;
   min-height: 44px;
