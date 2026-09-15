@@ -86,7 +86,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   box-shadow: 2px 2px 0 rgba(172, 50, 75, .12);
 }
 
-.layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 22px; margin-top: 20px; }
+.layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 22px; margin-top: 20px; overflow: visible; }
 .filters {
   position: sticky;
   top: 24px;
@@ -221,7 +221,7 @@ input[type="search"], select {
 }
 .filter-btn.active, .selected-filter { color: var(--accent-dark); border-color: var(--accent); background: var(--accent-soft); }
 
-.results { min-width: 0; }
+.results { min-width: 0; overflow: visible; }
 .results-header { min-height: 52px; margin-bottom: 15px; }
 .results-header p { margin: 0; }
 .result-count strong { font-size: 1.45rem; }
@@ -446,11 +446,6 @@ input[type="search"], select {
   .layout { grid-template-columns: 1fr; }
   .filters { position: static; max-height: none; }
   .filter-body { max-height: none; }
-  .player-statusbar {
-    left: 50%;
-    width: calc(100% - 48px);
-    transform: translateX(-50%);
-  }
 }
 
 @media (max-width: 640px) {
@@ -464,17 +459,16 @@ input[type="search"], select {
   .layout { gap: 18px; margin-top: 14px; }
   .results-header { align-items: flex-start; }
   .results-header .primary-button { min-height: 40px; font-size: .78rem; }
-  .player-panel {
-    padding-top:
-      calc(68px + env(safe-area-inset-top));
+ .player-panel {
+    top: 4px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
   }
   .player-statusbar {
-    top: max(0px, env(safe-area-inset-top));
-    left: 50%;
-    width: calc(100% - 20px);
+    width: 100%;
     min-height: 56px;
     padding: 7px 8px 7px 10px;
-    transform: translateX(-50%);
   }
   .player-equalizer { gap: 2px; }
   .player-equalizer span { width: 3px; }
@@ -483,9 +477,19 @@ input[type="search"], select {
   .player-controls { gap: 5px; }
   .player-button { min-height: 38px; padding: 0 8px; font-size: .68rem; }
   .icon-button { width: 38px; min-width: 38px; }
-  .player-video-wrap { width: 100%; margin-top: 9px; }
-  .player-fold-row { height: 24px; }
-  .player-fold-button { width: 54px; height: 24px; border-radius: 0 0 12px 12px; }
+  .player-video-wrap {
+    width: 100%;
+    margin-top: -2px;
+  }
+  .player-fold-row {
+    height: 24px;
+  }
+  .player-fold-button {
+    width: 54px;
+    height: 24px;
+    border-radius: 0 0 12px 12px;
+  }
+
   .song-card { grid-template-columns: 140px minmax(0, 1fr); min-height: 150px; }
   .card-body { padding: 10px 50px 10px 11px; }
   .song-title { margin-top: 5px; font-size: 1rem; }
