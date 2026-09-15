@@ -85,17 +85,22 @@ function bindEvents() {
 $("#toggle-player-video").addEventListener(
   "click",
   () => {
-    const toggleButton =
-      $("#toggle-player-video");
+const togglePlayerVideoButton =
+  $("#toggle-player-video");
 
-    const isVisible =
-      toggleButton.getAttribute(
-        "aria-expanded"
-      ) === "true";
+if (togglePlayerVideoButton) {
+  togglePlayerVideoButton.addEventListener(
+    "click",
+    () => {
+      const isVisible =
+        togglePlayerVideoButton.getAttribute(
+          "aria-expanded"
+        ) === "true";
 
-    setPlayerVideoVisible(!isVisible);
-  }
-);
+      setPlayerVideoVisible(!isVisible);
+    }
+  );
+}
   
   $("#close-player").addEventListener("click", closePlayer);
 }
