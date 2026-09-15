@@ -82,6 +82,12 @@ function bindEvents() {
     playNextShuffleSong(true);
   });
 
+$("#toggle-player-video").addEventListener("click", () => {
+  const videoArea = $("#player-video-area");
+  const isCurrentlyVisible = !videoArea.hidden;
+  setPlayerVideoVisible(!isCurrentlyVisible);
+  });
+  
   $("#close-player").addEventListener("click", closePlayer);
 }
 
@@ -564,8 +570,15 @@ function playSong(song, { preserveShuffle = false } = {}) {
   pendingSeekSeconds = getSourceStartSeconds(source);
   queuedSong = song;
 
-  $("#player-panel").hidden = false;
-  $("#player-title").textContent = `${song.title || "タイトルなし"}（準備中…）`;
+$("#player-panel").hidden = false;
+
+/* カードから再生した場合は動画を開く */
+if (!preserveShuffle) {
+  setPlayerVideoVisible(true);
+}
+
+$("#player-title").textContent =
+  `${song.title || "タイトルなし"}（準備中…）`;
   $("#player-artist").textContent = song.artist || "";
   $("#player-panel").scrollIntoView({ behavior: "smooth", block: "start" });
 
@@ -704,8 +717,39 @@ function closePlayer() {
   stopEndMonitor();
   queuedSong = null;
   pendingSeekSeconds = null;
-  if (playerReady) player.stopVideo();
+
+  if (playerReady) {
+    player.stopVideo();
+  }
+
   $("#player-panel").hidden = true;
+
+  /* 次に開いたときは動画を表示する */
+  setPlayerVideoVisible(true);
+}
+  
+function setPlayerVideoVisible(visible) {
+  const videoArea = $("#player-video-area");
+  const toggleButton = $("#toggle-player-video");
+
+  videoArea.hidden = !visible;
+
+  toggleButton.textContent = visible
+    ? "動画を隠す"
+    : "動画を表示";
+
+  toggleButton.setAttribute(
+    "aria-expanded",
+    String(visible)
+  );
+
+  /*
+   * 動画を隠したときは一時停止する。
+   * 非表示状態で音だけ流れるのを防ぎます。
+   */
+  if (!visible && playerReady && player) {
+    player.pauseVideo();
+  }
 }
 
 function getSourceStartSeconds(source) {
