@@ -62,7 +62,7 @@ const songsData = [
         "url": "https://twitter.com/kakeru_yumeoi/status/1044602955456868352",
         "startSeconds": null,
         "endSeconds": null,
-        "quickPlay": true,
+        "quickPlay": false,
         "embed": false,
         "availability": "available",
         "priority": null
@@ -132,7 +132,7 @@ const songsData = [
         "url": "https://twitter.com/kakeru_yumeoi/status/1046346936406568961",
         "startSeconds": null,
         "endSeconds": null,
-        "quickPlay": true,
+        "quickPlay": false,
         "embed": false,
         "availability": "available",
         "priority": null
@@ -287,7 +287,7 @@ const songsData = [
     "artistYomi": "デビルマン",
     "type": [
       "歌ってみた",
-      "Twitter"
+      "動画"
     ],
     "sing": [
       "1人"
@@ -623,7 +623,7 @@ const songsData = [
         "url": "https://www.youtube.com/watch?v=GohYP5pjg5Q&t=710s",
         "startSeconds": 710,
         "endSeconds": null,
-        "quickPlay": true,
+        "quickPlay": false,
         "embed": true,
         "availability": "available",
         "priority": null
@@ -680,13 +680,16 @@ const songsData = [
     "sing": [
       "1人",
       "アカペラ",
-      "ワンフレーズ"
+      "ワンフレーズ",
+      "プリティシリーズ"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】03_夢追翔のトークライブ～マシュマロを食む～【にじさんじSEEDs】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "キンプリ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -752,13 +755,16 @@ const songsData = [
     "sing": [
       "1人",
       "アカペラ",
-      "ワンフレーズ"
+      "ワンフレーズ",
+      "プリティシリーズ"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】03_夢追翔のトークライブ～マシュマロを食む～【にじさんじSEEDs】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "キンプリ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -3039,7 +3045,9 @@ const songsData = [
     "sourceTitle": "【歌枠】 第3回 #ぴろスタ 【バーチャルセッション】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "",
     "recordStatus": "現在視聴不可",
     "sources": [
@@ -3580,7 +3588,9 @@ const songsData = [
     "sourceTitle": "10_夢追翔のストリートライブ～虚無を食べよう～",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -6807,7 +6817,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】20_ゆめおのヒプノシスマイク歌枠、12役と伴奏全部僕【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -6843,7 +6855,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】20_ゆめおのヒプノシスマイク歌枠、12役と伴奏全部僕【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -6879,7 +6893,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】20_ゆめおのヒプノシスマイク歌枠、12役と伴奏全部僕【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -6915,7 +6931,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】20_ゆめおのヒプノシスマイク歌枠、12役と伴奏全部僕【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -7341,7 +7359,10 @@ const songsData = [
       "大人数",
       "コラボ"
     ],
-    "collabo": [],
+    "collabo": [
+      "星月せい",
+      "天城てん"
+    ],
     "sourceTitle": "【オリジナルソング】ミルクティー",
     "kasi": "",
     "link": "",
@@ -8535,6 +8556,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
+      "大人数",
       "音楽で遊ぶ企画"
     ],
     "collabo": [],
@@ -8570,6 +8592,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
+      "大人数",
       "音楽で遊ぶ企画"
     ],
     "collabo": [],
@@ -8605,6 +8628,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
+      "大人数",
       "音楽で遊ぶ企画"
     ],
     "collabo": [],
@@ -8640,6 +8664,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
+      "大人数",
       "音楽で遊ぶ企画"
     ],
     "collabo": [],
@@ -9398,7 +9423,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ラップ"
+      "ラップ",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】30_半年ありがとう！的な3月の雑談枠です【にじさんじ】",
@@ -9880,7 +9906,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】33_4万人記念枠、女性ボーカルの曲を歌います（キー変更有）【にじさんじ】",
@@ -9914,7 +9941,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】33_4万人記念枠、女性ボーカルの曲を歌います（キー変更有）【にじさんじ】",
@@ -9948,7 +9976,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】33_4万人記念枠、女性ボーカルの曲を歌います（キー変更有）【にじさんじ】",
@@ -9982,7 +10011,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】33_4万人記念枠、女性ボーカルの曲を歌います（キー変更有）【にじさんじ】",
@@ -10016,7 +10046,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】33_4万人記念枠、女性ボーカルの曲を歌います（キー変更有）【にじさんじ】",
@@ -10092,7 +10123,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】34_ヒプノシスマイク歌枠、12役と伴奏全部僕リターンズ【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -10128,7 +10161,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】34_ヒプノシスマイク歌枠、12役と伴奏全部僕リターンズ【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -10164,7 +10199,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】34_ヒプノシスマイク歌枠、12役と伴奏全部僕リターンズ【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -10200,7 +10237,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】34_ヒプノシスマイク歌枠、12役と伴奏全部僕リターンズ【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "全部僕シリーズ",
     "recordStatus": "公開中",
     "sources": [
@@ -10267,7 +10306,8 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】35_夢追翔 27th Birthday One Man Live【誕生日配信】",
@@ -10301,7 +10341,8 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】35_夢追翔 27th Birthday One Man Live【誕生日配信】",
@@ -10336,7 +10377,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ラップ"
+      "ラップ",
+      "記念枠"
     ],
     "collabo": [
       "緑仙"
@@ -10372,7 +10414,8 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】35_夢追翔 27th Birthday One Man Live【誕生日配信】",
@@ -11027,7 +11070,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "音楽で遊ぶ企画"
+      "音楽で遊ぶ企画",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】37_5万人記念、再び歌いながら喋ります【歌雑談/地獄】",
@@ -11231,7 +11275,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】夏衣装お披露目しつつ、夏に聴きたい歌を歌おう【にじさんじ】",
@@ -11265,7 +11310,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】夏衣装お披露目しつつ、夏に聴きたい歌を歌おう【にじさんじ】",
@@ -11299,7 +11345,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】夏衣装お披露目しつつ、夏に聴きたい歌を歌おう【にじさんじ】",
@@ -11333,7 +11380,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】夏衣装お披露目しつつ、夏に聴きたい歌を歌おう【にじさんじ】",
@@ -11367,7 +11415,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】夏衣装お披露目しつつ、夏に聴きたい歌を歌おう【にじさんじ】",
@@ -11697,7 +11746,8 @@ const songsData = [
     "artistYomi": "にじさんじ/NZMN(うづきコウ、ゆめおいかける、はるさきエアル、なるせなる)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -12044,7 +12094,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "音楽で遊ぶ企画"
+      "音楽で遊ぶ企画",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】8万人記念！歌いながらマシュマロを食べていく配信【にじさんじ/夢追翔】",
@@ -12305,7 +12356,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12339,7 +12391,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12373,7 +12426,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12407,7 +12461,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12441,7 +12496,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12475,7 +12531,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12509,7 +12566,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12543,7 +12601,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12577,7 +12636,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12612,7 +12672,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "サンホラ"
+      "サンホラ",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12647,7 +12708,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "サンホラ"
+      "サンホラ",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12682,7 +12744,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "サンホラ"
+      "サンホラ",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12716,7 +12779,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12750,7 +12814,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12784,7 +12849,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12818,7 +12884,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12852,7 +12919,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -12886,7 +12954,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】10万人登録者本当にありがとう。好きな歌を歌います。【にじさんじ/夢追翔】",
@@ -13658,7 +13727,8 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "他ライバー歌唱"
+      "他ライバー歌唱",
+      "もやしば"
     ],
     "collabo": [
       "黒井しば"
@@ -13999,7 +14069,8 @@ const songsData = [
     "artistYomi": "にじさんじ/le jouet（ゆめおいかける、りゅうしぇん、かがみハヤト）",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -14038,7 +14109,8 @@ const songsData = [
     "artistYomi": "BUMP OF CHICKEN",
     "type": [
       "歌ってみた",
-      "歌枠"
+      "歌枠",
+      "BIlibIli"
     ],
     "sing": [
       "1人"
@@ -14072,7 +14144,8 @@ const songsData = [
     "artistYomi": "よねづけんし",
     "type": [
       "歌ってみた",
-      "歌枠"
+      "歌枠",
+      "BIlibIli"
     ],
     "sing": [
       "1人"
@@ -14106,7 +14179,8 @@ const songsData = [
     "artistYomi": "amazarashi",
     "type": [
       "歌ってみた",
-      "歌枠"
+      "歌枠",
+      "BIlibIli"
     ],
     "sing": [
       "1人"
@@ -14140,7 +14214,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "歌枠",
-      "オリジナル"
+      "オリジナル",
+      "BIlibIli"
     ],
     "sing": [
       "1人"
@@ -14174,7 +14249,8 @@ const songsData = [
     "artistYomi": "にじさんじ/le jouet（ゆめおいかける、りゅうしぇん、かがみハヤト）",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -15069,13 +15145,16 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠"
+      "生活音・雑談枠",
+      "プリティシリーズ"
     ],
     "collabo": [],
     "sourceTitle": "【生活音垂れ流し】とあるバーチャルシンガーソングライターの日常【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "プリリズ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -15104,13 +15183,16 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠"
+      "生活音・雑談枠",
+      "プリティシリーズ"
     ],
     "collabo": [],
     "sourceTitle": "【生活音垂れ流し】とあるバーチャルシンガーソングライターの日常【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "プリリズ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -15391,7 +15473,9 @@ const songsData = [
     "sourceTitle": "【生活音垂れ流し】とあるバーチャルシンガーソングライターの日常【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "パラライ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -15427,7 +15511,9 @@ const songsData = [
     "sourceTitle": "【生活音垂れ流し】とあるバーチャルシンガーソングライターの日常【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "パラライ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -15462,7 +15548,9 @@ const songsData = [
     "sourceTitle": "【生活音垂れ流し】とあるバーチャルシンガーソングライターの日常【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "パラライ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -16372,7 +16460,8 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】28歳になりました。喋って歌います。【にじさんじ/夢追翔】",
@@ -16406,7 +16495,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】28歳になりました。喋って歌います。【にじさんじ/夢追翔】",
@@ -16440,7 +16530,8 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】28歳になりました。喋って歌います。【にじさんじ/夢追翔】",
@@ -16474,7 +16565,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】28歳になりました。喋って歌います。【にじさんじ/夢追翔】",
@@ -16508,7 +16600,8 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】28歳になりました。喋って歌います。【にじさんじ/夢追翔】",
@@ -17078,7 +17171,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ピアノ音源"
+      "ピアノ音源",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
@@ -17113,7 +17207,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ピアノ音源"
+      "ピアノ音源",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
@@ -17148,7 +17243,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ピアノ音源"
+      "ピアノ音源",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
@@ -17183,7 +17279,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ピアノ音源"
+      "ピアノ音源",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
@@ -17428,7 +17525,8 @@ const songsData = [
     "sing": [
       "1人",
       "3D",
-      "大人数"
+      "大人数",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
@@ -17464,7 +17562,8 @@ const songsData = [
     "sing": [
       "1人",
       "3D",
-      "大人数"
+      "大人数",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
@@ -17499,7 +17598,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
@@ -17534,7 +17634,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
@@ -17569,7 +17670,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
@@ -17604,7 +17706,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
@@ -17639,7 +17742,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
@@ -17674,7 +17778,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloid楽曲歌いたくなった【にじさんじ/夢追翔/Singing Stream】",
@@ -17709,7 +17813,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloid楽曲歌いたくなった【にじさんじ/夢追翔/Singing Stream】",
@@ -17744,7 +17848,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloid楽曲歌いたくなった【にじさんじ/夢追翔/Singing Stream】",
@@ -17779,7 +17883,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloid楽曲歌いたくなった【にじさんじ/夢追翔/Singing Stream】",
@@ -17814,7 +17918,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloid楽曲歌いたくなった【にじさんじ/夢追翔/Singing Stream】",
@@ -17849,7 +17953,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloidしば（りうたわ）く【にじさんじ/夢追翔/Singing Stream】",
@@ -17884,7 +17988,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloidしば（りうたわ）く【にじさんじ/夢追翔/Singing Stream】",
@@ -17919,7 +18023,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloidしば（りうたわ）く【にじさんじ/夢追翔/Singing Stream】",
@@ -17954,7 +18058,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloidしば（りうたわ）く【にじさんじ/夢追翔/Singing Stream】",
@@ -17989,7 +18093,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【LIVE】30分歌枠！Vocaloidしば（りうたわ）く【にじさんじ/夢追翔/Singing Stream】",
@@ -18024,7 +18128,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18056,11 +18160,12 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "絵空事への入り口",
       "絵空事に生きる"
     ],
@@ -18097,7 +18202,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18167,7 +18272,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "【男性が原キーで】たぶん / YOASOBI (Covered by 夢追翔)【歌ってみた】【にじさんじ】",
@@ -18204,7 +18309,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18240,7 +18345,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "クリスマスソング / back number (Covered by 夢追翔)【歌ってみた】【にじさんじ】",
@@ -18275,7 +18380,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "インフェルノ / Mrs. GREEN APPLE (Covered by 夢追翔)【歌ってみた】【にじさんじ】",
@@ -18310,7 +18415,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18346,7 +18451,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18378,11 +18483,12 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "絵空事への入り口",
       "絵空事に生きる"
     ],
@@ -18419,7 +18525,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "I LOVE... / Official髭男dism (Covered by 夢追翔)【歌ってみた】【にじさんじ】",
@@ -18454,7 +18560,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18490,7 +18596,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18564,7 +18670,8 @@ const songsData = [
       "2人",
       "コラボ",
       "3D",
-      "VACHSS"
+      "VACHSS",
+      "プリティシリーズ"
     ],
     "collabo": [
       "加賀美ハヤト"
@@ -18572,7 +18679,9 @@ const songsData = [
     "sourceTitle": "にじさんじANNIVERSARY FESTIVAL 2021 　VACHSSステージ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "キンプリ"
+    ],
     "memo": "プリズムジャンプ\n[告知PV](https://www.youtube.com/watch?v=VSFHdW-X5_8&t=15s)",
     "recordStatus": "円盤収録",
     "sources": [
@@ -18716,7 +18825,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -18757,7 +18867,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
+      "ラップ",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18793,7 +18904,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D",
+      "にじ3D",
+      "ラップ",
       "夢追ボーカルへの道"
     ],
     "collabo": [],
@@ -18965,7 +19077,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -19469,7 +19582,9 @@ const songsData = [
     "sourceTitle": "【1人18役で】ヒプノシスマイク -Division Battle Anthem-＋ / ヒプノシスマイク Division All Stars (Covered by 夢追翔)【歌ってみた】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -19494,7 +19609,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -20288,7 +20404,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20323,7 +20440,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20358,7 +20476,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20393,7 +20512,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20428,7 +20548,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20463,7 +20584,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20498,7 +20620,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20533,7 +20656,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20568,7 +20692,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20603,7 +20728,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
@@ -20634,7 +20760,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -20710,7 +20837,7 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "オリジナル",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -20745,7 +20872,7 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "オリジナル",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -21228,7 +21355,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21262,7 +21390,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21296,7 +21425,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21330,7 +21460,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21364,7 +21495,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21398,7 +21530,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21432,7 +21565,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21466,7 +21600,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21500,7 +21635,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21534,7 +21670,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
@@ -21565,7 +21702,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -21910,7 +22048,8 @@ const songsData = [
     "artistYomi": "にじさんじ/le jouet（ゆめおいかける、りゅうしぇん、かがみハヤト）",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -21949,7 +22088,7 @@ const songsData = [
     "artistYomi": "さいとうかずよし",
     "type": [
       "歌ってみた",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "1人"
@@ -21983,7 +22122,7 @@ const songsData = [
     "artistYomi": "D-51",
     "type": [
       "歌ってみた",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "2人",
@@ -22350,11 +22489,13 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「おそろいの地獄だね」（Kakeru Yumeoi - In the same inferno)",
@@ -22385,11 +22526,13 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「命に価値はないのだから」（Kakeru Yumeoi - Life is worthless)",
@@ -22424,7 +22567,8 @@ const songsData = [
     ],
     "sing": [
       "3人以上",
-      "コラボ"
+      "コラボ",
+      "3D"
     ],
     "collabo": [
       "神田笑一"
@@ -22461,7 +22605,8 @@ const songsData = [
     ],
     "sing": [
       "3人以上",
-      "コラボ"
+      "コラボ",
+      "3D"
     ],
     "collabo": [
       "神田笑一",
@@ -22501,7 +22646,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
@@ -22536,7 +22682,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
@@ -22571,7 +22718,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
@@ -22606,7 +22754,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
@@ -22641,7 +22790,9 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "3D",
+      "ラップ",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
@@ -22674,10 +22825,12 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ラップ"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「Stop the Internet」（Kakeru Yumeoi - #やめようインターネット )",
@@ -22713,7 +22866,8 @@ const songsData = [
     "sing": [
       "1人",
       "3D",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "【歌詞付き】オリジナリティ欠乏症 (LIVE ver.) / 夢追翔【にじさんじ】",
@@ -22931,7 +23085,8 @@ const songsData = [
       "2人",
       "コラボ",
       "3D",
-      "JM梅田"
+      "JM梅田",
+      "プリティシリーズ"
     ],
     "collabo": [
       "一条シン"
@@ -22939,7 +23094,9 @@ const songsData = [
     "sourceTitle": "JM梅田ミュージックフェス2022 SUMMER",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "キンプリ"
+    ],
     "memo": "一条シンとのコラボ歌唱&ダンス",
     "recordStatus": "現在視聴不可",
     "sources": [
@@ -23005,13 +23162,16 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠"
+      "生活音・雑談枠",
+      "プリティシリーズ"
     ],
     "collabo": [],
     "sourceTitle": "【雑談/Chit-Chat】てぇ～～……過去を振り返りてぇ～～【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "プリリズ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -23041,6 +23201,7 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
+      "ラップ",
       "イケボホストクラブ",
       "3D"
     ],
@@ -23052,7 +23213,9 @@ const songsData = [
     "sourceTitle": "【#犬山たまき4周年】3DLIVE/Dream Custom Made👑重大発表あり📢豪華ゲスト多数✨",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -23077,11 +23240,13 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「人間じゃないよな」（Kakeru Yumeoi - Wanna Be Human) #新曲_人間じゃないよな",
@@ -23529,11 +23694,12 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "オリジナル",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "2nd Full Album「拝啓、匣庭の中より」",
@@ -23564,11 +23730,12 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "オリジナル",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "2nd Full Album「拝啓、匣庭の中より」",
@@ -23599,11 +23766,12 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "オリジナル",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "2nd Full Album「拝啓、匣庭の中より」",
@@ -23634,11 +23802,13 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「共感性終止」（Kakeru Yumeoi - End of sympathy)",
@@ -23689,7 +23859,7 @@ const songsData = [
         "startSeconds": null,
         "endSeconds": null,
         "quickPlay": false,
-        "embed": true,
+        "embed": false,
         "availability": "available",
         "priority": null
       }
@@ -23704,11 +23874,13 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
-      "拝啓、匣庭の中より"
+      "拝啓",
+      "匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「音楽なんざクソくらえ」（Kakeru Yumeoi - Fxxk the music) #音楽なんざクソくらえ",
@@ -23821,8 +23993,9 @@ const songsData = [
     "sing": [
       "2人",
       "コラボ",
-      "ゆめおいまちた",
       "3D",
+      "ラップ",
+      "ゆめおいまちた",
       "ユニット歌謡祭2022"
     ],
     "collabo": [
@@ -24006,7 +24179,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "怪獣の花唄 / Vaundy (Covered by 夢追翔)【歌ってみた/にじさんじ】",
@@ -24348,7 +24521,8 @@ const songsData = [
     "artistYomi": "にじさんじ/レヴィ・エリファfeat.ゆめおいかける/3×4×S",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "2人",
@@ -24431,6 +24605,7 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
+      "ラップ",
       "イケボホストクラブ",
       "3D"
     ],
@@ -24441,7 +24616,9 @@ const songsData = [
     "sourceTitle": "【#犬山たまき生誕祭】3DLIVE/Best Treasures💎重大発表あり！豪華ゲスト多数✨",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "[単品](https://www.youtube.com/watch?v=ULQdYryMnFQ)",
     "recordStatus": "公開中",
     "sources": [
@@ -24470,7 +24647,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
@@ -24505,7 +24683,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
@@ -24540,7 +24719,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
@@ -24575,7 +24755,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
@@ -24610,7 +24791,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
@@ -24645,7 +24827,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
@@ -25355,7 +25538,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人"
@@ -25393,7 +25577,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D"
     ],
     "collabo": [],
     "sourceTitle": "前説ADvance / 大森靖子 (Covered by 夢追翔)【歌ってみた/にじさんじ】",
@@ -25825,13 +26009,16 @@ const songsData = [
     "sing": [
       "1人",
       "3D",
-      "ゆめおの夢まつり"
+      "ゆめおの夢まつり",
+      "プリティシリーズ"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔ファンミーティング ゆめおの夢まつり",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "キンプリ"
+    ],
     "memo": "カラオケコーナー",
     "recordStatus": "現在視聴不可",
     "sources": [
@@ -26047,7 +26234,8 @@ const songsData = [
     ],
     "sing": [
       "3人以上",
-      "コラボ"
+      "コラボ",
+      "ラップ"
     ],
     "collabo": [
       "轟京子",
@@ -26453,7 +26641,8 @@ const songsData = [
     "artistYomi": "Eve (VACHSSがっきょく)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -26537,7 +26726,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
@@ -26572,7 +26762,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
@@ -26607,7 +26798,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
@@ -26642,7 +26834,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
@@ -26677,7 +26870,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
@@ -26708,7 +26902,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける feat. アリア(CV:すおうサンゴ)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "他ライバー歌唱",
@@ -26745,7 +26940,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける feat. カサノバ(CV:シェリン・バーガンディ)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "他ライバー歌唱",
@@ -26782,7 +26978,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける feat. フェニミィ(CV:すこやかな)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "他ライバー歌唱",
@@ -26859,7 +27056,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける feat. アマデウス(CV:ゆめおいかける)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人",
@@ -26888,268 +27086,13 @@ const songsData = [
   {
     "id": "perf-000734",
     "date": "2024/07/27",
-    "title": "静謐なる虚飾楽園",
-    "titleYomi": "せいひつなるでぃすとぴあ",
-    "artist": "夢追翔 feat. アマデウス(CV:夢追翔)",
-    "artistYomi": "ゆめおいかける feat. アマデウス(CV:ゆめおいかける)",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "1人",
-      "音楽が消えた街"
-    ],
-    "collabo": [],
-    "sourceTitle": "1st Story Album「音楽が消えた街」",
-    "kasi": "",
-    "link": "https://linkco.re/UR7AuqzF",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=tLafEM0V-OQ",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000735",
-    "date": "2024/07/27",
-    "title": "空に描いた幸福論",
-    "titleYomi": "そらにえがいたこうふくろん",
-    "artist": "夢追翔 feat. アリア(CV:周央サンゴ)",
-    "artistYomi": "ゆめおいかける feat. アリア(CV:すおうサンゴ)",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "他ライバー歌唱",
-      "音楽が消えた街"
-    ],
-    "collabo": [
-      "周央サンゴ"
-    ],
-    "sourceTitle": "1st Story Album「音楽が消えた街」",
-    "kasi": "",
-    "link": "https://linkco.re/UR7AuqzF",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=sRnyNwoRmKU",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000736",
-    "date": "2024/07/27",
-    "title": "アテンションノート",
-    "titleYomi": "アテンションノート",
-    "artist": "夢追翔 feat. カサノバ(CV:シェリン・バーガンディ)",
-    "artistYomi": "ゆめおいかける feat. カサノバ(CV:シェリン・バーガンディ)",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "他ライバー歌唱",
-      "音楽が消えた街"
-    ],
-    "collabo": [
-      "シェリン・バーガンディ"
-    ],
-    "sourceTitle": "1st Story Album「音楽が消えた街」",
-    "kasi": "",
-    "link": "https://linkco.re/UR7AuqzF",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=5ohU2LJ9nmE",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000737",
-    "date": "2024/07/27",
-    "title": "最テイ裁判所",
-    "titleYomi": "さいテイさいばんしょ",
-    "artist": "夢追翔 feat. フェニミィ(CV:健屋花那)",
-    "artistYomi": "ゆめおいかける feat. フェニミィ(CV:すこやかな)",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "他ライバー歌唱",
-      "音楽が消えた街"
-    ],
-    "collabo": [
-      "健屋花那"
-    ],
-    "sourceTitle": "1st Story Album「音楽が消えた街」",
-    "kasi": "",
-    "link": "https://linkco.re/UR7AuqzF",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=yuBLfAInyQE",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000738",
-    "date": "2024/07/27",
-    "title": "嗚呼素晴らしき音楽",
-    "titleYomi": "ああすばらしきおんがく",
-    "artist": "夢追翔 feat. ジョシュア(CV弦月藤士郎)",
-    "artistYomi": "ゆめおいかける feat. ジョシュア(CVげんづきとうじろう)",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "2人",
-      "コラボ",
-      "他ライバー歌唱",
-      "音楽が消えた街"
-    ],
-    "collabo": [
-      "弦月藤士郎"
-    ],
-    "sourceTitle": "1st Story Album「音楽が消えた街」",
-    "kasi": "",
-    "link": "https://linkco.re/UR7AuqzF",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=zP4chYPdvMA",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000739",
-    "date": "2024/07/27",
-    "title": "パラドックス・アシンメトリー",
-    "titleYomi": "パラドックス・アシンメトリー",
-    "artist": "夢追翔 feat. ルーニー(CV:鈴木勝)",
-    "artistYomi": "ゆめおいかける feat. ルーニー(CV:すずきまさる)",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "他ライバー歌唱",
-      "音楽が消えた街"
-    ],
-    "collabo": [],
-    "sourceTitle": "1st Story Album「音楽が消えた街」",
-    "kasi": "",
-    "link": "https://linkco.re/UR7AuqzF",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=c5E6hSaabIQ",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000740",
-    "date": "2024/07/27",
-    "title": "失われし最終楽章",
-    "titleYomi": "うしなわれしさいしゅうがくしょう",
-    "artist": "夢追翔 feat. シエル(CV:リゼ・ヘルエスタ)",
-    "artistYomi": "ゆめおいかける feat. シエル(CV:リゼ・ヘルエスタ)",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "他ライバー歌唱",
-      "音楽が消えた街"
-    ],
-    "collabo": [],
-    "sourceTitle": "1st Story Album「音楽が消えた街」",
-    "kasi": "",
-    "link": "https://linkco.re/UR7AuqzF",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=K8N1dfbSWy8",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000741",
-    "date": "2024/07/27",
     "title": "Andante",
     "titleYomi": "andante",
     "artist": "夢追翔 feat.(CV:周央サンゴ, シェリン・バーガンディ, 健屋花那, 弦月藤士郎, 鈴木勝, リゼ・ヘルエスタ)",
     "artistYomi": "ゆめおいかける feat.(CV:すおうサンゴ, シェリン・バーガンディ, けんやかな, げんづきとうじろう, すずきまさる, リゼ・ヘルエスタ)",
     "type": [
       "オリジナル",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -27162,7 +27105,7 @@ const songsData = [
     "kasi": "",
     "link": "https://linkco.re/UR7AuqzF",
     "keyword": [],
-    "memo": "",
+    "memo": "アルバム限定曲",
     "recordStatus": "公開中",
     "sources": [
       {
@@ -27178,7 +27121,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000742",
+    "id": "perf-000735",
     "date": "2024/08/03",
     "title": "RPG",
     "titleYomi": "rpg",
@@ -27212,7 +27155,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000743",
+    "id": "perf-000736",
     "date": "2024/08/03",
     "title": "私以外私じゃないの",
     "titleYomi": "わたしいがいわたしじゃないの",
@@ -27248,7 +27191,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000744",
+    "id": "perf-000737",
     "date": "2024/08/03",
     "title": "オンリーワンダー",
     "titleYomi": "オンリーワンダー",
@@ -27285,7 +27228,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000745",
+    "id": "perf-000738",
     "date": "2024/08/03",
     "title": "あゝオオサカdreamin'night",
     "titleYomi": "ああオオサカdreamin'night",
@@ -27306,7 +27249,9 @@ const songsData = [
     "sourceTitle": "【 #倉持武者修業 】第1回!! お歌の武者修行だぁぁ！ 【夢追翔 / レヴィ・エリファ / 緋八マナ / 倉持めると にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ヒプマイ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -27323,7 +27268,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000746",
+    "id": "perf-000739",
     "date": "2024/08/03",
     "title": "助演男優賞",
     "titleYomi": "じょえんだんゆうしょう",
@@ -27334,7 +27279,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ラップ"
     ],
     "collabo": [],
     "sourceTitle": "【 #倉持武者修業 】第1回!! お歌の武者修行だぁぁ！ 【夢追翔 / レヴィ・エリファ / 緋八マナ / 倉持めると にじさんじ】",
@@ -27357,7 +27303,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000747",
+    "id": "perf-000740",
     "date": "2024/08/03",
     "title": "アイデンティティ",
     "titleYomi": "アイデンティティ",
@@ -27391,7 +27337,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000748",
+    "id": "perf-000741",
     "date": "2024/08/03",
     "title": "君と羊と青",
     "titleYomi": "きみとひつじとあお",
@@ -27428,7 +27374,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000749",
+    "id": "perf-000742",
     "date": "2024/08/03",
     "title": "サマータイムレコード",
     "titleYomi": "サマータイムレコード",
@@ -27467,7 +27413,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000750",
+    "id": "perf-000743",
     "date": "2024/08/04",
     "title": "Missing",
     "titleYomi": "Missing",
@@ -27504,7 +27450,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000751",
+    "id": "perf-000744",
     "date": "2024/08/23",
     "title": "嗚呼素晴らしき音楽(MV)",
     "titleYomi": "ああすばらしきおんがく(MV)",
@@ -27512,7 +27458,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける feat. ジョシュア(CV:げんづきとうじろう)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "2人",
@@ -27543,7 +27490,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000752",
+    "id": "perf-000745",
     "date": "2024/08/30",
     "title": "パラドックス・アシンメトリー(MV)",
     "titleYomi": "パラドックス・アシンメトリー(MV)",
@@ -27551,7 +27498,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける feat. ルーニー(CV:すずきまさる)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "他ライバー歌唱",
@@ -27580,7 +27528,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000753",
+    "id": "perf-000746",
     "date": "2024/09/06",
     "title": "オルターエゴ",
     "titleYomi": "オルターエゴ",
@@ -27620,7 +27568,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000754",
+    "id": "perf-000747",
     "date": "2024/09/13",
     "title": "失われし最終楽章(MV)",
     "titleYomi": "うしなわれしさいしゅうがくしょう(MV)",
@@ -27628,7 +27576,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける feat. シエル(CV:リゼ・ヘルエスタ)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "他ライバー歌唱",
@@ -27657,7 +27606,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000755",
+    "id": "perf-000748",
     "date": "2024/09/22",
     "title": "オーバーライド",
     "titleYomi": "オーバーライド",
@@ -27695,7 +27644,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000756",
+    "id": "perf-000749",
     "date": "2024/09/26",
     "title": "空に歌えば",
     "titleYomi": "そらにうたえば",
@@ -27733,7 +27682,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000757",
+    "id": "perf-000750",
     "date": "2024/09/26",
     "title": "ラブソング",
     "titleYomi": "ラブソング",
@@ -27767,7 +27716,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000758",
+    "id": "perf-000751",
     "date": "2024/09/26",
     "title": "パーフェクトライフ",
     "titleYomi": "パーフェクトライフ",
@@ -27801,7 +27750,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000759",
+    "id": "perf-000752",
     "date": "2024/09/26",
     "title": "ハルルソラ",
     "titleYomi": "ハルルソラ",
@@ -27839,7 +27788,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000760",
+    "id": "perf-000753",
     "date": "2024/09/26",
     "title": "僕が死のうと思ったのは",
     "titleYomi": "ぼくがしのうとおもったのは",
@@ -27877,7 +27826,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000761",
+    "id": "perf-000754",
     "date": "2024/09/26",
     "title": "スターライト",
     "titleYomi": "スターライト",
@@ -27915,7 +27864,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000762",
+    "id": "perf-000755",
     "date": "2024/10/30",
     "title": "Dear WOMAN",
     "titleYomi": "Dear WOMAN",
@@ -27957,7 +27906,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000763",
+    "id": "perf-000756",
     "date": "2024/10/31",
     "title": "サイバーパンクデッドボーイ",
     "titleYomi": "サイバーパンクデッドボーイ",
@@ -27995,7 +27944,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000764",
+    "id": "perf-000757",
     "date": "2024/10/31",
     "title": "トンデモワンダーズ",
     "titleYomi": "トンデモワンダーズ",
@@ -28037,7 +27986,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000765",
+    "id": "perf-000758",
     "date": "2024/11/20",
     "title": "Hurrah!! 2025Ver.",
     "titleYomi": "Hurrah!! 2025Ver.",
@@ -28045,7 +27994,7 @@ const songsData = [
     "artistYomi": "にじさんじはこきょく /じん",
     "type": [
       "オリジナル",
-      "音源リリース"
+      "サブスク"
     ],
     "sing": [
       "大人数"
@@ -28071,7 +28020,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000766",
+    "id": "perf-000759",
     "date": "2024/12/15",
     "title": "ウィーアー！",
     "titleYomi": "ウィーアー！",
@@ -28084,6 +28033,7 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
+      "30",
       "ANISAMA V神"
     ],
     "collabo": [
@@ -28094,7 +28044,9 @@ const songsData = [
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "アニサマ"
+    ],
     "memo": "きただにひろし本人とのコラボ\nDAMにてアニサマV神の歌唱映像配信",
     "recordStatus": "公開中",
     "sources": [
@@ -28111,7 +28063,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000767",
+    "id": "perf-000760",
     "date": "2024/12/15",
     "title": "死にたくないから生きている",
     "titleYomi": "しにたくないからいきている",
@@ -28122,13 +28074,16 @@ const songsData = [
     ],
     "sing": [
       "1人",
+      "3D",
       "ANISAMA V神"
     ],
     "collabo": [],
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "アニサマ"
+    ],
     "memo": "DAMにてアニサマV神の歌唱映像配信",
     "recordStatus": "円盤収録",
     "sources": [
@@ -28145,7 +28100,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000768",
+    "id": "perf-000761",
     "date": "2024/12/15",
     "title": "青のすみか",
     "titleYomi": "あおのすみか",
@@ -28157,13 +28112,16 @@ const songsData = [
     ],
     "sing": [
       "1人",
+      "3D",
       "ANISAMA V神"
     ],
     "collabo": [],
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "アニサマ"
+    ],
     "memo": "",
     "recordStatus": "円盤収録",
     "sources": [
@@ -28180,7 +28138,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000769",
+    "id": "perf-000762",
     "date": "2024/12/15",
     "title": "Stargazer",
     "titleYomi": "STARGAZER",
@@ -28193,13 +28151,16 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
+      "3D",
       "ANISAMA V神"
     ],
     "collabo": [],
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "アニサマ"
+    ],
     "memo": "全V出演者による歌唱",
     "recordStatus": "円盤収録",
     "sources": [
@@ -28216,7 +28177,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000770",
+    "id": "perf-000763",
     "date": "2024/12/20",
     "title": "フラジール",
     "titleYomi": "フラジール",
@@ -28258,7 +28219,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000771",
+    "id": "perf-000764",
     "date": "2024/12/20",
     "title": "The Stage Is Mine",
     "titleYomi": "The Stage Is Mine",
@@ -28271,6 +28232,7 @@ const songsData = [
     "sing": [
       "1人",
       "3D",
+      "ラップ",
       "にじさんじ歌謡祭2024"
     ],
     "collabo": [],
@@ -28294,7 +28256,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000772",
+    "id": "perf-000765",
     "date": "2024/12/20",
     "title": "にじさんじ歌謡祭2024スペシャルメドレー（Wonder NeverLand、Hurrah!!、虹色のPuddle、Virtual to LIVE）",
     "titleYomi": "にじさんじかようさい2024スペシャルメドレー（Wonder NeverLand、Hurrah!!、にじいろのPuddle、Virtual to \nLIVE）",
@@ -28331,7 +28293,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000773",
+    "id": "perf-000766",
     "date": "2024/12/21",
     "title": "RAD DOGS",
     "titleYomi": "RAD DOGS",
@@ -28372,7 +28334,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000774",
+    "id": "perf-000767",
     "date": "2024/12/21",
     "title": "にじさんじ歌謡祭2024スペシャルメドレー（Wonder NeverLand、Hurrah!!、虹色のPuddle、Virtual to LIVE）",
     "titleYomi": "にじさんじかようさい2024スペシャルメドレー（Wonder NeverLand、Hurrah!!、にじいろのPuddle、Virtual to \nLIVE）",
@@ -28409,7 +28371,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000775",
+    "id": "perf-000768",
     "date": "2024/12/22",
     "title": "僕のキモチ",
     "titleYomi": "ぼくのキモチ",
@@ -28450,7 +28412,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000776",
+    "id": "perf-000769",
     "date": "2024/12/22",
     "title": "にじさんじ歌謡祭2024スペシャルメドレー（Wonder NeverLand、Hurrah!!、虹色のPuddle、Virtual to LIVE）",
     "titleYomi": "にじさんじかようさい2024スペシャルメドレー（Wonder NeverLand、Hurrah!!、にじいろのPuddle、Virtual to \nLIVE）",
@@ -28487,7 +28449,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000777",
+    "id": "perf-000770",
     "date": "2024/12/25",
     "title": "ダーリン",
     "titleYomi": "ダーリン",
@@ -28521,7 +28483,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000778",
+    "id": "perf-000771",
     "date": "2024/12/31",
     "title": "Hurrah!!",
     "titleYomi": "Hurrah!!",
@@ -28561,7 +28523,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000779",
+    "id": "perf-000772",
     "date": "2025/01/01",
     "title": "静謐なる虚飾楽園",
     "titleYomi": "せいひつなるでぃすとぴあ",
@@ -28597,7 +28559,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000780",
+    "id": "perf-000773",
     "date": "2025/01/01",
     "title": "共感性終止",
     "titleYomi": "きょうかんせいしゅうし",
@@ -28633,7 +28595,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000781",
+    "id": "perf-000774",
     "date": "2025/01/01",
     "title": "Summer and Peace!",
     "titleYomi": "Summer and Peace!",
@@ -28674,7 +28636,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000782",
+    "id": "perf-000775",
     "date": "2025/01/01",
     "title": "Virtural to LIVE",
     "titleYomi": "Virtural to LIVE",
@@ -28711,41 +28673,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000783",
-    "date": "2025/01/06",
-    "title": "The Stage Is Mine",
-    "titleYomi": "The Stage Is Mine",
-    "artist": "夢追翔",
-    "artistYomi": "ゆめおいかける",
-    "type": [
-      "オリジナル",
-      "音源リリース"
-    ],
-    "sing": [
-      "1人"
-    ],
-    "collabo": [],
-    "sourceTitle": "",
-    "kasi": "",
-    "link": "https://linkco.re/Y01UyQv0",
-    "keyword": [],
-    "memo": "",
-    "recordStatus": "公開中",
-    "sources": [
-      {
-        "platform": "youtube",
-        "url": "https://youtube.com/watch?v=BfIR8p7sNPc",
-        "startSeconds": null,
-        "endSeconds": null,
-        "quickPlay": true,
-        "embed": true,
-        "availability": "available",
-        "priority": null
-      }
-    ]
-  },
-  {
-    "id": "perf-000784",
+    "id": "perf-000776",
     "date": "2025/01/15",
     "title": "メランコリーキッチン",
     "titleYomi": "メランコリーキッチン",
@@ -28783,7 +28711,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000785",
+    "id": "perf-000777",
     "date": "2025/01/15",
     "title": "神のまにまに",
     "titleYomi": "かみのまにまに",
@@ -28822,7 +28750,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000786",
+    "id": "perf-000778",
     "date": "2025/02/14",
     "title": "Bunny Girl",
     "titleYomi": "Bunny Girl",
@@ -28856,7 +28784,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000787",
+    "id": "perf-000779",
     "date": "2025/02/26",
     "title": "シンデレラガール",
     "titleYomi": "シンデレラガール",
@@ -28898,7 +28826,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000788",
+    "id": "perf-000780",
     "date": "2025/03/14",
     "title": "ずうっといっしょ！",
     "titleYomi": "ずうっといっしょ！",
@@ -28932,7 +28860,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000789",
+    "id": "perf-000781",
     "date": "2025/03/16",
     "title": "10月無口な君を忘れる",
     "titleYomi": "10がつむくちなきみをわすれる",
@@ -28969,7 +28897,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000790",
+    "id": "perf-000782",
     "date": "2025/05/14",
     "title": "成敗いたAAAAAす！",
     "titleYomi": "せいばいいたAAAAAす！",
@@ -29008,7 +28936,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000791",
+    "id": "perf-000783",
     "date": "2025/05/14",
     "title": "主人公になろう！",
     "titleYomi": "しゅじんおおやけになろう！",
@@ -29045,7 +28973,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000792",
+    "id": "perf-000784",
     "date": "2025/05/14",
     "title": "スロウダウナー",
     "titleYomi": "スロウダウナー",
@@ -29082,7 +29010,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000793",
+    "id": "perf-000785",
     "date": "2025/05/14",
     "title": "勘冴えて悔しいわ",
     "titleYomi": "かんさえてくやしいわ",
@@ -29119,7 +29047,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000794",
+    "id": "perf-000786",
     "date": "2025/05/14",
     "title": "幽霊東京",
     "titleYomi": "ゆうれいとうきょう",
@@ -29156,7 +29084,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000795",
+    "id": "perf-000787",
     "date": "2025/05/14",
     "title": "ひつじがいっぴき",
     "titleYomi": "ひつじがいっぴき",
@@ -29193,7 +29121,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000796",
+    "id": "perf-000788",
     "date": "2025/05/14",
     "title": "い〜やい〜やい〜や",
     "titleYomi": "い～やい～やい～や",
@@ -29230,7 +29158,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000797",
+    "id": "perf-000789",
     "date": "2025/05/14",
     "title": "グロテスク",
     "titleYomi": "グロテスク",
@@ -29267,7 +29195,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000798",
+    "id": "perf-000790",
     "date": "2025/05/14",
     "title": "いーあるふぁんくらぶ",
     "titleYomi": "いーあるふぁんくらぶ",
@@ -29306,7 +29234,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000799",
+    "id": "perf-000791",
     "date": "2025/05/16",
     "title": "Mr. Showtime",
     "titleYomi": "Mr. Showtime",
@@ -29344,7 +29272,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000800",
+    "id": "perf-000792",
     "date": "2025/05/30",
     "title": "ビビデバ",
     "titleYomi": "ビビデバ",
@@ -29380,7 +29308,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000801",
+    "id": "perf-000793",
     "date": "2025/06/11",
     "title": "命にふさわしい",
     "titleYomi": "いのちにふさわしい",
@@ -29418,7 +29346,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000802",
+    "id": "perf-000794",
     "date": "2025/06/11",
     "title": "アノミー",
     "titleYomi": "アノミー",
@@ -29452,7 +29380,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000803",
+    "id": "perf-000795",
     "date": "2025/06/11",
     "title": "ヒーロー",
     "titleYomi": "ヒーロー",
@@ -29489,7 +29417,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000804",
+    "id": "perf-000796",
     "date": "2025/06/11",
     "title": "空っぽの空に潰される",
     "titleYomi": "からっぽのそらにつぶされる",
@@ -29526,7 +29454,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000805",
+    "id": "perf-000797",
     "date": "2025/06/11",
     "title": "名前",
     "titleYomi": "なまえ",
@@ -29560,7 +29488,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000806",
+    "id": "perf-000798",
     "date": "2025/06/11",
     "title": "未来になれなかったあの夜に",
     "titleYomi": "みらいになれなかったあのよるに",
@@ -29598,7 +29526,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000807",
+    "id": "perf-000799",
     "date": "2025/06/28",
     "title": "The Stage Is Mine(MV)",
     "titleYomi": "The Stage Is Mine(MV)",
@@ -29606,7 +29534,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人"
@@ -29632,7 +29561,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000808",
+    "id": "perf-000800",
     "date": "2025/07/19",
     "title": "アンチユー",
     "titleYomi": "アンチユー",
@@ -29670,7 +29599,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000809",
+    "id": "perf-000801",
     "date": "2025/07/25",
     "title": "RELAY",
     "titleYomi": "RELAY",
@@ -29682,7 +29611,8 @@ const songsData = [
     ],
     "sing": [
       "大人数",
-      "コラボ"
+      "コラボ",
+      "にじさんじ甲子園"
     ],
     "collabo": [
       "笹木咲"
@@ -29707,7 +29637,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000810",
+    "id": "perf-000802",
     "date": "2025/07/25",
     "title": "8.31",
     "titleYomi": "8.31",
@@ -29719,7 +29649,8 @@ const songsData = [
     ],
     "sing": [
       "大人数",
-      "コラボ"
+      "コラボ",
+      "にじさんじ甲子園"
     ],
     "collabo": [
       "弦月藤士郎"
@@ -29744,7 +29675,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000811",
+    "id": "perf-000803",
     "date": "2025/08/08",
     "title": "虹",
     "titleYomi": "にじ",
@@ -29785,7 +29716,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000812",
+    "id": "perf-000804",
     "date": "2025/08/22",
     "title": "Flyer!",
     "titleYomi": "Flyer!",
@@ -29824,7 +29755,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000813",
+    "id": "perf-000805",
     "date": "2025/09/12",
     "title": "FOCUS",
     "titleYomi": "Focus",
@@ -29866,7 +29797,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000814",
+    "id": "perf-000806",
     "date": "2025/09/12",
     "title": "Help me,ERINNNNNN!!",
     "titleYomi": "Help me,ERINNNNNN!!",
@@ -29903,7 +29834,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000815",
+    "id": "perf-000807",
     "date": "2025/09/13",
     "title": "Beyond the way",
     "titleYomi": "Beyond the way",
@@ -29946,7 +29877,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000816",
+    "id": "perf-000808",
     "date": "2025/09/13",
     "title": "偽物人間40号",
     "titleYomi": "にせものにんげん40ごう",
@@ -29986,7 +29917,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000817",
+    "id": "perf-000809",
     "date": "2025/09/13",
     "title": "Alice in N.Y.",
     "titleYomi": "Alice in N.Y.",
@@ -30027,7 +29958,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000818",
+    "id": "perf-000810",
     "date": "2025/09/13",
     "title": "CITRUS",
     "titleYomi": "CITRUS",
@@ -30065,7 +29996,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000819",
+    "id": "perf-000811",
     "date": "2025/09/13",
     "title": "僕にピアノは弾けないけれど",
     "titleYomi": "ぼくにピアノはひけないけれど",
@@ -30100,7 +30031,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000820",
+    "id": "perf-000812",
     "date": "2025/09/13",
     "title": "GETCHA!",
     "titleYomi": "GETCHA!",
@@ -30139,7 +30070,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000821",
+    "id": "perf-000813",
     "date": "2025/09/13",
     "title": "ファイアダンス",
     "titleYomi": "ファイアダンス",
@@ -30180,7 +30111,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000822",
+    "id": "perf-000814",
     "date": "2025/09/13",
     "title": "一旦ステイ TONIGHT",
     "titleYomi": "いったんステイ TONIGHT",
@@ -30222,7 +30153,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000823",
+    "id": "perf-000815",
     "date": "2025/09/13",
     "title": "Arc goes oN",
     "titleYomi": "Arc goes oN",
@@ -30265,7 +30196,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000824",
+    "id": "perf-000816",
     "date": "2025/09/13",
     "title": "ヨナガオルケスタ",
     "titleYomi": "ヨナガオルケスタ",
@@ -30308,7 +30239,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000825",
+    "id": "perf-000817",
     "date": "2025/09/13",
     "title": "Virtual to LIVE",
     "titleYomi": "Virtual to LIVE",
@@ -30351,7 +30282,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000826",
+    "id": "perf-000818",
     "date": "2025/09/14",
     "title": "僕にピアノは弾けないけれど(MV)",
     "titleYomi": "ぼくにピアノはひけないけれど(MV)",
@@ -30359,7 +30290,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人"
@@ -30385,7 +30317,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000827",
+    "id": "perf-000819",
     "date": "2025/10/12",
     "title": "みかんドリーム・シマエナガ",
     "titleYomi": "みかんドリーム・シマエナガ",
@@ -30420,7 +30352,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000828",
+    "id": "perf-000820",
     "date": "2025/10/25",
     "title": "ピースサイン",
     "titleYomi": "ピースサイン",
@@ -30457,7 +30389,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000829",
+    "id": "perf-000821",
     "date": "2025/10/25",
     "title": "スターマーカー",
     "titleYomi": "スターマーカー",
@@ -30494,7 +30426,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000830",
+    "id": "perf-000822",
     "date": "2025/10/25",
     "title": "さよならエレジー",
     "titleYomi": "さよならエレジー",
@@ -30533,7 +30465,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000831",
+    "id": "perf-000823",
     "date": "2025/10/25",
     "title": "愛を伝えたいだとか",
     "titleYomi": "あいをつたえたいだとか",
@@ -30571,7 +30503,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000832",
+    "id": "perf-000824",
     "date": "2025/10/25",
     "title": "シンデレラボーイ",
     "titleYomi": "シンデレラボーイ",
@@ -30608,7 +30540,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000833",
+    "id": "perf-000825",
     "date": "2025/10/25",
     "title": "猫",
     "titleYomi": "ねこ",
@@ -30645,7 +30577,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000834",
+    "id": "perf-000826",
     "date": "2025/10/25",
     "title": "晩餐歌",
     "titleYomi": "ばんさんか",
@@ -30682,7 +30614,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000835",
+    "id": "perf-000827",
     "date": "2025/10/25",
     "title": "Pretender",
     "titleYomi": "Pretender",
@@ -30721,7 +30653,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000836",
+    "id": "perf-000828",
     "date": "2025/11/03",
     "title": "バカサバイバー",
     "titleYomi": "バカサバイバー",
@@ -30762,7 +30694,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000837",
+    "id": "perf-000829",
     "date": "2025/12/02",
     "title": "FAKE LAND",
     "titleYomi": "FAKE LAND",
@@ -30797,7 +30729,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000838",
+    "id": "perf-000830",
     "date": "2025/12/24",
     "title": "犬のおまわりさん",
     "titleYomi": "いぬのおまわりさん",
@@ -30836,7 +30768,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000839",
+    "id": "perf-000831",
     "date": "2025/12/24",
     "title": "神のまにまに",
     "titleYomi": "かみのまにまに",
@@ -30875,7 +30807,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000840",
+    "id": "perf-000832",
     "date": "2025/12/24",
     "title": "合法的トビ方ノススメ",
     "titleYomi": "ごうほうてきトビかたノススメ",
@@ -30887,7 +30819,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "黒夢町"
+      "黒夢町",
+      "ラップ"
     ],
     "collabo": [],
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
@@ -30910,7 +30843,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000841",
+    "id": "perf-000833",
     "date": "2025/12/24",
     "title": "スイートマジック",
     "titleYomi": "スイートマジック",
@@ -30949,7 +30882,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000842",
+    "id": "perf-000834",
     "date": "2025/12/24",
     "title": "にぎにぎにじたうん！",
     "titleYomi": "にぎにぎにじたうん！",
@@ -30988,7 +30921,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000843",
+    "id": "perf-000835",
     "date": "2025/12/24",
     "title": "DOGS",
     "titleYomi": "Dogs",
@@ -31023,7 +30956,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000844",
+    "id": "perf-000836",
     "date": "2025/12/24",
     "title": "コンビニ",
     "titleYomi": "コンビニ",
@@ -31062,7 +30995,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000845",
+    "id": "perf-000837",
     "date": "2025/12/24",
     "title": "ウィーアー！",
     "titleYomi": "ウィーアー！",
@@ -31101,7 +31034,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000846",
+    "id": "perf-000838",
     "date": "2025/12/25",
     "title": "モニタリング",
     "titleYomi": "モニタリング",
@@ -31135,7 +31068,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000847",
+    "id": "perf-000839",
     "date": "2026/01/01",
     "title": "IRIS OUT",
     "titleYomi": "IRIS OUT",
@@ -31169,7 +31102,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000848",
+    "id": "perf-000840",
     "date": "2026/01/01",
     "title": "イイじゃん",
     "titleYomi": "イイじゃん",
@@ -31207,7 +31140,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000849",
+    "id": "perf-000841",
     "date": "2026/01/26",
     "title": "カケル",
     "titleYomi": "カケル",
@@ -31244,7 +31177,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000850",
+    "id": "perf-000842",
     "date": "2026/02/03",
     "title": "JANE DOE",
     "titleYomi": "Jane Doe",
@@ -31278,7 +31211,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000851",
+    "id": "perf-000843",
     "date": "2026/02/15",
     "title": "お気に召すまま",
     "titleYomi": "おきにめすまま",
@@ -31312,7 +31245,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000852",
+    "id": "perf-000844",
     "date": "2026/02/23",
     "title": "心臓",
     "titleYomi": "しんぞう",
@@ -31347,7 +31280,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000853",
+    "id": "perf-000845",
     "date": "2026/02/28",
     "title": "CHE.R.RY",
     "titleYomi": "CHE.R.RY",
@@ -31383,7 +31316,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000854",
+    "id": "perf-000846",
     "date": "2026/03/14",
     "title": "イフ",
     "titleYomi": "イフ",
@@ -31419,7 +31352,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000855",
+    "id": "perf-000847",
     "date": "2026/04/01",
     "title": "寿司でたまらない(MV)",
     "titleYomi": "すしでたまらない",
@@ -31427,7 +31360,8 @@ const songsData = [
     "artistYomi": "にじさんじ/むらさきだん(ゆめおいかける、ほしるべショウ、なぎさトラウト、ミラン・ケストレル)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -31458,7 +31392,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000856",
+    "id": "perf-000848",
     "date": "2026/04/14",
     "title": "Same Blue",
     "titleYomi": "Same Blue",
@@ -31492,7 +31426,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000857",
+    "id": "perf-000849",
     "date": "2026/04/26",
     "title": "月光",
     "titleYomi": "げっこう",
@@ -31506,7 +31440,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "黒夢町",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [
       "黒井しば",
@@ -31532,7 +31467,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000858",
+    "id": "perf-000850",
     "date": "2026/04/26",
     "title": "愛♡スクリ～ム！",
     "titleYomi": "あい♡スクリ～ム！",
@@ -31546,7 +31481,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "黒夢町",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [
       "黒井しば",
@@ -31572,7 +31508,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000859",
+    "id": "perf-000851",
     "date": "2026/04/26",
     "title": "3年目の浮気",
     "titleYomi": "3ねんめのうわき",
@@ -31586,7 +31522,9 @@ const songsData = [
       "2人",
       "コラボ",
       "黒夢町",
-      "3D"
+      "3D",
+      "記念枠",
+      "もやしば"
     ],
     "collabo": [
       "黒井しば"
@@ -31611,7 +31549,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000860",
+    "id": "perf-000852",
     "date": "2026/04/26",
     "title": "花になって",
     "titleYomi": "はなになって",
@@ -31626,7 +31564,8 @@ const songsData = [
       "コラボ",
       "黒夢町",
       "3D",
-      "ゆめおいまちた"
+      "ゆめおいまちた",
+      "記念枠"
     ],
     "collabo": [
       "町田ちま"
@@ -31651,7 +31590,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000861",
+    "id": "perf-000853",
     "date": "2026/04/26",
     "title": "AmBitious!!!",
     "titleYomi": "AmBitious!!!",
@@ -31665,7 +31604,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "黒夢町",
-      "3D"
+      "3D",
+      "記念枠"
     ],
     "collabo": [
       "黒井しば",
@@ -31674,7 +31614,9 @@ const songsData = [
     "sourceTitle": "【3DLIVE】KOKUMUCHO 7th Anniversary 3D Live!!!【 #黒夢町7周年ライブ 】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "パラライ"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -31691,7 +31633,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000862",
+    "id": "perf-000854",
     "date": "2026/05/02",
     "title": "三原色",
     "titleYomi": "さんげんしょく",
@@ -31728,7 +31670,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000863",
+    "id": "perf-000855",
     "date": "2026/05/03",
     "title": "貪欲を患う(MV)",
     "titleYomi": "どんよくをわずらう(MV)",
@@ -31736,7 +31678,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人"
@@ -31762,7 +31705,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000864",
+    "id": "perf-000856",
     "date": "2026/05/14",
     "title": "Replace to be(MV)",
     "titleYomi": "Replace to be(MV)",
@@ -31770,7 +31713,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける (VACHSSがっきょく)",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "3人以上",
@@ -31804,7 +31748,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000865",
+    "id": "perf-000857",
     "date": "2026/05/14",
     "title": "Replace to be",
     "titleYomi": "Replace to be",
@@ -31848,7 +31792,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000866",
+    "id": "perf-000858",
     "date": "2026/05/14",
     "title": "S.C.R.E.A.M",
     "titleYomi": "S.C.R.E.A.M",
@@ -31889,7 +31833,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000867",
+    "id": "perf-000859",
     "date": "2026/05/14",
     "title": "ヴィラン",
     "titleYomi": "ヴィラン",
@@ -31930,7 +31874,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000868",
+    "id": "perf-000860",
     "date": "2026/05/14",
     "title": "貪欲を患う",
     "titleYomi": "どんよくをわずらう",
@@ -31967,7 +31911,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000869",
+    "id": "perf-000861",
     "date": "2026/05/14",
     "title": "Virtural to LIVE",
     "titleYomi": "Virtural to LIVE",
@@ -32011,7 +31955,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000870",
+    "id": "perf-000862",
     "date": "2026/05/14",
     "title": "鈍色に拍動めく",
     "titleYomi": "にびいろにゆらめく",
@@ -32048,7 +31992,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000871",
+    "id": "perf-000863",
     "date": "2026/05/14",
     "title": "Chase tne Light!",
     "titleYomi": "Chase tne Light!",
@@ -32088,7 +32032,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000872",
+    "id": "perf-000864",
     "date": "2026/05/14",
     "title": "敗北の少年",
     "titleYomi": "はいぼくのしょうねん",
@@ -32128,7 +32072,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000873",
+    "id": "perf-000865",
     "date": "2026/05/14",
     "title": "メメント",
     "titleYomi": "メメント",
@@ -32172,7 +32116,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000874",
+    "id": "perf-000866",
     "date": "2026/05/14",
     "title": "DOGRAND",
     "titleYomi": "DOGRAND",
@@ -32216,7 +32160,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000875",
+    "id": "perf-000867",
     "date": "2026/05/24",
     "title": "プロミスザスター",
     "titleYomi": "プロミスザスター",
@@ -32260,7 +32204,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000876",
+    "id": "perf-000868",
     "date": "2026/05/24",
     "title": "Hurrah!!",
     "titleYomi": "Hurrah!!",
@@ -32300,7 +32244,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000877",
+    "id": "perf-000869",
     "date": "2026/05/24",
     "title": "灰色と青",
     "titleYomi": "はいいろとあお",
@@ -32338,7 +32282,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000878",
+    "id": "perf-000870",
     "date": "2026/05/24",
     "title": "シネマ",
     "titleYomi": "シネマ",
@@ -32373,7 +32317,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000879",
+    "id": "perf-000871",
     "date": "2026/05/24",
     "title": "琥珀色の街、上海蟹の朝",
     "titleYomi": "こはくいろのまち、しゃんはいがにのあさ",
@@ -32411,7 +32355,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000880",
+    "id": "perf-000872",
     "date": "2026/05/24",
     "title": "ray",
     "titleYomi": "Ray",
@@ -32450,7 +32394,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000881",
+    "id": "perf-000873",
     "date": "2026/05/24",
     "title": "スーパーウルトラハイパーミラクルロマンチック",
     "titleYomi": "スーパーウルトラハイパーミラクルロマンチック",
@@ -32489,7 +32433,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000882",
+    "id": "perf-000874",
     "date": "2026/05/24",
     "title": "Subtitle",
     "titleYomi": "Subtitle",
@@ -32527,7 +32471,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000883",
+    "id": "perf-000875",
     "date": "2026/05/24",
     "title": "公然の秘密",
     "titleYomi": "こうぜんのひみつ",
@@ -32565,7 +32509,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000884",
+    "id": "perf-000876",
     "date": "2026/05/24",
     "title": "おやすみ泣き声、さよなら歌姫",
     "titleYomi": "おやすみなきごえ、さよならうたひめ",
@@ -32603,7 +32547,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000885",
+    "id": "perf-000877",
     "date": "2026/06/28",
     "title": "涙サプライズ",
     "titleYomi": "なみだサプライズ",
@@ -32643,7 +32587,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000886",
+    "id": "perf-000878",
     "date": "2026/06/28",
     "title": "僕のあたまから出ていけ",
     "titleYomi": "ぼくのあたまからでていけ",
@@ -32655,7 +32599,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
@@ -32678,7 +32623,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000887",
+    "id": "perf-000879",
     "date": "2026/06/28",
     "title": "天に唾吐く",
     "titleYomi": "てんにつばはく",
@@ -32690,7 +32635,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
@@ -32713,7 +32659,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000888",
+    "id": "perf-000880",
     "date": "2026/06/28",
     "title": "君の好きな僕",
     "titleYomi": "きみのすきなぼく",
@@ -32725,7 +32671,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
@@ -32748,7 +32695,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000889",
+    "id": "perf-000881",
     "date": "2026/06/28",
     "title": "貪欲を患う",
     "titleYomi": "どんよくをわずらう",
@@ -32760,7 +32707,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
@@ -32783,7 +32731,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000890",
+    "id": "perf-000882",
     "date": "2026/06/28",
     "title": "ミタサレナイトガール",
     "titleYomi": "ミタサレナイトガール",
@@ -32795,7 +32743,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
@@ -32818,7 +32767,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000891",
+    "id": "perf-000883",
     "date": "2026/06/28",
     "title": "おそろいの地獄だね",
     "titleYomi": "おそろいのじごくだね",
@@ -32830,7 +32779,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
@@ -32853,7 +32803,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000892",
+    "id": "perf-000884",
     "date": "2026/06/28",
     "title": "Andante(Solo ver.)",
     "titleYomi": "Andante(Solo ver.)",
@@ -32865,7 +32815,8 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "3D"
+      "にじ3D",
+      "記念枠"
     ],
     "collabo": [],
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
@@ -32888,7 +32839,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000893",
+    "id": "perf-000885",
     "date": "2026/06/28",
     "title": "鈍色に拍動めく(MV)",
     "titleYomi": "にびいろにゆらめく(MV)",
@@ -32896,7 +32847,8 @@ const songsData = [
     "artistYomi": "ゆめおいかける",
     "type": [
       "動画",
-      "オリジナル"
+      "オリジナル",
+      "サブスク"
     ],
     "sing": [
       "1人"
@@ -32922,7 +32874,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000894",
+    "id": "perf-000886",
     "date": "2026/06/30",
     "title": "会心の一撃",
     "titleYomi": "かいしんのいちげき",
@@ -32959,7 +32911,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000895",
+    "id": "perf-000887",
     "date": "2026/06/30",
     "title": "トンツカタンタン",
     "titleYomi": "トンツカタンタン",
@@ -32999,7 +32951,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000896",
+    "id": "perf-000888",
     "date": "2026/06/30",
     "title": "風のアンセム",
     "titleYomi": "かぜのアンセム",
@@ -33037,7 +32989,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000897",
+    "id": "perf-000889",
     "date": "2026/06/30",
     "title": "夜の踊り子",
     "titleYomi": "よるのおどりこ",
@@ -33077,7 +33029,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000898",
+    "id": "perf-000890",
     "date": "2026/06/30",
     "title": "夢幻",
     "titleYomi": "むげん",
@@ -33115,7 +33067,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000899",
+    "id": "perf-000891",
     "date": "2026/06/30",
     "title": "きみも悪い人でよかった",
     "titleYomi": "きみもわるいひとでよかった",
@@ -33154,8 +33106,8 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000900",
-    "date": "2026/07/14",
+    "id": "perf-000892",
+    "date": "2026/06/30",
     "title": "群青日和",
     "titleYomi": "ぐんじょうびより",
     "artist": "東京事変",
@@ -33196,7 +33148,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000901",
+    "id": "perf-000893",
     "date": "2026/07/14",
     "title": "栞",
     "titleYomi": "しおり",
@@ -33238,7 +33190,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000902",
+    "id": "perf-000894",
     "date": "2026/07/14",
     "title": "栞",
     "titleYomi": "しおり",
@@ -33280,7 +33232,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000903",
+    "id": "perf-000895",
     "date": "2026/07/14",
     "title": "青と夏",
     "titleYomi": "あおとなつ",
@@ -33323,7 +33275,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000904",
+    "id": "perf-000896",
     "date": "2026/07/14",
     "title": "青と夏",
     "titleYomi": "あおとなつ",
@@ -33366,7 +33318,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000905",
+    "id": "perf-000897",
     "date": "2026/07/14",
     "title": "青と夏",
     "titleYomi": "あおとなつ",
@@ -33408,7 +33360,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000906",
+    "id": "perf-000898",
     "date": "2026/07/14",
     "title": "栞",
     "titleYomi": "しおり",
@@ -33450,7 +33402,7 @@ const songsData = [
     ]
   },
   {
-    "id": "perf-000907",
+    "id": "perf-000899",
     "date": "2026/07/14",
     "title": "青と夏",
     "titleYomi": "あおとなつ",
