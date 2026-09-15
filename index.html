@@ -21,24 +21,58 @@
     </div>
   </header>
 
-  <section id="player-panel" class="player-panel" hidden>
-    <div class="player-inner">
+<section
+  id="player-panel"
+  class="player-panel"
+  hidden
+>
+  <div class="player-shell">
+    <!-- NOW PLAYINGバー -->
+    <div class="player-statusbar">
+      <div class="player-equalizer" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div class="player-info">
-        <p class="eyebrow">🔻NOW PLAYING🔻</p>
-        <strong id="player-title">選択した楽曲</strong>
+        <p class="player-label">NOW PLAYING</p>
+
+        <strong id="player-title">
+          選択した楽曲
+        </strong>
+
         <span id="player-artist"></span>
       </div>
 
-      <div class="player-frame-wrap">
-        <div id="youtube-player"></div>
-      </div>
-
       <div class="player-controls">
-        <button id="next-player" class="player-button" type="button">次の曲</button>
-        <button id="close-player" class="icon-button" type="button" aria-label="プレーヤーを閉じる">×</button>
+        <button
+          id="next-player"
+          class="player-button"
+          type="button"
+        >
+          次の曲
+        </button>
+
+        <button
+          id="close-player"
+          class="icon-button"
+          type="button"
+          aria-label="プレーヤーを閉じる"
+          title="プレーヤーを閉じる"
+        >
+          ×
+        </button>
       </div>
     </div>
-  </section>
+
+    <!-- YouTubeプレーヤー -->
+    <div class="player-frame-wrap">
+      <div id="youtube-player"></div>
+    </div>
+  </div>
+</section>
 
   <main class="page-shell">
     <section class="mode-panel" aria-label="表示モード">
