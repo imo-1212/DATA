@@ -238,18 +238,26 @@ input[type="search"], select {
 .primary-button { padding: 8px 14px; color: #fff; border: 1px solid var(--accent); background: var(--accent); font-weight: 700; }
 .secondary-button { padding: 8px 14px; color: var(--accent); border: 1px solid var(--line); background: var(--accent-soft); font-weight: 700; }
 
-.player-panel { margin: 0 0 14px; }
+.player-panel { padding-top: 72px; margin: 0 0 14px; }
 .player-statusbar {
+  position: fixed;
+  top: max(0px, env(safe-area-inset-top));
+  left: calc(50% + 146px);
+  z-index: 100;
+  width: min(868px, calc(100% - 340px));
+  transform: translateX(-50%);
   display: flex;
   min-height: 58px;
   align-items: center;
   gap: 13px;
   padding: 8px 10px 8px 16px;
   color: var(--canvas);
-  background: #351b23;
+  background: rgba(53, 27, 35, 0.96);
   border: 2px solid var(--accent);
   border-radius: 11px;
-  box-shadow: 4px 4px 0 rgba(172, 50, 75, .26);
+  box-shadow:
+  4px 4px 0 rgba(172, 50, 75, 0.26);
+  backdrop-filter: blur(10px);
 }
 .player-equalizer { display: flex; height: 22px; align-items: center; gap: 3px; }
 .player-equalizer span { display: block; width: 4px; border-radius: 2px; background: var(--yellow); animation: equalizer .8s ease-in-out infinite alternate; }
@@ -412,6 +420,11 @@ input[type="search"], select {
   .layout { grid-template-columns: 1fr; }
   .filters { position: static; max-height: none; }
   .filter-body { max-height: none; }
+  .player-statusbar {
+    left: 50%;
+    width: calc(100% - 48px);
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 640px) {
@@ -425,7 +438,18 @@ input[type="search"], select {
   .layout { gap: 18px; margin-top: 14px; }
   .results-header { align-items: flex-start; }
   .results-header .primary-button { min-height: 40px; font-size: .78rem; }
-  .player-statusbar { min-height: 56px; gap: 8px; padding: 7px 8px 7px 10px; }
+  .player-panel {
+    padding-top:
+      calc(68px + env(safe-area-inset-top));
+  }
+  .player-statusbar {
+    top: max(0px, env(safe-area-inset-top));
+    left: 50%;
+    width: calc(100% - 20px);
+    min-height: 56px;
+    padding: 7px 8px 7px 10px;
+    transform: translateX(-50%);
+  }
   .player-equalizer { gap: 2px; }
   .player-equalizer span { width: 3px; }
   .player-info strong { font-size: .78rem; }
