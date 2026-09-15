@@ -86,7 +86,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   box-shadow: 2px 2px 0 rgba(172, 50, 75, .12);
 }
 
-.layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 22px; margin-top: 20px; overflow: visible; }
+.layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 22px; margin-top: 20px; }
 .filters {
   position: sticky;
   top: 24px;
@@ -221,7 +221,7 @@ input[type="search"], select {
 }
 .filter-btn.active, .selected-filter { color: var(--accent-dark); border-color: var(--accent); background: var(--accent-soft); }
 
-.results { min-width: 0; overflow: visible; }
+.results { min-width: 0; }
 .results-header { min-height: 52px; margin-bottom: 15px; }
 .results-header p { margin: 0; }
 .result-count strong { font-size: 1.45rem; }
@@ -245,7 +245,7 @@ input[type="search"], select {
   width: 100%;
   margin: 0 0 14px;
   padding: 0 0 6px;
-  background: var(--canvas);
+
 }
 .player-statusbar {
   position: relative;
@@ -259,11 +259,12 @@ input[type="search"], select {
   gap: 13px;
   padding: 8px 10px 8px 16px;
   color: var(--canvas);
-  background: #351b23;
-  border: 2px solid var(--accent);
-  border-radius: 11px;
-  box-shadow: 4px 4px 0 rgba(172, 50, 75, 0.26);
+  background: hsl(341.54deg 32.5% 15.69%);
+  border: 10px outset var(--accent);
+  border-radius: 12px;
+
   transform: none;
+  margin: 0 0 10px;
 }
 .player-equalizer { display: flex; height: 22px; align-items: center; gap: 3px; }
 .player-equalizer span { display: block; width: 4px; border-radius: 2px; background: var(--yellow); animation: equalizer .8s ease-in-out infinite alternate; }
@@ -351,7 +352,7 @@ input[type="search"], select {
   align-self: start;
   width: 100%;
   min-height: 0;
-  padding: 0;
+  padding: 0 ;
   overflow: hidden;
   border: 0;
   aspect-ratio: 16 / 9;
@@ -446,6 +447,11 @@ input[type="search"], select {
   .layout { grid-template-columns: 1fr; }
   .filters { position: static; max-height: none; }
   .filter-body { max-height: none; }
+  .player-statusbar {
+    left: 50%;
+    width: calc(100% - 48px);
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 640px) {
@@ -478,19 +484,9 @@ input[type="search"], select {
   .player-controls { gap: 5px; }
   .player-button { min-height: 38px; padding: 0 8px; font-size: .68rem; }
   .icon-button { width: 38px; min-width: 38px; }
-  .player-video-wrap {
-    width: 100%;
-    margin-top: -2px;
-  }
-  .player-fold-row {
-    height: 24px;
-  }
-  .player-fold-button {
-    width: 54px;
-    height: 24px;
-    border-radius: 0 0 12px 12px;
-  }
-
+  .player-video-wrap { width: 100%; margin-top:4px; }
+  .player-fold-row { height: 24px; }
+  .player-fold-button { width: 54px; height: 24px; border-radius: 0 0 12px 12px; }
   .song-card { grid-template-columns: 140px minmax(0, 1fr); min-height: 150px; }
   .card-body { padding: 10px 50px 10px 11px; }
   .song-title { margin-top: 5px; font-size: 1rem; }
@@ -499,6 +495,15 @@ input[type="search"], select {
   .tag-list { gap: 4px; margin-top: 6px; }
   .tag { padding: 2px 5px; font-size: .65rem; }
   .memo { font-size: .72rem; }
+  .play-mark {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  display: grid;
+  width: 25px;
+  height: 25px;
+  font-size: .78rem; 
+}
   .card-actions { top: 9px; right: 8px; bottom: 9px; gap: 6px; }
   .action-button, .favorite-button { width: 38px; min-width: 38px; min-height: 38px; height: 38px; }
   .page-top-button { right: 16px; bottom: 16px; width: 58px; height: 58px; }
