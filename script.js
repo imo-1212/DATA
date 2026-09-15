@@ -108,7 +108,6 @@ if (togglePlayerVideoButton) {
 }
   
   $("#close-player").addEventListener("click", closePlayer);
-}
 
 function changeMode(mode) {
   state.mode = mode;
