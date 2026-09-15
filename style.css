@@ -62,48 +62,184 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18; }
 .header-note { max-width: 380px; margin: 0; color: rgba(255, 255, 255, .72); font-size: .9rem; }
 
+/* ========================================
+   NOW PLAYING
+======================================== */
+
 .player-panel {
   position: sticky;
   top: 0;
   z-index: 30;
 
+  padding: 10px 24px;
+
+  background: rgba(255, 249, 231, 0.94);
+  border-bottom: 1px solid var(--line);
+
+  backdrop-filter: blur(10px);
+}
+
+.player-shell {
+  width: min(1160px, 100%);
+  margin: auto;
+}
+
+/* 上部の濃いバー */
+.player-statusbar {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  gap: 13px;
+
+  padding: 8px 10px 8px 16px;
+
   color: var(--canvas);
   background: #351b23;
 
-  border-bottom: 1px solid var(--accent);
-  backdrop-filter: blur(10px);
+  border: 2px solid var(--accent);
+  border-radius: 11px;
+
+  box-shadow:
+    4px 4px 0 rgba(172, 50, 75, 0.26);
 }
-.player-inner {
-  display: grid;
-  grid-template-columns: minmax(180px, 1fr) minmax(320px, 560px) auto;
+
+/* 左側の音量バー風装飾 */
+.player-equalizer {
+  display: flex;
+  height: 22px;
   align-items: center;
-  gap: 20px;
-
-  width: min(1160px, 100%);
-  margin: auto;
-  padding: 12px 24px;
-
-  color: var(--canvas);
+  gap: 3px;
 }
-.player-info { display: grid; gap: 3px; min-width: 0; }
-.player-info strong, .player-info span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.player-info span { color: rgba(255, 255, 255, .68); font-size: .88rem; }
-.player-frame-wrap { aspect-ratio: 16 / 9; overflow: hidden; border-radius: 9px; background: #000; }
-.player-frame-wrap iframe, #youtube-player { display: block; width: 100%; height: 100%; border: 0; }
-.player-controls { display: flex; align-items: center; gap: 8px; }
-.player-button, .icon-button {
-  min-height: 44px;
+
+.player-equalizer span {
+  display: block;
+  width: 4px;
+
+  border-radius: 2px;
+
+  background: var(--yellow);
+
+  animation: player-equalizer 0.8s ease-in-out infinite alternate;
+}
+
+.player-equalizer span:nth-child(1) {
+  height: 10px;
+}
+
+.player-equalizer span:nth-child(2) {
+  height: 18px;
+  animation-delay: 0.15s;
+}
+
+.player-equalizer span:nth-child(3) {
+  height: 13px;
+  animation-delay: 0.3s;
+}
+
+.player-equalizer span:nth-child(4) {
+  height: 7px;
+  animation-delay: 0.45s;
+}
+
+@keyframes player-equalizer {
+  from {
+    transform: scaleY(0.55);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* 曲名・アーティスト */
+.player-info {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 2px;
+}
+
+.player-label {
+  margin: 0;
+
+  color: #d9aeba;
+
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.player-info strong,
+.player-info span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player-info strong {
+  color: var(--canvas);
+  font-size: 0.88rem;
+}
+
+.player-info span {
+  color: rgba(255, 249, 231, 0.65);
+  font-size: 0.74rem;
+}
+
+/* 次の曲・閉じる */
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.player-button,
+.icon-button {
+  min-height: 40px;
+
   border: 0;
   border-radius: 8px;
-  color: #fdfdfd;
-  background: rgba(255, 255, 255, .11);
+
+  color: var(--accent-dark);
+  background: var(--yellow);
+
+  font-weight: 700;
+
   cursor: pointer;
 }
-.player-button { padding: 0 13px; }
+
+.player-button {
+  padding: 0 12px;
+}
+
 .icon-button {
-  width: 44px;
-  min-width: 44px;
-  font-size: 1.25rem;
+  width: 40px;
+  min-width: 40px;
+
+  font-size: 1.2rem;
+}
+
+/* YouTubeプレーヤー本体 */
+.player-frame-wrap {
+  width: min(720px, 100%);
+  margin: 12px auto 2px;
+
+  overflow: hidden;
+
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.player-frame-wrap iframe,
+#youtube-player {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border: 0;
 }
 
 .page-shell { width: min(1160px, calc(100% - 48px)); margin: 28px auto 64px; }
