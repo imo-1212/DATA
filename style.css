@@ -219,6 +219,10 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   font-size: 1.2rem;
 }
 
+.player-toggle-button {
+  min-width: 92px;
+}
+
 /* YouTubeプレーヤー本体 */
 .player-frame-wrap {
   width: min(720px, 100%);
@@ -231,6 +235,11 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
 
   aspect-ratio: 16 / 9;
   background: #000;
+}
+
+/* 動画が非表示の場合は余白も消す */
+.player-frame-wrap[hidden] {
+  display: none !important;
 }
 
 .player-frame-wrap iframe,
@@ -754,7 +763,6 @@ select:focus {
   .results-header { align-items: flex-start; flex-direction: column; }
   .results-header .primary-button { width: 100%; }
   .player-inner { padding: 10px 14px; }
-  .player-button { font-size: .82rem; }
   .song-card .thumbnail-button,
   .song-card .thumbnail-placeholder {
     align-self: start;
@@ -764,14 +772,40 @@ select:focus {
     margin: 0;
     aspect-ratio: 16 / 9;
   }
-
+  .player-controls { gap: 5px; }
+  .player-toggle-button, .player-button { min-height: 38px; padding: 0 7px; font-size: 0.68rem; }
+  .player-toggle-button { min-width: 74px; }
+  .icon-button { width: 38px; min-width: 38px; }
   .song-card .card-body {
     margin: 0;
     padding: 10px 51px 10px 11px;
   }
+  .player-video-wrap {
+    width: 100%;
+    margin-top: 9px;
+  }
+
+  .player-fold-row {
+    height: 24px;
+  }
+
+  .player-fold-button {
+    width: 54px;
+    height: 24px;
+
+    border-radius: 0 0 12px 12px;
+  }
+
+  .player-fold-icon::before {
+    font-size: 0.68rem;
+  }
 }
 
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) {
+  .player-video-wrap .player-frame-wrap {
+    transition: none;
+  }
+}
 
 [hidden] {
   display: none !important;
