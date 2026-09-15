@@ -140,6 +140,10 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
 }
 
 .layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 22px; margin-top: 20px; }
+/* ========================================
+   タグフィルター
+======================================== */
+
 .filters {
   position: sticky;
   top: 24px;
@@ -147,35 +151,125 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
 
   max-height: calc(100vh - 48px);
   margin-top: 12px;
-  padding: 20px;
-  overflow: auto;
+  padding: 0;
+  overflow: hidden;
 
   color: var(--ink);
   background: var(--surface);
 
   border: 2px solid var(--accent);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
+  border-radius: 12px;
+
+  box-shadow:
+    5px 6px 0 rgba(172, 50, 75, 0.14);
 }
-.filter-heading, .results-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.filter-heading h2 { margin: 0px 0px; font-size: 1.08rem; }
+
+/* ウィンドウ上部の黄色いバー */
+.filter-window-bar {
+  display: flex;
+  min-height: 32px;
+  align-items: center;
+  gap: 6px;
+
+  padding: 7px 11px;
+
+  color: var(--accent-dark);
+  background: var(--yellow);
+
+  border-bottom: 1px solid var(--accent);
+}
+
+/* 左上の3つの丸 */
+.filter-window-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+
+  background: var(--coral);
+}
+
+.filter-window-title {
+  margin-left: 5px;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* フィルター本文 */
+.filter-body {
+  max-height: calc(100vh - 82px);
+  padding: 17px;
+  overflow-y: auto;
+
+  scrollbar-color: var(--line) transparent;
+  scrollbar-width: thin;
+}
+
+.filter-body::-webkit-scrollbar {
+  width: 7px;
+}
+
+.filter-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--line);
+}
+
+.filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.filter-heading h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
 .text-button {
-  min-height: 35px;
-  padding: 6px 8px;
+  min-height: 34px;
+  padding: 5px 8px;
+
   border: 0;
   border-radius: 6px;
 
   color: var(--accent);
   background: var(--accent-soft);
-  box-shadow: 2px 2px 0 rgba(172, 50, 75, 0.16);
 
-  font-weight: 500;
+  font-size: 0.72rem;
+  font-weight: 700;
+
   cursor: pointer;
 }
 
-  cursor: pointer; }
-.field { display: grid; gap: 7px; margin-top: 20px; }
-.field > span, legend { color: #74716c; font-size: .82rem; font-weight: 600; }
+.text-button:hover {
+  color: #fff;
+  background: var(--accent);
+}
+
+/* 検索欄と並べ替え */
+.field {
+  display: grid;
+  gap: 7px;
+  margin-top: 18px;
+}
+
+.field > span,
+.filter-group legend {
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 input[type="search"],
 select {
   width: 100%;
@@ -186,83 +280,198 @@ select {
   border-radius: 8px;
 
   color: var(--ink);
-  background: var(--surface);
+  background: #fff;
 }
+
 input[type="search"]:focus,
 select:focus {
   border-color: var(--accent);
 }
 
+/* お気に入りだけ表示 */
 .favorite-toggle {
   display: flex;
+  min-height: 46px;
   align-items: center;
   gap: 9px;
-  min-height: 46px;
-  margin-top: 18px;
+
+  margin-top: 16px;
   padding: 8px 10px;
+
+  border: 1px solid transparent;
   border-radius: 8px;
+
   background: var(--soft);
+
   cursor: pointer;
 }
-.favorite-toggle input { width: 14px; height: 14px; accent-color: var(--accent); }
-.favorite-toggle span { flex: 1; font-size: .88rem; font-weight: 700; }
-.favorite-toggle small { color: var(--muted); }
-.selected-filters { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+
+.favorite-toggle:has(input:checked) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.favorite-toggle input {
+  width: 16px;
+  height: 16px;
+
+  accent-color: var(--accent);
+}
+
+.favorite-toggle span {
+  flex: 1;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.favorite-toggle small {
+  color: var(--muted);
+}
+
+/* 選択中の条件 */
+.selected-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 16px;
+}
+
 .selected-filter {
-  min-height: 34px;
-  padding: 5px 9px;
+  min-height: 32px;
+  padding: 5px 8px;
+
   border: 1px solid var(--accent);
-  border-radius: 8px;
+  border-radius: 7px;
+
   color: var(--accent-dark);
   background: var(--accent-soft);
-  font-size: .8rem;
+
+  font-size: 0.74rem;
   font-weight: 700;
+
   cursor: pointer;
 }
-.tag-filter-panel {
-  margin-top: 18px;
-  border: 1px solid #ac324b;
-  border-radius: 8px;
-  background: #fff; 
-  box-shadow: 1px 1px 1px #ac324b;
 
+/* タグ一覧の外枠 */
+.tag-filter-panel {
+  margin-top: 16px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--accent);
+  border-radius: 9px;
+
+  background: #fff;
 }
+
 .tag-filter-panel summary {
   display: flex;
   min-height: 44px;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+
   padding: 9px 11px;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+
   cursor: pointer;
-  font-size: .88rem;
-  font-weight: 750;
   list-style: none;
-  
 }
-.tag-filter-panel summary::-webkit-details-marker { display: none; }
-.tag-filter-panel summary::after { content: "＋"; color: var(--muted); }
-.tag-filter-panel[open] summary::after { content: "−"; }
-.filter-count { display: grid; min-width: 24px; height: 24px; margin-left: auto; place-items: center; border-radius: 12px; color: var(--accent-dark); background: var(--accent-soft); font-size: .72rem; }
-.tag-filter-content { max-height: 350px; overflow: auto; padding: 0px 11px 13px; border-top: 1px solid #ac324b;}
-.filter-group { margin: 12px 0 0; padding: 0px; border: 0; }
-.filter-group legend { margin-bottom: 2px; }
-.button-group { display: flex; flex-wrap: wrap; gap: 5px 5px; }
+
+.tag-filter-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.tag-filter-panel summary::after {
+  content: "＋";
+
+  color: var(--accent);
+}
+
+.tag-filter-panel[open] summary::after {
+  content: "−";
+}
+
+/* 選択数 */
+.filter-count {
+  display: grid;
+  min-width: 24px;
+  height: 24px;
+  margin-left: auto;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+
+  font-size: 0.7rem;
+}
+
+/* タグ一覧 */
+.tag-filter-content {
+  max-height: 350px;
+  padding: 0 11px 13px;
+  overflow-y: auto;
+
+  border-top: 1px solid var(--accent);
+}
+
+.filter-group {
+  margin: 0;
+  padding: 14px 0;
+
+  border: 0;
+  border-bottom: 1px dashed rgba(172, 50, 75, 0.32);
+}
+
+.filter-group:last-child {
+  border-bottom: 0;
+}
+
+.filter-group legend {
+  margin-bottom: 8px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .filter-btn {
-  min-height: 36px;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  min-height: 34px;
+  padding: 6px 9px;
+
+  border: 1px solid #dfd6cf;
+  border-radius: 7px;
+
   color: var(--muted);
   background: var(--soft);
+
+  font-size: 0.76rem;
+
   cursor: pointer;
 }
-.filter-btn:hover { border-color: #b8b5b0; }
-.filter-btn.active, .selected-filter {
+
+.filter-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+/* 選択中 */
+.filter-btn.active,
+.selected-filter {
   color: var(--accent-dark);
   border-color: var(--accent);
   background: var(--accent-soft);
 }
+
+
 .results-header { min-height: 52px; margin-bottom: 15px; }
 .results-header p { margin: 0; }
 .result-count strong { font-size: 1.45rem; }
