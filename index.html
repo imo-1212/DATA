@@ -53,56 +53,109 @@
     </section>
 
     <div class="layout">
-      <aside class="filters" aria-label="検索と絞り込み">
-        <div class="filter-heading">
-          <h2>絞り込み</h2>
-          <button id="reset-btn" class="text-button" type="button">リセット</button>
-        </div>
+<aside class="filters" aria-label="検索と絞り込み">
+  <!-- ウィンドウ上部 -->
+  <div class="filter-window-bar" aria-hidden="true">
+    <span class="filter-window-dot"></span>
+    <span class="filter-window-dot"></span>
+    <span class="filter-window-dot"></span>
 
-        <label class="field">
-          <span>キーワード検索</span>
-          <input id="search-input" type="search" placeholder="曲名、アーティスト、コラボ…">
-        </label>
+    <span class="filter-window-title">TAG FILTER</span>
+  </div>
 
-        <label class="field">
-          <span>並べ替え</span>
-          <select id="sort-select">
-            <option value="date-desc">日付：新しい順</option>
-            <option value="date-asc">日付：古い順</option>
-            <option value="title-asc">曲名：昇順</option>
-            <option value="title-desc">曲名：降順</option>
-            <option value="artist-asc">アーティスト：昇順</option>
-            <option value="artist-desc">アーティスト：降順</option>
-          </select>
-        </label>
+  <div class="filter-body">
+    <div class="filter-heading">
+      <h2>絞り込み</h2>
 
-        <label class="favorite-toggle">
-          <input id="favorites-only" type="checkbox">
-          <span>お気に入りのみ</span>
-          <small id="favorite-count">0</small>
-        </label>
+      <button
+        id="reset-btn"
+        class="text-button"
+        type="button"
+      >
+        RESET
+      </button>
+    </div>
 
-        <div id="selected-filters" class="selected-filters" hidden></div>
+    <label class="field">
+      <span>キーワード検索</span>
 
-        <details id="tag-filter-panel" class="tag-filter-panel">
-          <summary>
-            <span>タグを選ぶ</span>
-            <span id="selected-filter-count" class="filter-count">0</span>
-          </summary>
-          <div class="tag-filter-content">
-            <fieldset class="filter-group">
-              <legend>形態・種類</legend>
-              <div id="filter-type" class="button-group"></div>
-            </fieldset>
+      <input
+        id="search-input"
+        type="search"
+        placeholder="曲名、アーティスト、コラボ…"
+      >
+    </label>
 
-            <fieldset class="filter-group">
-              <legend>歌唱・ライブ名</legend>
-              <div id="filter-sing" class="button-group"></div>
-            </fieldset>
-          </div>
-        </details>
-      </aside>
+    <label class="field">
+      <span>並べ替え</span>
 
+      <select id="sort-select">
+        <option value="date-desc">日付：新しい順</option>
+        <option value="date-asc">日付：古い順</option>
+        <option value="title-asc">曲名：昇順</option>
+        <option value="title-desc">曲名：降順</option>
+        <option value="artist-asc">アーティスト：昇順</option>
+        <option value="artist-desc">アーティスト：降順</option>
+      </select>
+    </label>
+
+    <label class="favorite-toggle">
+      <input
+        id="favorites-only"
+        type="checkbox"
+      >
+
+      <span>お気に入りのみ</span>
+      <small id="favorite-count">0</small>
+    </label>
+
+    <!-- 選択中のタグ -->
+    <div
+      id="selected-filters"
+      class="selected-filters"
+      hidden
+    ></div>
+
+    <!-- タグを選ぶ -->
+    <details
+      id="tag-filter-panel"
+      class="tag-filter-panel"
+      open
+    >
+      <summary>
+        <span>タグを選ぶ</span>
+
+        <span
+          id="selected-filter-count"
+          class="filter-count"
+        >
+          0
+        </span>
+      </summary>
+
+      <div class="tag-filter-content">
+        <fieldset class="filter-group">
+          <legend>形態・種類</legend>
+
+          <div
+            id="filter-type"
+            class="button-group"
+          ></div>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend>歌唱・ライブ名</legend>
+
+          <div
+            id="filter-sing"
+            class="button-group"
+          ></div>
+        </fieldset>
+      </div>
+    </details>
+  </div>
+  
+</aside>
       <section class="results" aria-live="polite">
         <div class="results-header">
           <div>
