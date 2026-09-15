@@ -103,11 +103,12 @@ if (togglePlayerVideoButton) {
         ) === "true";
 
       setPlayerVideoVisible(!isVisible);
+  $("#close-player").addEventListener("click", closePlayer);
     }
   );
 }
   
-  $("#close-player").addEventListener("click", closePlayer);
+
 
 function changeMode(mode) {
   state.mode = mode;
