@@ -31,14 +31,19 @@ let shuffleHistory = [];
 
 const $ = selector => document.querySelector(selector);
 
-window.addEventListener("DOMContentLoaded", () => {
-  buildFilters();
-  bindEvents();
-  updateModeButtons();
-  updateFavoriteCount();
-  updateSelectedFilters();
-  render({ resetLimit: true });
-});
+window.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    buildFilters();
+    bindEvents();
+
+    updateModeButtons();
+    updateFavoriteCount();
+    updateSelectedFilters();
+
+    render({ resetLimit: true });
+  }
+);
 
 function bindEvents() {
   $("#mode-all").addEventListener("click", () => changeMode("all"));
