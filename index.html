@@ -27,7 +27,7 @@
   hidden
 >
   <div class="player-shell">
-    <!-- 常に表示するNOW PLAYINGバー -->
+    <!-- 常に残る部分 -->
     <div class="player-statusbar">
       <div class="player-equalizer" aria-hidden="true">
         <span></span>
@@ -37,7 +37,9 @@
       </div>
 
       <div class="player-info">
-        <p class="player-label">NOW PLAYING</p>
+        <p class="player-label">
+          🔻NOW PLAYING🔻
+        </p>
 
         <strong id="player-title">
           選択した楽曲
@@ -60,14 +62,13 @@
           class="icon-button"
           type="button"
           aria-label="プレーヤーを閉じる"
-          title="プレーヤーを閉じる"
         >
           ×
         </button>
       </div>
     </div>
 
-    <!-- 開閉可能な動画エリア -->
+    <!-- 開閉する部分 -->
     <div class="player-video-wrap">
       <div
         id="player-video-area"
@@ -76,6 +77,7 @@
         <div id="youtube-player"></div>
       </div>
 
+      <!-- 必ず動画より後ろ -->
       <div class="player-fold-row">
         <button
           id="toggle-player-video"
