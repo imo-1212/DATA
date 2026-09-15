@@ -251,6 +251,93 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   border: 0;
 }
 
+.player-video-wrap {
+  display: flex;
+  width: min(720px, 100%);
+  margin: 12px auto 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* YouTube動画を上にする */
+.player-video-wrap .player-frame-wrap {
+  order: 1;
+
+  width: 100%;
+  max-height: 500px;
+  margin: 0;
+
+  overflow: hidden;
+
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+
+  opacity: 1;
+  aspect-ratio: 16 / 9;
+  background: #000;
+
+  transition:
+    max-height 0.25s ease,
+    opacity 0.18s ease,
+    border-width 0.25s ease;
+}
+
+/* ▼ボタンを動画の下にする */
+.player-fold-row {
+  order: 2;
+
+  display: flex;
+  height: 26px;
+  justify-content: center;
+
+  margin-top: -1px;
+}
+
+/* 動画を収納した状態 */
+.player-video-wrap
+.player-frame-wrap.is-collapsed {
+  max-height: 0;
+
+  opacity: 0;
+
+  border-top-width: 0;
+  border-bottom-width: 0;
+
+  pointer-events: none;
+}
+
+.player-fold-button {
+  display: grid;
+  width: 58px;
+  height: 26px;
+  place-items: center;
+
+  padding: 0;
+
+  border: 2px solid var(--accent);
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+
+  color: #fff;
+  background: var(--accent);
+
+  cursor: pointer;
+}
+
+.player-fold-icon::before {
+  content: "▼";
+
+  display: block;
+
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.player-fold-button[aria-expanded="false"]
+.player-fold-icon::before {
+  content: "▲";
+}
+
 .page-shell { width: min(1160px, calc(100% - 48px)); margin: 28px auto 64px; }
 .mode-panel {
   display: flex;
