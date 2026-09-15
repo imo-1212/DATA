@@ -1140,3 +1140,67 @@ select:focus {
   border: 0px solid #AC324B;
   box-shadow: 0px 2px 10px -5px #777777; border-radius: 100px;
 }
+
+@media (max-width: 640px) {
+  /* タグフィルター */
+  .filters {
+    position: static;
+
+    width: 100%;
+    max-height: none;
+    margin-top: 0;
+  }
+
+  .filter-body {
+    max-height: none;
+  }
+
+  /* NOW PLAYING */
+  .player-panel {
+    padding: 8px 10px;
+  }
+
+  .player-statusbar {
+    min-height: 54px;
+    gap: 9px;
+
+    padding: 7px 8px 7px 11px;
+  }
+
+  .player-equalizer {
+    gap: 2px;
+  }
+
+  .player-equalizer span {
+    width: 3px;
+  }
+
+  .player-info strong {
+    font-size: 0.78rem;
+  }
+
+  .player-info span {
+    font-size: 0.68rem;
+  }
+
+  .player-button {
+    padding: 0 8px;
+
+    font-size: 0.72rem;
+  }
+
+  .icon-button {
+    width: 38px;
+    min-width: 38px;
+  }
+
+  .player-frame-wrap {
+    margin-top: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .player-equalizer span {
+    animation: none;
+  }
+}
