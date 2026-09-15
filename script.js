@@ -82,11 +82,20 @@ function bindEvents() {
     playNextShuffleSong(true);
   });
 
-$("#toggle-player-video").addEventListener("click", () => {
-  const videoArea = $("#player-video-area");
-  const isCurrentlyVisible = !videoArea.hidden;
-  setPlayerVideoVisible(!isCurrentlyVisible);
-  });
+$("#toggle-player-video").addEventListener(
+  "click",
+  () => {
+    const toggleButton =
+      $("#toggle-player-video");
+
+    const isVisible =
+      toggleButton.getAttribute(
+        "aria-expanded"
+      ) === "true";
+
+    setPlayerVideoVisible(!isVisible);
+  }
+);
   
   $("#close-player").addEventListener("click", closePlayer);
 }
@@ -572,11 +581,6 @@ function playSong(song, { preserveShuffle = false } = {}) {
 
 $("#player-panel").hidden = false;
 
-/* カードから再生した場合は動画を開く */
-if (!preserveShuffle) {
-  setPlayerVideoVisible(true);
-}
-
 $("#player-title").textContent =
   `${song.title || "タイトルなし"}（準備中…）`;
   $("#player-artist").textContent = song.artist || "";
@@ -732,24 +736,33 @@ function setPlayerVideoVisible(visible) {
   const videoArea = $("#player-video-area");
   const toggleButton = $("#toggle-player-video");
 
-  videoArea.hidden = !visible;
-
-  toggleButton.textContent = visible
-    ? "動画を隠す"
-    : "動画を表示";
+  /*
+   * hidden属性は使わず、クラスで高さを変更します。
+   * YouTubeプレーヤー自体はDOM上に残ります。
+   */
+  videoArea.classList.toggle(
+    "is-collapsed",
+    !visible
+  );
 
   toggleButton.setAttribute(
     "aria-expanded",
     String(visible)
   );
 
-  /*
-   * 動画を隠したときは一時停止する。
-   * 非表示状態で音だけ流れるのを防ぎます。
-   */
-  if (!visible && playerReady && player) {
-    player.pauseVideo();
-  }
+  const label = visible
+    ? "動画を収納"
+    : "動画を表示";
+
+  toggleButton.setAttribute(
+    "aria-label",
+    label
+  );
+
+  toggleButton.setAttribute(
+    "title",
+    label
+  );
 }
 
 function getSourceStartSeconds(source) {
