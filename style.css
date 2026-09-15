@@ -255,8 +255,7 @@ input[type="search"], select {
   background: rgba(53, 27, 35, 0.96);
   border: 2px solid var(--accent);
   border-radius: 11px;
-  box-shadow:
-  4px 4px 0 rgba(172, 50, 75, 0.26);
+  box-shadow: 4px 4px 0 rgba(172, 50, 75, 0.26);
   backdrop-filter: blur(10px);
 }
 .player-equalizer { display: flex; height: 22px; align-items: center; gap: 3px; }
