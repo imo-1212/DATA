@@ -28033,7 +28033,7 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "30",
+      "3D",
       "ANISAMA V神"
     ],
     "collabo": [
