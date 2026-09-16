@@ -304,7 +304,7 @@ function createCard(song) {
   if (youtubeSource) {
     const youtube = getYouTubeInfo(youtubeSource.url);
     media = `<button class="thumbnail-button" type="button" data-play aria-label="${escapeAttribute(song.title || "楽曲")}をサイト内で再生">
-      <img class="thumbnail" src="${escapeAttribute(youtubeThumbnailUrl(youtube.id, "hqdefault.jpg"))}" alt="" loading="lazy" data-thumbnail-id="${escapeAttribute(youtube.id)}">
+      <img class="thumbnail" src="${escapeAttribute(youtubeThumbnailUrl(youtube.id, "mqdefault.jpg"))}" alt="" loading="lazy" data-thumbnail-id="${escapeAttribute(youtube.id)}">
       <span class="play-mark" aria-hidden="true">▶</span>
     </button>`;
   } else {
