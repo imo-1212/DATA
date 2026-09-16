@@ -253,6 +253,7 @@ input[type="search"], select {
   left: auto;
   z-index: 2;
   display: flex;
+  width: 100%;
   min-height: 58px;
   align-items: center;
   gap: 13px;
@@ -280,14 +281,6 @@ input[type="search"], select {
 .player-button, .icon-button { min-height: 40px; color: var(--accent-dark); border: 0; background: var(--yellow); font-weight: 700; }
 .player-button { padding: 0 12px; }
 .icon-button { width: 40px; min-width: 40px; font-size: 1.2rem; }
-.player-video-wrap {
-  display: flex;
-  margin: -2px;
-  flex-direction: column;
-  align-items: stretch;
-}
-.player-statusbar,
-.player-video-wrap {
 .player-video-wrap {
   display: flex;
   width: min(720px, 100%);
@@ -365,14 +358,7 @@ input[type="search"], select {
   background: #2f2430;
 }
 .thumbnail-button { cursor: pointer; }
-.thumbnail {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  background: #2f2430;
-}
+.thumbnail { display: block; width: 100%; height: 100%; object-fit: cover; }
 .thumbnail-placeholder { place-items: center; color: #fff; font-size: .78rem; font-weight: 700; }
 .play-mark {
   position: absolute;
@@ -474,16 +460,16 @@ input[type="search"], select {
   .results-header { align-items: flex-start; }
   .results-header .primary-button { min-height: 40px; font-size: .78rem; }
   .player-panel {
-    top: 4px;
-    width: 100%;
-    margin-bottom: 12px;
-    padding-bottom: 5px;
-
+    padding-top:
+      calc(8px + env(safe-area-inset-top));
   }
   .player-statusbar {
-    width: 100%;
+    top: max(2.5px, env(safe-area-inset-top));
+    left: 50%;
+    width: calc(100% - 20px);
     min-height: 56px;
     padding: 7px 8px 7px 10px;
+    transform: translateX(-50%);
   }
   .player-equalizer { gap: 2px; }
   .player-equalizer span { width: 3px; }
@@ -492,8 +478,13 @@ input[type="search"], select {
   .player-controls { gap: 5px; }
   .player-button { min-height: 38px; padding: 0 8px; font-size: .68rem; }
   .icon-button { width: 38px; min-width: 38px; }
-  .player-video-wrap { margin-top: -2px;  width: calc(100% - 20px); }
-  .player-fold-row { height: 24px; }
+  .player-video-wrap {
+    width: 100%;
+    margin-top: -2px;
+  }
+  .player-fold-row {
+    height: 24px;
+  }
   .player-fold-button {
     width: 54px;
     height: 24px;
