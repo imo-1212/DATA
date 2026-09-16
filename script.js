@@ -781,10 +781,19 @@ function normalizeSortText(value) {
 }
 
 function asArray(value) {
-  if (Array.isArray(value)) return value.filter(item => item !== null && item !== undefined && item !== "");
-  if (value === null || value === undefined || value === "") return [];
-  return String(value).split(/[,、]/).map(item => item.trim()).filter(Boolean);
-}
+  if (Array.isArray(value)) { return value.filter(
+        item =>
+        item !== null &&
+        item !== undefined &&
+        item !== ""
+    );
+  }
+  if (
+    value === null ||
+    value === undefined ||
+    value === ""
+  ) { return [];}
+  return String(value) .split(",") .map(item => item.trim()) .filter(Boolean);}
 
 function renderMemo(value) {
   return escapeHtml(value).replace(
