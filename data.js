@@ -22494,8 +22494,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「おそろいの地獄だね」（Kakeru Yumeoi - In the same inferno)",
@@ -22531,8 +22530,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「命に価値はないのだから」（Kakeru Yumeoi - Life is worthless)",
@@ -22866,8 +22864,7 @@ const songsData = [
     "sing": [
       "1人",
       "3D",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "【歌詞付き】オリジナリティ欠乏症 (LIVE ver.) / 夢追翔【にじさんじ】",
@@ -23245,8 +23242,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「人間じゃないよな」（Kakeru Yumeoi - Wanna Be Human) #新曲_人間じゃないよな",
@@ -23698,8 +23694,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "2nd Full Album「拝啓、匣庭の中より」",
@@ -23734,8 +23729,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "2nd Full Album「拝啓、匣庭の中より」",
@@ -23770,8 +23764,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "2nd Full Album「拝啓、匣庭の中より」",
@@ -23807,8 +23800,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「共感性終止」（Kakeru Yumeoi - End of sympathy)",
@@ -23879,8 +23871,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "拝啓",
-      "匣庭の中より"
+      "拝啓、匣庭の中より"
     ],
     "collabo": [],
     "sourceTitle": "夢追翔 MV「音楽なんざクソくらえ」（Kakeru Yumeoi - Fxxk the music) #音楽なんざクソくらえ",
@@ -28033,7 +28024,7 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "3D",
+      "30",
       "ANISAMA V神"
     ],
     "collabo": [
