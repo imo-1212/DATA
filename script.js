@@ -70,6 +70,10 @@ function bindEvents() {
     setShuffleEnabled(true);
     playNextShuffleSong();
   });
+  on( #player-shuffle-button", "click", () => {
+    if (!shuffleEnabled) { setShuffleEnabled(true); }
+    playNextShuffleSong(true);
+  });
   on("#next-player", "click", () => playNextShuffleSong(true));
   on("#close-player", "click", closePlayer);
   on("#toggle-player-video", "click", event => {
@@ -537,6 +541,12 @@ function setShuffleEnabled(enabled) {
   if (!button) return;
   button.textContent = enabled ? "シャッフル停止" : "シャッフル再生";
   button.setAttribute("aria-pressed", String(enabled));
+  const playerShuffleButton =
+  $("#player-shuffle-button");
+if (playerShuffleButton) {
+  playerShuffleButton.classList.toggle( "active", enabled );
+  playerShuffleButton.setAttribute( "aria-pressed", String(enabled));
+}
 }
 
 function getShuffleCandidates() {
@@ -567,6 +577,7 @@ function playSong(song, { preserveShuffle = false } = {}) {
   if (!preserveShuffle) setShuffleEnabled(false);
   currentSong = song;
   currentSource = source;
+  updatePlayerDetails(song, source);
   pendingSeekSeconds = getSourceStartSeconds(source);
   queuedSong = song;
   const panel = $("#player-panel");
@@ -596,6 +607,63 @@ function setPlayerVideoVisible(visible) {
   const label = visible ? "動画を収納" : "動画を表示";
   toggleButton.setAttribute("aria-label", label);
   toggleButton.setAttribute("title", label);
+}
+
+function updatePlayerDetails(song, source) {
+  const dateElement =
+    $("#player-detail-date");
+
+  const typesElement =
+    $("#player-detail-types");
+
+  const linkElement =
+    $("#player-detail-link");
+
+  const tagsElement =
+    $("#player-detail-tags");
+
+  if (dateElement) {
+    dateElement.textContent =
+      song.date || "日付不明";
+  }
+
+  if (typesElement) {
+    const types = [
+      ...asArray(song.type),
+      ...asArray(song.sing)
+    ];
+
+    typesElement.textContent =
+      types.slice(0, 3).join(" / ");
+  }
+
+  if (linkElement) {
+    if (source?.url) {
+      linkElement.href = source.url;
+
+      linkElement.textContent =
+        song.sourceTitle ||
+        "元配信を開く";
+
+      linkElement.hidden = false;
+    } else {
+      linkElement.removeAttribute("href");
+      linkElement.textContent = "URLなし";
+      linkElement.hidden = false;
+    }
+  }
+
+  if (tagsElement) {
+    const tags = [
+      ...asArray(song.collabo),
+      ...asArray(song.keyword)
+    ];
+
+    tagsElement.textContent =
+      tags.length
+        ? tags.slice(0, 8).join(" / ")
+        : "タグなし";
+  }
 }
 
 function loadYouTubeApi() {
@@ -654,6 +722,7 @@ function loadSongIntoPlayer(song) {
   if (!youtube || !playerReady) return;
   currentSong = song;
   currentSource = source;
+  updatePlayerDetails(song, source);
   pendingSeekSeconds = getSourceStartSeconds(source);
   if ($("#player-title")) $("#player-title").textContent = song.title || "タイトルなし";
   if ($("#player-artist")) $("#player-artist").textContent = song.artist || "";
