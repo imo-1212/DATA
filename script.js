@@ -70,10 +70,13 @@ function bindEvents() {
     setShuffleEnabled(true);
     playNextShuffleSong();
   });
-  on( #player-shuffle-button", "click", () => {
-    if (!shuffleEnabled) { setShuffleEnabled(true); }
-    playNextShuffleSong(true);
-  });
+on("#player-shuffle-button", "click", () => {
+  if (!shuffleEnabled) {
+    setShuffleEnabled(true);
+  }
+
+  playNextShuffleSong(true);
+});
   on("#next-player", "click", () => playNextShuffleSong(true));
   on("#close-player", "click", closePlayer);
   on("#toggle-player-video", "click", event => {
