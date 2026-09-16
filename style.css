@@ -365,7 +365,14 @@ input[type="search"], select {
   background: #2f2430;
 }
 .thumbnail-button { cursor: pointer; }
-.thumbnail { display: block; width: 100%; height: 100%; object-fit: cover; }
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: #2f2430;
+}
 .thumbnail-placeholder { place-items: center; color: #fff; font-size: .78rem; font-weight: 700; }
 .play-mark {
   position: absolute;
