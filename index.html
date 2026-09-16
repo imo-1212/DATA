@@ -105,15 +105,93 @@
           <div class="player-statusbar">
             <div class="player-equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
             <div class="player-info">
-              <p class="player-label">NOW PLAYING</p>
+              <p class="player-label">🔻NOW PLAYING🔻</p>
               <strong id="player-title">選択した楽曲</strong>
               <span id="player-artist"></span>
-            </div>
-            <div class="player-controls">
-              <button id="next-player" class="player-button" type="button">次の曲</button>
-              <button id="close-player" class="icon-button" type="button" aria-label="プレーヤーを閉じる" title="プレーヤーを閉じる">×</button>
-            </div>
-          </div>
+        </div>
+            
+ <!-- PCのみ表示する情報 -->
+  <div class="player-desktop-details">
+    <p class="player-detail-line">
+      <span id="player-detail-date"></span>
+      <span id="player-detail-types"></span>
+    </p>
+
+    <a
+      id="player-detail-link"
+      class="player-detail-link"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      元配信を開く
+    </a>
+
+    <p
+      id="player-detail-tags"
+      class="player-detail-tags"
+    ></p>
+  </div>
+</div>
+              
+<div class="player-controls">
+  <!-- スマホではこれまでどおり「次の曲」 -->
+  <button
+    id="next-player"
+    class="player-button mobile-next-button"
+    type="button"
+  >
+    次の曲
+  </button>
+
+  <!-- 閉じるボタンはPC・スマホ共通 -->
+  <button
+    id="close-player"
+    class="icon-button"
+    type="button"
+    aria-label="プレーヤーを閉じる"
+    title="プレーヤーを閉じる"
+  >
+    ×
+  </button>
+
+  <!-- PC専用シャッフルボタン -->
+  <button
+    id="player-shuffle-button"
+    class="icon-button desktop-shuffle-button"
+    type="button"
+    aria-label="シャッフルで次の曲を再生"
+    title="シャッフルで次の曲を再生"
+    aria-pressed="false"
+  >
+    <svg
+      class="shuffle-icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        d="M4 7h3.5c2.5 0 3.8 1.4 5.2 4
+           1.4 2.6 2.7 4 5.3 4H20"
+      ></path>
+
+      <path
+        d="M17 12l3 3-3 3"
+      ></path>
+
+      <path
+        d="M4 17h3.5c1.7 0 2.8-.7 3.8-2"
+      ></path>
+
+      <path
+        d="M13.5 8.8C14.7 7.6 16 7 18 7h2"
+      ></path>
+
+      <path
+        d="M17 4l3 3-3 3"
+      ></path>
+    </svg>
+  </button>
+ </div>
 
           <div class="player-video-wrap">
             <div id="player-video-area" class="player-frame-wrap">
