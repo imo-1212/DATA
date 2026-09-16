@@ -321,10 +321,76 @@ function createCard(song) {
   const isYouTubeSource = openableSource?.platform === "youtube";
   const sourceLabel = isYouTubeSource ? "YouTubeで開く" : "元配信を開く";
   const targetAttributes = isYouTubeSource ? "" : `target="_blank" rel="noopener noreferrer"`;
-  const sourceAction = openableSource ? `<a class="action-button icon-action" href="${escapeAttribute(openableSource.url)}" ${targetAttributes} aria-label="${sourceLabel}" title="${sourceLabel}" data-tooltip="${sourceLabel}">↗</a>` : "";
-  const lyricsAction = song.kasi ? `<a class="action-button" href="${escapeAttribute(song.kasi)}" target="_blank" rel="noopener noreferrer" aria-label="歌詞ページを開く" title="歌詞ページを開く" data-tooltip="歌詞ページを開く">歌詞</a>` : "";
-  const streamingAction = song.link ? `<a class="action-button link-icon-button" href="${escapeAttribute(song.link)}" target="_blank" rel="noopener noreferrer" aria-label="楽曲配信ページを開く" title="楽曲配信ページを開く" data-tooltip="楽曲配信ページを開く"><img src="./link-icon.svg" alt="" aria-hidden="true"></a>` : "";
+  const sourceAction = openableSource
+  ? `
+    <a
+      class="action-button icon-action"
+      href="${escapeAttribute(openableSource.url)}"
+      ${targetAttributes}
+      aria-label="${sourceLabel}"
+      title="${sourceLabel}"
+      data-tooltip="${sourceLabel}"
+    >
+      <span
+        class="action-symbol"
+        aria-hidden="true"
+      >
+        ↗
+      </span>
 
+      <span class="action-label">
+        元配信
+      </span>
+    </a>
+  `
+  : "";
+  
+  const lyricsAction = song.kasi
+  ? `
+    <a
+      class="action-button lyrics-action"
+      href="${escapeAttribute(song.kasi)}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="歌詞ページを開く"
+      title="歌詞ページを開く"
+      data-tooltip="歌詞ページを開く"
+    >
+      <span aria-hidden="true">
+        歌詞
+      </span>
+
+      <span class="action-label">
+        歌詞
+      </span>
+    </a>
+  `
+  : "";
+  
+  const streamingAction = song.link
+  ? `
+    <a
+      class="action-button link-icon-button"
+      href="${escapeAttribute(song.link)}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="楽曲配信ページを開く"
+      title="楽曲配信ページを開く"
+      data-tooltip="楽曲配信ページを開く"
+    >
+      <img
+        src="./link-icon.svg"
+        alt=""
+        aria-hidden="true"
+      >
+
+      <span class="action-label">
+        LINK
+      </span>
+    </a>
+  `
+  : "";
+  
   article.innerHTML = `${media}
     <div class="card-body">
       <div class="card-meta"><time>${escapeHtml(song.date || "日付不明")}</time>${typeBadges}${statusBadge}</div>
@@ -332,14 +398,56 @@ function createCard(song) {
       <p class="song-artist">${escapeHtml(song.artist || "アーティスト不明")}</p>
       ${song.sourceTitle ? `<p class="song-source">${escapeHtml(song.sourceTitle)}</p>` : ""}
       ${tagHtml ? `<div class="tag-list">${tagHtml}</div>` : ""}
-      ${song.memo ? `<p class="memo">${renderMemo(song.memo)}</p>` : ""}
-      <div class="card-actions">
-        ${sourceAction}${lyricsAction}${streamingAction}
-        <button class="favorite-button${isFavorite ? " active" : ""}" type="button" data-favorite aria-pressed="${isFavorite}" aria-label="${isFavorite ? "お気に入りから削除" : "お気に入りに追加"}" title="${isFavorite ? "お気に入りから削除" : "お気に入りに追加"}">
-          <svg class="favorite-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 L14.7 8.9 L20.7 9.8 L16.3 14 L17.4 20 L12 17.2 L6.6 20 L7.7 14 L3.3 9.8 L9.3 8.9 Z"></path></svg>
-        </button>
-      </div>
-    </div>`;
+${song.memo
+  ? `<p class="memo">${renderMemo(song.memo)}</p>`
+  : ""
+}
+
+</div>
+
+<div class="card-actions">
+  ${sourceAction}
+  ${lyricsAction}
+  ${streamingAction}
+
+  <button
+    class="favorite-button${isFavorite ? " active" : ""}"
+    type="button"
+    data-favorite
+    aria-pressed="${isFavorite}"
+    aria-label="${isFavorite
+      ? "お気に入りから削除"
+      : "お気に入りに追加"
+    }"
+    title="${isFavorite
+      ? "お気に入りから削除"
+      : "お気に入りに追加"
+    }"
+  >
+    <svg
+      class="favorite-star"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path d="M12 3.5
+               L14.7 8.9
+               L20.7 9.8
+               L16.3 14
+               L17.4 20
+               L12 17.2
+               L6.6 20
+               L7.7 14
+               L3.3 9.8
+               L9.3 8.9
+               Z">
+      </path>
+    </svg>
+
+    <span class="action-label">
+      保存
+    </span>
+  </button>
+</div>`;
 
   const image = article.querySelector(".thumbnail");
   image?.addEventListener("error", () => {
