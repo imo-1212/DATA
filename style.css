@@ -315,8 +315,7 @@ input[type="search"], select {
 }
 .player-fold-icon::before { content: "▼"; display: block; font-size: .72rem; line-height: 1; }
 .player-fold-button[aria-expanded="false"] .player-fold-icon::before { content: "▲"; }
-.player-desktop-details,
-.desktop-shuffle-button { display: none; }
+.player-desktop-details, .desktop-shuffle-button { display: none; }
 
 .song-grid { display: flex; flex-direction: column; gap: 12px; }
 .song-card {
@@ -440,7 +439,8 @@ input[type="search"], select {
    transform: translateX(-50%);
    border-radius: 14px 14px 0 0 ;  
 }
-
+}
+  
 @media (max-width: 640px) {
   .site-header { padding: 28px 18px; }
   .header-inner { display: block; }
