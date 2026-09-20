@@ -19,15 +19,6 @@ let liveTags =
     !SING_COUNT_TAGS.includes(value)
   );
 
-/*
- * ライブ名などは複数選択可能
- */
-createFilterButtons(
-  "#filter-sing","#filter-sing-count",
-  liveTags,
-  state.selectedSings
-);
-  
 /* 人数 */
 const SING_COUNT_TAGS = [
  "コラボ",
