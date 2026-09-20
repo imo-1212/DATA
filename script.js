@@ -3,21 +3,6 @@
 const songs = typeof songsData !== "undefined" && Array.isArray(songsData) ? [...songsData] : [];
 const PAGE_SIZE = 60;
 const FAVORITES_KEY = "yumeoi-song-favorites-v1";
-/*
- * 人数タグ
- */
-const countTags =
-  SING_COUNT_TAGS.filter(value =>
-    allSingTags.includes(value)
-  );
-
-/*
- * 人数以外の歌唱・ライブ名
- */
-let liveTags =
-  allSingTags.filter(value =>
-    !SING_COUNT_TAGS.includes(value)
-  );
 
 /* 人数 */
 const SING_COUNT_TAGS = [
@@ -36,6 +21,7 @@ const SING_STYLE_TAGS = [
   "アカペラ",
   "コーラス",
   "ワンフレーズ",
+  "ワンコーラス",
   "ジングル",
   "BGM",
   "生演奏",
