@@ -643,8 +643,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "アカペラ",
-      "ワンフレーズ"
+      "アカペラ"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】03_夢追翔のトークライブ～マシュマロを食む～【にじさんじSEEDs】",
@@ -680,7 +679,6 @@ const songsData = [
     "sing": [
       "1人",
       "アカペラ",
-      "ワンフレーズ",
       "プリティシリーズ"
     ],
     "collabo": [],
@@ -718,8 +716,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "アカペラ",
-      "ワンフレーズ"
+      "アカペラ"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】03_夢追翔のトークライブ～マシュマロを食む～【にじさんじSEEDs】",
@@ -755,7 +752,6 @@ const songsData = [
     "sing": [
       "1人",
       "アカペラ",
-      "ワンフレーズ",
       "プリティシリーズ"
     ],
     "collabo": [],
@@ -1224,7 +1220,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "生演奏",
-      "コラボ"
+      "コラボ",
+      "ワンコーラス"
     ],
     "collabo": [
       "字ぴろぱる",
@@ -1304,7 +1301,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "生演奏",
-      "コラボ"
+      "コラボ",
+      "ワンコーラス"
     ],
     "collabo": [
       "字ぴろぱる",
@@ -1424,7 +1422,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "生演奏",
-      "コラボ"
+      "コラボ",
+      "ワンコーラス"
     ],
     "collabo": [
       "字ぴろぱる",
@@ -1617,7 +1616,8 @@ const songsData = [
     ],
     "sing": [
       "コラボ",
-      "アカペラ"
+      "アカペラ",
+      "ワンフレーズ"
     ],
     "collabo": [
       "緑仙",
@@ -2643,7 +2643,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "生演奏",
-      "廃墟セッション"
+      "廃墟セッション",
+      "ワンフレーズ"
     ],
     "collabo": [
       "字ぴろぱる",
@@ -3238,7 +3239,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "生演奏",
-      "コラボ"
+      "コラボ",
+      "ワンフレーズ"
     ],
     "collabo": [
       "字ぴろぱる",
@@ -3440,7 +3442,7 @@ const songsData = [
       "3人以上",
       "生演奏",
       "コラボ",
-      "ワンフレーズ"
+      "ワンコーラス"
     ],
     "collabo": [
       "字ぴろぱる",
@@ -3792,7 +3794,7 @@ const songsData = [
       "生演奏",
       "コラボ",
       "アカペラ",
-      "ワンフレーズ"
+      "ワンコーラス"
     ],
     "collabo": [
       "字ぴろぱる",
@@ -4988,8 +4990,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -5028,7 +5031,8 @@ const songsData = [
     "sing": [
       "1人",
       "アカペラ",
-      "生活音・雑談枠"
+      "生活音・雑談枠",
+      "ワンフレーズ"
     ],
     "collabo": [],
     "sourceTitle": "【テスト配信】ゆめお、作業するってよ",
@@ -5063,7 +5067,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "アカペラ"
+      "ワンフレーズ"
     ],
     "collabo": [],
     "sourceTitle": "",
@@ -5437,9 +5441,12 @@ const songsData = [
       "Twitter"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ワンコーラス"
     ],
-    "collabo": [],
+    "collabo": [
+      "轟京子"
+    ],
     "sourceTitle": "",
     "kasi": "",
     "link": "",
@@ -5471,9 +5478,12 @@ const songsData = [
       "Twitter"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ワンコーラス"
     ],
-    "collabo": [],
+    "collabo": [
+      "轟京子"
+    ],
     "sourceTitle": "",
     "kasi": "",
     "link": "",
@@ -6772,6 +6782,7 @@ const songsData = [
       "配信"
     ],
     "sing": [
+      "1人",
       "コラボ",
       "ラップ"
     ],
@@ -6961,8 +6972,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -6999,8 +7011,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -7037,6 +7050,7 @@ const songsData = [
       "配信"
     ],
     "sing": [
+      "2人",
       "コラボ",
       "ラップ"
     ],
@@ -7953,7 +7967,8 @@ const songsData = [
       "2人",
       "コラボ",
       "生演奏",
-      "音楽で遊ぶ企画"
+      "音楽で遊ぶ企画",
+      "ワンフレーズ"
     ],
     "collabo": [
       "字ぴろぱる"
@@ -7988,6 +8003,7 @@ const songsData = [
       "配信"
     ],
     "sing": [
+      "1人",
       "コラボ",
       "ラップ"
     ],
@@ -8052,7 +8068,7 @@ const songsData = [
     "id": "perf-000213",
     "date": "2019/02/24",
     "title": "辿りつく詩",
-    "titleYomi": "たどりつくし",
+    "titleYomi": "たどりつくうた",
     "artist": "Sound Horizon",
     "artistYomi": "Sound Horizon",
     "type": [
@@ -8438,9 +8454,10 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
+      "1人",
       "ジングル",
-      "黒夢町"
+      "黒夢町",
+      "ワンフレーズ"
     ],
     "collabo": [
       "黒井しば",
@@ -8477,8 +8494,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -8517,7 +8535,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "アカペラ"
+      "アカペラ",
+      "ワンフレーズ"
     ],
     "collabo": [
       "町田ちま",
@@ -8942,7 +8961,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ"
+      "1人",
+      "コラボ",
+      "ワンコーラス"
     ],
     "collabo": [],
     "sourceTitle": "第一回にじさんじ合唱コンクール",
@@ -8976,8 +8997,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -9492,7 +9514,8 @@ const songsData = [
       "Twitter"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ワンコーラス"
     ],
     "collabo": [],
     "sourceTitle": "",
@@ -9526,8 +9549,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -9633,7 +9657,8 @@ const songsData = [
       "Twitter"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ワンコーラス"
     ],
     "collabo": [],
     "sourceTitle": "",
@@ -10267,8 +10292,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -10483,8 +10509,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -10522,8 +10549,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -10561,8 +10589,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -10600,8 +10629,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -11484,8 +11514,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -11523,8 +11554,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -11674,8 +11706,8 @@ const songsData = [
       "動画"
     ],
     "sing": [
-      "コラボ",
       "3人以上",
+      "コラボ",
       "le jouet"
     ],
     "collabo": [
@@ -11789,8 +11821,8 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "コラボ",
       "3人以上",
+      "コラボ",
       "コーラス"
     ],
     "collabo": [
@@ -11901,8 +11933,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ",
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -12018,7 +12051,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -12056,7 +12091,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -12207,7 +12244,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -12245,7 +12284,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "ジングル"
+      "1人",
+      "ジングル",
+      "ワンコーラス"
     ],
     "collabo": [
       "黒井しば",
@@ -13064,8 +13105,9 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
-      "le jouet",
-      "生演奏"
+      "1人",
+      "生演奏",
+      "le jouet"
     ],
     "collabo": [
       "緑仙",
@@ -13224,7 +13266,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "le jouet"
+      "le jouet",
+      "ワンフレーズ"
     ],
     "collabo": [
       "緑仙",
@@ -13403,7 +13446,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ワンフレーズ"
+      "ワンコーラス"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】聖夜だしクリスマスソング歌おう【にじさんじ/夢追翔】",
@@ -13438,7 +13481,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "ワンフレーズ"
+      "ワンコーラス"
     ],
     "collabo": [],
     "sourceTitle": "【#翔onAir】聖夜だしクリスマスソング歌おう【にじさんじ/夢追翔】",
@@ -13764,10 +13807,15 @@ const songsData = [
       "歌枠"
     ],
     "sing": [
+      "1人",
+      "コラボ",
       "le jouet",
       "生演奏"
     ],
-    "collabo": [],
+    "collabo": [
+      "緑仙",
+      "加賀美ハヤト"
+    ],
     "sourceTitle": "【 #le_jouet 】エレピ弾き語り生演奏オフコラボオンラインライブその２【にじさんじ/加賀美ハヤト/緑仙/夢追翔】",
     "kasi": "",
     "link": "",
@@ -14542,7 +14590,8 @@ const songsData = [
     "sing": [
       "大人数",
       "コラボ",
-      "歌リレー"
+      "歌リレー",
+      "ワンコーラス"
     ],
     "collabo": [],
     "sourceTitle": "#にじさんじ歌リレー",
@@ -14579,7 +14628,7 @@ const songsData = [
       "3人以上",
       "コラボ",
       "le jouet",
-      "ワンフレーズ"
+      "ワンコーラス"
     ],
     "collabo": [
       "緑仙",
@@ -16042,7 +16091,9 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "コラボ"
+      "1人",
+      "コラボ",
+      "ワンフレーズ"
     ],
     "collabo": [
       "緑仙"
@@ -16188,7 +16239,8 @@ const songsData = [
       "Twitter"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ワンコーラス"
     ],
     "collabo": [],
     "sourceTitle": "",
@@ -18633,7 +18685,8 @@ const songsData = [
     "sing": [
       "1人",
       "3D",
-      "VACHSS"
+      "VACHSS",
+      "にじさんじANNIVERSARY FESTIVAL 2021"
     ],
     "collabo": [],
     "sourceTitle": "にじさんじANNIVERSARY FESTIVAL 2021 　VACHSSステージ",
@@ -18671,7 +18724,8 @@ const songsData = [
       "コラボ",
       "3D",
       "VACHSS",
-      "プリティシリーズ"
+      "プリティシリーズ",
+      "にじさんじANNIVERSARY FESTIVAL 2021"
     ],
     "collabo": [
       "加賀美ハヤト"
@@ -18712,7 +18766,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "3D",
-      "VACHSS"
+      "VACHSS",
+      "にじさんじANNIVERSARY FESTIVAL 2021"
     ],
     "collabo": [
       "剣持刀也",
@@ -18752,7 +18807,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "3D",
-      "VACHSS"
+      "VACHSS",
+      "にじさんじANNIVERSARY FESTIVAL 2021"
     ],
     "collabo": [
       "葛葉",
@@ -18940,8 +18996,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】睡魔と戦う男【にじさんじ/夢追翔】",
@@ -18975,8 +19030,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】睡魔と戦う男【にじさんじ/夢追翔】",
@@ -19010,8 +19064,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】睡魔と戦う男【にじさんじ/夢追翔】",
@@ -19045,8 +19098,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】睡魔と戦う男【にじさんじ/夢追翔】",
@@ -19154,8 +19206,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19189,8 +19240,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19224,8 +19274,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19259,8 +19308,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19294,8 +19342,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19329,8 +19376,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19364,8 +19410,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19399,8 +19444,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19434,8 +19478,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19469,8 +19512,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19504,8 +19546,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -19539,8 +19580,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生活音・雑談枠",
-      "ワンフレーズ"
+      "生活音・雑談枠"
     ],
     "collabo": [],
     "sourceTitle": "【ガチ作業枠/Working Stream】集～中～力～（しゅうちゅうりき）（消臭力のメロディで）【にじさんじ/夢追翔】",
@@ -21743,7 +21783,9 @@ const songsData = [
     "sing": [
       "他ライバー歌唱"
     ],
-    "collabo": [],
+    "collabo": [
+      "Derem Kado"
+    ],
     "sourceTitle": "【Cover】「青空を睨む」Gaze into the sky【NIJISANJI ID | Derem Kado】",
     "kasi": "",
     "link": "",
@@ -21815,7 +21857,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "にじロック",
-      "3D"
+      "3D",
+      "NIJIROCK NEXT BEAT"
     ],
     "collabo": [
       "加賀美ハヤト",
@@ -21859,7 +21902,8 @@ const songsData = [
       "2人",
       "コラボ",
       "にじロック",
-      "3D"
+      "3D",
+      "NIJIROCK NEXT BEAT"
     ],
     "collabo": [
       "轟京子"
@@ -21897,7 +21941,8 @@ const songsData = [
     "sing": [
       "1人",
       "にじロック",
-      "3D"
+      "3D",
+      "NIJIROCK NEXT BEAT"
     ],
     "collabo": [],
     "sourceTitle": "NIJIROCK NEXT BEAT",
@@ -21933,7 +21978,8 @@ const songsData = [
     "sing": [
       "1人",
       "にじロック",
-      "3D"
+      "3D",
+      "NIJIROCK NEXT BEAT"
     ],
     "collabo": [],
     "sourceTitle": "NIJIROCK NEXT BEAT",
@@ -21970,7 +22016,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "にじロック",
-      "3D"
+      "3D",
+      "NIJIROCK NEXT BEAT"
     ],
     "collabo": [
       "ジョー・力一",
@@ -22010,7 +22057,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "にじロック",
-      "3D"
+      "3D",
+      "NIJIROCK NEXT BEAT"
     ],
     "collabo": [
       "加賀美ハヤト",
@@ -23835,7 +23883,8 @@ const songsData = [
       "Twitter"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "ワンフレーズ"
     ],
     "collabo": [],
     "sourceTitle": "",
@@ -28024,7 +28073,7 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "30",
+      "3D",
       "ANISAMA V神"
     ],
     "collabo": [
@@ -31286,7 +31335,14 @@ const songsData = [
       "コラボ",
       "3D"
     ],
-    "collabo": [],
+    "collabo": [
+      "樋口楓",
+      "文野環",
+      "卯月コウ",
+      "ジョー・力一",
+      "レオス・ヴィンセント",
+      "佐伯イッテツ"
+    ],
     "sourceTitle": "俺の理想の初恋を聞いてくれ【にじさんじ】",
     "kasi": "",
     "link": "",
@@ -31850,7 +31906,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "none",
@@ -31887,7 +31943,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "none",
@@ -31931,7 +31987,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "SP企画(リコーダーでの演奏)",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "none",
@@ -31968,7 +32024,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "楽曲初お披露目",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "youtube",
@@ -32008,7 +32064,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "none",
@@ -32048,7 +32104,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "none",
@@ -32092,7 +32148,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "youtube",
@@ -32136,7 +32192,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "none",
@@ -32180,7 +32236,7 @@ const songsData = [
     "link": "",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "配信終了",
     "sources": [
       {
         "platform": "none",
