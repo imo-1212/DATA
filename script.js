@@ -62,6 +62,7 @@ const SING_EVENT_TAGS = [
   "歌リレー",
   "にじさんじANNIVERSARY FESTIVAL 2021",
   "Light up tones",
+  "NIJIROCK NEXT BEAT",
   "NJU歌謡祭2021",
   "JM梅田",
   "FANTASIA",
