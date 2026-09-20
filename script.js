@@ -3,6 +3,97 @@
 const songs = typeof songsData !== "undefined" && Array.isArray(songsData) ? [...songsData] : [];
 const PAGE_SIZE = 60;
 const FAVORITES_KEY = "yumeoi-song-favorites-v1";
+/*
+ * 人数タグ
+ */
+const countTags =
+  SING_COUNT_TAGS.filter(value =>
+    allSingTags.includes(value)
+  );
+
+/*
+ * 人数以外の歌唱・ライブ名
+ */
+let liveTags =
+  allSingTags.filter(value =>
+    !SING_COUNT_TAGS.includes(value)
+  );
+
+/*
+ * ライブ名などは複数選択可能
+ */
+createFilterButtons(
+  "#filter-sing","#filter-sing-count",
+  liveTags,
+  state.selectedSings
+);
+  
+/* 人数 */
+const SING_COUNT_TAGS = [
+ "コラボ",
+  "1人",
+  "2人",
+  "3人以上",
+  "大人数"
+];
+
+/* 歌唱形式など */
+const SING_STYLE_TAGS = [
+  "3D",
+  "にじ3D",
+  "ラップ",
+  "アカペラ",
+  "コーラス",
+  "ワンフレーズ",
+  "ジングル",
+  "BGM",
+  "生演奏",
+  "生活音・雑談枠",
+  "記念枠",
+  "他ライバー歌唱",
+  "ピアノ音源"
+];
+
+/* ユニット名 */
+const SING_UNIT_TAGS = [
+  "もやしば",
+  "ゆめおいまちた",
+  "黒夢町",
+  "le jouet",
+  "夢星家",
+  "VACHSS",
+  "イケボホストクラブ",
+  "実は同期なんです"
+];
+
+const SING_EVENT_TAGS = [
+  "にじロック",
+  "歌リレー",
+  "にじさんじANNIVERSARY FESTIVAL 2021",
+  "Light up tones",
+  "NJU歌謡祭2021",
+  "JM梅田",
+  "FANTASIA",
+  "ユニット歌謡祭2022",
+  "にじフェス2023前夜祭",
+  "ゆめおの夢まつり",
+  "にじさんじ歌謡祭2024",
+  "NIJISANJI COUNTDOWN LIVE 2024→2025",
+  "Singin’ in the Rainbow！　福岡公演",
+  "VACHSS_LIVE"
+];
+
+const SING_OTHER_TAGS = [
+  "絵空事への入口",
+  "絵空事に生きる",
+  "拝啓、匣庭の中より",
+  "音楽が消えた街",
+  "廃墟セッション",
+  "音楽で遊ぶ企画",
+  "夢追ボーカルへの道",
+  "サンホラ",
+  "プリティシリーズ"
+];
 
 const state = {
   mode: "quick",
@@ -116,101 +207,105 @@ function updateModeButtons() {
 }
 
 function buildFilters() {
-  createFilterButtons("#filter-type", uniqueValues("type"), state.selectedTypes);
-const allSingTags =
-  uniqueValues("sing");
-
-/*
- * 人数タグ
- */
-const countTags =
-  SING_COUNT_TAGS.filter(value =>
-    allSingTags.includes(value)
+  /*
+   * typeのタグ
+   */
+  createFilterButtons(
+    "#filter-type",
+    uniqueValues("type"),
+    state.selectedTypes
   );
 
-/*
- * 人数以外の歌唱・ライブ名
- */
-let liveTags =
-  allSingTags.filter(value =>
-    !SING_COUNT_TAGS.includes(value)
+  /*
+   * data.jsに存在するsingタグを取得
+   */
+  const allSingTags =
+    uniqueValues("sing");
+
+  /*
+   * 配列に書いた順番を維持しつつ、
+   * data.jsに存在するタグだけを残す
+   */
+  const existingTags = values =>
+    values.filter(value =>
+      allSingTags.includes(value)
+    );
+
+  const countTags =
+    existingTags(SING_COUNT_TAGS);
+
+  const styleTags =
+    existingTags(SING_STYLE_TAGS);
+
+  const unitTags =
+    existingTags(SING_UNIT_TAGS);
+
+  const eventTags =
+    existingTags(SING_EVENT_TAGS);
+
+  /*
+   * 分類済みのタグをまとめる
+   */
+  const assignedTags = new Set([
+    ...SING_COUNT_TAGS,
+    ...SING_STYLE_TAGS,
+    ...SING_UNIT_TAGS,
+    ...SING_EVENT_TAGS,
+    ...SING_OTHER_TAGS
+  ]);
+
+  /*
+   * OTHER_TAGSに指定したタグ
+   */
+  const specifiedOtherTags =
+    existingTags(SING_OTHER_TAGS);
+
+  /*
+   * どの配列にも書かれていないタグは、
+   * 自動的に「その他」の最後へ追加
+   */
+  const unassignedTags =
+    allSingTags.filter(value =>
+      !assignedTags.has(value)
+    );
+
+  const otherTags = [
+    ...specifiedOtherTags,
+    ...unassignedTags
+  ];
+
+  /*
+   * 各表示場所へボタンを作る
+   */
+  createFilterButtons(
+    "#filter-sing-count",
+    countTags,
+    state.selectedSings
   );
 
-/*
- * ライブ名などは複数選択可能
- */
-createFilterButtons(
-  "#filter-sing","#filter-sing-count",
-  liveTags,
-  state.selectedSings
-);
-  
-/* 人数 */
-const SING_COUNT_TAGS = [
- "コラボ",
-  "1人",
-  "2人",
-  "3人以上",
-  "大人数"
-];
+  createFilterButtons(
+    "#filter-sing-style",
+    styleTags,
+    state.selectedSings
+  );
 
-/* 歌唱形式など */
-const SING_STYLE_TAGS = [
-  "3D",
-  "にじ3D",
-  "ラップ",
-  "アカペラ",
-  "コーラス",
-  "ワンフレーズ",
-  "ジングル",
-  "BGM",
-  "生演奏",
-  "生活音・雑談枠",
-  "記念枠",
-  "他ライバー歌唱",
-  "ピアノ音源"
-];
+  createFilterButtons(
+    "#filter-sing-unit",
+    unitTags,
+    state.selectedSings
+  );
 
-/* ユニット名 */
-const SING_UNIT_TAGS = [
-  "もやしば",
-  "ゆめおいまちた",
-  "黒夢町"
-  "le jouet",
-  "夢星家",
-  "VACHSS",
-  "イケボホストクラブ",
-  "実は同期なんです"
-];
+  createFilterButtons(
+    "#filter-sing-event",
+    eventTags,
+    state.selectedSings
+  );
 
-const SING_EVENT_TAGS = [
-  "にじロック",
-  "歌リレー",
-  "にじさんじANNIVERSARY FESTIVAL 2021"
-  "Light up tones",
-  "NJU歌謡祭2021",
-  "JM梅田"
-  "FANTASIA",
-  "ユニット歌謡祭2022",
-  "にじフェス2023前夜祭",
-  "ゆめおの夢まつり",
-  "にじさんじ歌謡祭2024",
-  "NIJISANJI COUNTDOWN LIVE 2024→2025",
-  "Singin’ in the Rainbow！　福岡公演",
-  "VACHSS_LIVE"
-];
-
-const SING_OTHER_TAGS = [
-  "絵空事への入口",
-  "絵空事に生きる",
-  "拝啓、匣庭の中より",
-  "音楽が消えた街",
-  "廃墟セッション",
-  "音楽で遊ぶ企画",
-  "夢追ボーカルへの道",
-  "サンホラ",
-  "プリティシリーズ"
-];
+  createFilterButtons(
+    "#filter-sing-other",
+    otherTags,
+    state.selectedSings
+  );
 }
 
 function uniqueValues(key) {
