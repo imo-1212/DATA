@@ -206,25 +206,52 @@ function updateModeButtons() {
 }
 
 function buildFilters() {
-  /*
-   * typeのタグ
-   */
+  const allTypeTags =
+    uniqueValues("type");
+
+  const songTypeTags =
+    SONG_TYPE_TAGS.filter(value =>
+      allTypeTags.includes(value)
+    );
+
+  const formatTags =
+    SONG_FORMAT_TAGS.filter(value =>
+      allTypeTags.includes(value)
+    );
+
+  const assignedTypeTags = new Set([
+    ...SONG_TYPE_TAGS,
+    ...SONG_FORMAT_TAGS
+  ]);
+
+  const unassignedTypeTags =
+    allTypeTags.filter(value =>
+      !assignedTypeTags.has(value)
+    );
+
+  const finalFormatTags = [
+    ...formatTags,
+    ...unassignedTypeTags
+  ];
+
+  createFilterButtons(
+    "#filter-song-type",
+    songTypeTags,
+    state.selectedTypes
+  );
+
   createFilterButtons(
     "#filter-type",
-    uniqueValues("type"),
+    finalFormatTags,
     state.selectedTypes
   );
 
   /*
-   * data.jsに存在するsingタグを取得
+   * ここから既存のsingタグ処理
    */
   const allSingTags =
     uniqueValues("sing");
 
-  /*
-   * 配列に書いた順番を維持しつつ、
-   * data.jsに存在するタグだけを残す
-   */
   const existingTags = values =>
     values.filter(value =>
       allSingTags.includes(value)
