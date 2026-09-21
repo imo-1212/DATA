@@ -205,9 +205,9 @@ input[type="search"], select {
   font-size: .7rem;
 }
 .tag-filter-content { max-height: 350px; padding: 0 11px 13px; overflow-y: auto; border-top: 1px solid var(--accent); }
-.filter-group { margin: 0; padding: 14px 0; border: 0; border-bottom: 1px dashed rgba(172, 50, 75, .32); }
+.filter-group { margin: 0; padding: 6px 0; border: 0; border-bottom: 1px dashed rgba(172, 50, 75, .32); }
 .filter-group:last-child { border-bottom: 0; }
-.filter-group legend { margin-bottom: 8px; }
+.filter-group legend { margin-bottom: 0px;  padding: 6px 0; }
 .button-group { display: flex; flex-wrap: wrap; gap: 6px; }
 .filter-btn {
   min-height: 34px;
