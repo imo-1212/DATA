@@ -50,7 +50,7 @@
 
           <label class="field">
             <span>キーワード検索</span>
-            <input id="search-input" type="search" placeholder="曲名、アーティスト、コラボ…">
+            <input id="search-input" type="search" placeholder="曲名、アーティスト、コラボライバー名、枠名…">
           </label>
 
           <label class="field">
@@ -75,14 +75,14 @@
 
           <details id="tag-filter-panel" class="tag-filter-panel" open>
             <summary>
-              <span>タグを選ぶ</span>
+              <span>タグを選択</span>
               <span id="selected-filter-count" class="filter-count">0</span>
             </summary>
             
 <div class="tag-filter-content">
   <!-- type -->
   <fieldset class="filter-group">
-    <legend>形態・種類</legend>
+    <legend>楽曲タイプ</legend>
 
     <div
       id="filter-type"
@@ -158,12 +158,12 @@
           <div class="player-statusbar">
             <div class="player-equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
             <div class="player-info">
-              <p class="player-label">NOW PLAYING</p>
+              <p class="player-label">🔻NOW PLAYING🔻</p>
               <strong id="player-title">選択した楽曲</strong>
               <span id="player-artist"></span>
             </div>
             <div class="player-controls">
-              <button id="next-player" class="player-button" type="button">次の曲</button>
+              <button id="next-player" class="player-button" type="button">シャッフル</button>
               <button id="close-player" class="icon-button" type="button" aria-label="プレーヤーを閉じる" title="プレーヤーを閉じる">×</button>
             </div>
           </div>
