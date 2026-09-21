@@ -55,6 +55,7 @@ const SING_EVENT_TAGS = [
   "ユニット歌謡祭2022",
   "にじフェス2023前夜祭",
   "ゆめおの夢まつり",
+  "ANISAMA V神",
   "にじさんじ歌謡祭2024",
   "NIJISANJI COUNTDOWN LIVE 2024→2025",
   "Singin’ in the Rainbow！　福岡公演",
