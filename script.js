@@ -152,14 +152,7 @@ function bindEvents() {
     renderedLimit += PAGE_SIZE;
     renderCards();
   });
-  on("#shuffle-btn", "click", () => {
-    if (shuffleEnabled) {
-      setShuffleEnabled(false);
-      return;
-    }
-    setShuffleEnabled(true);
-    playNextShuffleSong();
-  });
+  on("#shuffle-btn", "click", () => playNextShuffleSong(true));
   on("#next-player", "click", () => playNextShuffleSong(true));
   on("#close-player", "click", closePlayer);
   on("#toggle-player-video", "click", event => {
