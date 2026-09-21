@@ -685,8 +685,8 @@ function getOpenableSource(song) {
 
 function platformLabel(platform) {
   const labels = {
-    youtube: "YOUTUBE", niconico: "ニコニコ動画", twitter: "X / TWITTER",
-    tiktok: "TIKTOK", twitcasting: "ツイキャス", bilibili: "BILIBILI",
+    youtube: "Youtube", niconico: "ニコニコ動画", twitter: "X（Twitter）",
+    tiktok: "Tiktok", twitcasting: "ツイキャス", bilibili: "Bilibili",
     spotify: "SPOTIFY", appleMusic: "APPLE MUSIC", other: "外部サイト"
   };
   return labels[platform] || "外部サイト";
