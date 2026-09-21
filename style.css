@@ -235,7 +235,7 @@ input[type="search"], select {
   text-decoration: none;
   cursor: pointer;
 }
-.primary-button { padding: 8px 14px; color: #fff; border: 1px solid var(--accent); background: var(--accent); font-weight: 700; }
+.primary-button { padding: 8px 14px; color: #fff; border: 1px solid var(--accent); background: var(--accent); font-weight: 700;   box-shadow: var(--shadow);}
 .secondary-button { padding: 8px 14px; color: var(--accent); border: 1px solid var(--line); background: var(--accent-soft); font-weight: 700; }
 
 .player-panel {
@@ -395,7 +395,7 @@ input[type="search"], select {
 .empty-state { padding: 64px 24px; border: 1px dashed var(--line); border-radius: 12px; text-align: center; }
 .empty-state p { margin: 0 0 16px; }
 .load-more-wrap { display: flex; justify-content: center; margin-top: 24px; }
-.load-more-wrap .secondary-button { min-width: 180px; }
+.load-more-wrap .secondary-button { min-width: 180px;   box-shadow: var(--shadow);}
 .site-footer { padding: 25px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: .78rem; }
 
 .page-top-button {
