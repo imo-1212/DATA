@@ -353,6 +353,36 @@ function updateSelectedFilters() {
   }));
 }
 
+function applyCardTagFilter(tag) {
+  const targetButton = [
+    ...document.querySelectorAll(
+      ".filter-btn"
+    )
+  ].find(button =>
+    button.dataset.value === tag
+  );
+  if (!targetButton) {
+    applyTagSearch(tag);
+    return;
+  }
+  const tagPanel =
+    $("#tag-filter-panel");
+  if (tagPanel) {
+    tagPanel.open = true;
+  }
+  if (
+    !targetButton.classList.contains(
+      "active"
+    )
+  ) {
+    targetButton.click();
+  }
+  targetButton.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
 function applyTagSearch(tag) {
   state.query = normalize(tag);
   const input = $("#search-input");
@@ -629,8 +659,9 @@ ${song.memo
     setShuffleEnabled(false);
     playSong(song);
   });
-  article.querySelectorAll("[data-search-tag]").forEach(button => {
-    button.addEventListener("click", () => applyTagSearch(button.dataset.searchTag));
+article.querySelectorAll("[data-search-tag]").forEach(button => {button.addEventListener("click",() =>
+        applyCardTagFilter(button.dataset.searchTag)
+    );
   });
   article.querySelector("[data-favorite]")?.addEventListener("click", () => toggleFavorite(song.id));
   return article;
