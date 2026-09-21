@@ -4,6 +4,26 @@ const songs = typeof songsData !== "undefined" && Array.isArray(songsData) ? [..
 const PAGE_SIZE = 60;
 const FAVORITES_KEY = "yumeoi-song-favorites-v1";
 
+/* 楽曲タイプ */
+const SONG_TYPE_TAGS = [
+  "歌ってみた",
+  "オリジナル"
+];
+
+/* 配信・公開形態 */
+const SONG_FORMAT_TAGS = [
+  "動画",
+  "配信",
+  "歌枠",
+  "ライブ",
+  "サブスク",
+  "Twitter",
+  "niconico",
+  "TikTok",
+  "Bilibili",
+  "その他"
+];
+
 /* 人数 */
 const SING_COUNT_TAGS = [
  "コラボ",
