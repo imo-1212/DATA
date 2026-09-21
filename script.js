@@ -12,9 +12,9 @@ const SONG_TYPE_TAGS = [
 
 /* 配信・公開形態 */
 const SONG_FORMAT_TAGS = [
+  "歌枠",
   "動画",
   "配信",
-  "歌枠",
   "ライブ",
   "サブスク",
   "Twitter",
