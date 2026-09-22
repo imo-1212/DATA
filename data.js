@@ -15597,9 +15597,7 @@ const songsData = [
     "sourceTitle": "【生活音垂れ流し】とあるバーチャルシンガーソングライターの日常【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [
-      "パラライ"
-    ],
+    "keyword": [],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -18285,7 +18283,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -18992,6 +18991,7 @@ const songsData = [
     "artist": "アイカツ！",
     "artistYomi": "アイカツ！",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19026,6 +19026,7 @@ const songsData = [
     "artist": "アイカツ！",
     "artistYomi": "アイカツ！",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19060,6 +19061,7 @@ const songsData = [
     "artist": "ピクミン",
     "artistYomi": "ピクミン",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19094,7 +19096,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -19202,7 +19205,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -19236,7 +19240,8 @@ const songsData = [
     "artist": "UNISON SQUARE GARDEN",
     "artistYomi": "UNISON SQUARE GARDEN",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19270,7 +19275,8 @@ const songsData = [
     "artist": "YOASOBI",
     "artistYomi": "YOASOBI",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19304,7 +19310,8 @@ const songsData = [
     "artist": "YOASOBI",
     "artistYomi": "YOASOBI",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19338,7 +19345,8 @@ const songsData = [
     "artist": "Official髭男dism",
     "artistYomi": "Officialひげだんdism",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19372,7 +19380,8 @@ const songsData = [
     "artist": "Official髭男dism",
     "artistYomi": "Officialひげだんdism",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19406,7 +19415,8 @@ const songsData = [
     "artist": "ノッツ",
     "artistYomi": "ノッツ",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19440,7 +19450,8 @@ const songsData = [
     "artist": "ノッツ",
     "artistYomi": "ノッツ",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19474,7 +19485,8 @@ const songsData = [
     "artist": "若干P",
     "artistYomi": "じゃっかんP",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19508,7 +19520,8 @@ const songsData = [
     "artist": "IDOLiSH7",
     "artistYomi": "IDOLiSH7",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19542,7 +19555,8 @@ const songsData = [
     "artist": "シャニマス/ノクチル",
     "artistYomi": "シャニマス/ノクチル",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19576,7 +19590,8 @@ const songsData = [
     "artist": "デレステ/一ノ瀬志希",
     "artistYomi": "デレステ/いちのせしき",
     "type": [
-      "配信"
+      "配信",
+      "歌ってみた"
     ],
     "sing": [
       "1人",
@@ -19720,6 +19735,7 @@ const songsData = [
     "artist": "Official髭男dism",
     "artistYomi": "Officialひげだんdism",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19754,6 +19770,7 @@ const songsData = [
     "artist": "DECO*27",
     "artistYomi": "DECO*27",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19788,6 +19805,7 @@ const songsData = [
     "artist": "Chinozo",
     "artistYomi": "Chinozo",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19822,6 +19840,7 @@ const songsData = [
     "artist": "おジャ魔女どれみ",
     "artistYomi": "おじゃまじょどれみ",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19856,6 +19875,7 @@ const songsData = [
     "artist": "yama",
     "artistYomi": "yama",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19890,6 +19910,7 @@ const songsData = [
     "artist": "Ado",
     "artistYomi": "ADO",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19924,6 +19945,7 @@ const songsData = [
     "artist": "Kanaria",
     "artistYomi": "KANARIA",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19958,6 +19980,7 @@ const songsData = [
     "artist": "wowaka",
     "artistYomi": "wowaka",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -19992,6 +20015,7 @@ const songsData = [
     "artist": "KazearashiP",
     "artistYomi": "KazearashiP",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20026,6 +20050,7 @@ const songsData = [
     "artist": "EasyPop",
     "artistYomi": "EasyPop",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20060,6 +20085,7 @@ const songsData = [
     "artist": "ryo",
     "artistYomi": "ryo",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20094,6 +20120,7 @@ const songsData = [
     "artist": "doriko",
     "artistYomi": "doriko",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20128,6 +20155,7 @@ const songsData = [
     "artist": "ryo",
     "artistYomi": "ryo",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20162,6 +20190,7 @@ const songsData = [
     "artist": "ryo",
     "artistYomi": "ryo",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20196,6 +20225,7 @@ const songsData = [
     "artist": "DECO*27",
     "artistYomi": "DECO*27",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20230,6 +20260,7 @@ const songsData = [
     "artist": "Neru",
     "artistYomi": "Neru",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20264,6 +20295,7 @@ const songsData = [
     "artist": "あいみょん",
     "artistYomi": "あいみょん",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20298,6 +20330,7 @@ const songsData = [
     "artist": "米津玄師",
     "artistYomi": "よねづけんし",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20332,6 +20365,7 @@ const songsData = [
     "artist": "Official髭男dism",
     "artistYomi": "Officialひげだんdism",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -20366,8 +20400,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "動画",
-      "オリジナル"
+      "歌ってみた",
+      "配信"
     ],
     "sing": [
       "1人",
@@ -21279,7 +21313,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -21870,10 +21905,10 @@ const songsData = [
     ],
     "sourceTitle": "NIJIROCK NEXT BEAT",
     "kasi": "",
-    "link": "",
+    "link": "https://lemino.docomo.ne.jp/contents/Y3JpZDovL3BsYWxhLmlwdHZmLmpwL2dyb3VwL2IxMDM3NTU=",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "有料",
     "sources": [
       {
         "platform": "none",
@@ -21910,10 +21945,10 @@ const songsData = [
     ],
     "sourceTitle": "NIJIROCK NEXT BEAT",
     "kasi": "",
-    "link": "",
+    "link": "https://lemino.docomo.ne.jp/contents/Y3JpZDovL3BsYWxhLmlwdHZmLmpwL2dyb3VwL2IxMDM3NTU=",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "有料",
     "sources": [
       {
         "platform": "none",
@@ -21947,10 +21982,10 @@ const songsData = [
     "collabo": [],
     "sourceTitle": "NIJIROCK NEXT BEAT",
     "kasi": "",
-    "link": "",
+    "link": "https://lemino.docomo.ne.jp/contents/Y3JpZDovL3BsYWxhLmlwdHZmLmpwL2dyb3VwL2IxMDM3NTU=",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "有料",
     "sources": [
       {
         "platform": "none",
@@ -21984,10 +22019,10 @@ const songsData = [
     "collabo": [],
     "sourceTitle": "NIJIROCK NEXT BEAT",
     "kasi": "",
-    "link": "",
+    "link": "https://lemino.docomo.ne.jp/contents/Y3JpZDovL3BsYWxhLmlwdHZmLmpwL2dyb3VwL2IxMDM3NTU=",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "有料",
     "sources": [
       {
         "platform": "none",
@@ -22025,10 +22060,10 @@ const songsData = [
     ],
     "sourceTitle": "NIJIROCK NEXT BEAT",
     "kasi": "",
-    "link": "",
+    "link": "https://lemino.docomo.ne.jp/contents/Y3JpZDovL3BsYWxhLmlwdHZmLmpwL2dyb3VwL2IxMDM3NTU=",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "有料",
     "sources": [
       {
         "platform": "none",
@@ -22070,10 +22105,10 @@ const songsData = [
     ],
     "sourceTitle": "NIJIROCK NEXT BEAT",
     "kasi": "",
-    "link": "",
+    "link": "https://lemino.docomo.ne.jp/contents/Y3JpZDovL3BsYWxhLmlwdHZmLmpwL2dyb3VwL2IxMDM3NTU=",
     "keyword": [],
     "memo": "",
-    "recordStatus": "円盤収録",
+    "recordStatus": "有料",
     "sources": [
       {
         "platform": "none",
@@ -23203,6 +23238,7 @@ const songsData = [
     "artist": "プリリズ /りんね",
     "artistYomi": "プリリズ /りんね",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -23992,7 +24028,8 @@ const songsData = [
     "artist": "にじさんじ箱曲 /kz",
     "artistYomi": "にじさんじはこきょく /kz",
     "type": [
-      "ライブ"
+      "ライブ",
+      "オリジナル"
     ],
     "sing": [
       "大人数",
@@ -24028,6 +24065,7 @@ const songsData = [
     "artist": "Creepy Nuts×Ayase×幾田りら",
     "artistYomi": "Creepy Nuts×Ayase×いくたりら",
     "type": [
+      "歌ってみた",
       "ライブ"
     ],
     "sing": [
@@ -24068,7 +24106,8 @@ const songsData = [
     "artist": "にじさんじ箱曲 /kz",
     "artistYomi": "にじさんじはこきょく /kz",
     "type": [
-      "ライブ"
+      "ライブ",
+      "オリジナル"
     ],
     "sing": [
       "大人数",
@@ -24104,6 +24143,7 @@ const songsData = [
     "artist": "[Alexandros]",
     "artistYomi": "[ALEXANDROS]",
     "type": [
+      "歌ってみた",
       "ライブ"
     ],
     "sing": [
@@ -24144,7 +24184,8 @@ const songsData = [
     "artist": "にじさんじ箱曲 /kz",
     "artistYomi": "にじさんじはこきょく /kz",
     "type": [
-      "ライブ"
+      "ライブ",
+      "オリジナル"
     ],
     "sing": [
       "大人数",
@@ -24180,7 +24221,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -24286,6 +24328,7 @@ const songsData = [
     "artist": "ポケモン/さち＆じゅり（小林幸子&井端珠里）",
     "artistYomi": "ポケモン/さち＆じゅり（こばやしさちこ&いはたじゅり）",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -24932,7 +24975,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -24966,7 +25010,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -25000,7 +25045,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -25150,7 +25196,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -25184,7 +25231,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -25255,6 +25303,7 @@ const songsData = [
     "artist": "なとり",
     "artistYomi": "なとり",
     "type": [
+      "歌ってみた",
       "ライブ"
     ],
     "sing": [
@@ -25365,7 +25414,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "ライブ"
+      "ライブ",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -25401,6 +25451,7 @@ const songsData = [
     "artist": "和ぬか",
     "artistYomi": "わぬか",
     "type": [
+      "歌ってみた",
       "ライブ"
     ],
     "sing": [
@@ -27953,6 +28004,7 @@ const songsData = [
     "artist": "マイキ/プロセカ",
     "artistYomi": "マイキ/プロセカ",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -27991,6 +28043,7 @@ const songsData = [
     "artist": "sasakure.‌UK/プロセカ",
     "artistYomi": "sasakure.‌UK/プロセカ",
     "type": [
+      "歌ってみた",
       "配信"
     ],
     "sing": [
@@ -28088,7 +28141,7 @@ const songsData = [
       "アニサマ"
     ],
     "memo": "きただにひろし本人とのコラボ\nDAMにてアニサマV神の歌唱映像配信",
-    "recordStatus": "公開中",
+    "recordStatus": "円盤収録",
     "sources": [
       {
         "platform": "youtube",
@@ -28110,7 +28163,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "ライブ"
+      "ライブ",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -31651,6 +31705,7 @@ const songsData = [
       "3人以上",
       "コラボ",
       "黒夢町",
+      "ラップ",
       "3D",
       "記念枠"
     ],
@@ -31681,7 +31736,7 @@ const songsData = [
   },
   {
     "id": "perf-000854",
-    "date": "2026/05/02",
+    "date": "2026/04/26",
     "title": "三原色",
     "titleYomi": "さんげんしょく",
     "artist": "YOASOBI",
@@ -31697,7 +31752,7 @@ const songsData = [
       "3D"
     ],
     "collabo": [],
-    "sourceTitle": "夢追翔 MV「貪欲を患う」（Kakeru Yumeoi - Lovely Charmy Greedy)",
+    "sourceTitle": "【3DLIVE】KOKUMUCHO 7th Anniversary 3D Live!!!【 #黒夢町7周年ライブ 】",
     "kasi": "",
     "link": "",
     "keyword": [],
@@ -31718,7 +31773,7 @@ const songsData = [
   },
   {
     "id": "perf-000855",
-    "date": "2026/05/03",
+    "date": "2026/05/02",
     "title": "貪欲を患う(MV)",
     "titleYomi": "どんよくをわずらう(MV)",
     "artist": "夢追翔",
@@ -31732,7 +31787,7 @@ const songsData = [
       "1人"
     ],
     "collabo": [],
-    "sourceTitle": "",
+    "sourceTitle": "夢追翔 MV「貪欲を患う」（Kakeru Yumeoi - Lovely Charmy Greedy)",
     "kasi": "",
     "link": "https://linkco.re/mHpV4N4c",
     "keyword": [],
@@ -31753,7 +31808,7 @@ const songsData = [
   },
   {
     "id": "perf-000856",
-    "date": "2026/05/14",
+    "date": "2026/05/08",
     "title": "Replace to be(MV)",
     "titleYomi": "Replace to be(MV)",
     "artist": "夢追翔 (VACHSS楽曲)",
