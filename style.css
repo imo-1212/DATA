@@ -61,7 +61,7 @@ h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18;
   justify-content: space-between;
   gap: 12px;
   padding: 12px 18px;
-  border: 2px solid var(--accent);
+  border: 1px solid var(--accent);
   border-radius: 12px;
   background: var(--surface);
   box-shadow: var(--shadow);
@@ -707,16 +707,25 @@ input[type="search"], select {
     gap: 5px;
   }
 
-  .player-detail-tag {
-    display: inline-flex;
-    min-height: 24px;
-    align-items: center;
-    padding: 3px 7px;
-    color: #62575b;
-    border-radius: 6px;
-    background: #f3eee9;
-    font-size: .68rem;
-  }
+.player-detail-tag {
+  display: inline-flex;
+  min-height: 24px;
+  align-items: center;
+  padding: 3px 7px;
+  color: #62575b;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: #f3eee9;
+  font: inherit;
+  font-size: .68rem;
+  cursor: pointer;
+}
+
+.player-detail-tag:hover {
+  color: var(--accent-dark);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
 
   .player-detail-tag.type {
     color: var(--accent);
@@ -803,6 +812,56 @@ input[type="search"], select {
   .player-statusbar {
     border-radius: 14px;
   }
+  /*
+ * プレーヤーのお気に入りボタン
+ */
+.player-detail-favorite {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  padding: 0;
+
+  color: rgba(
+    255,
+    187,
+    71,
+    .55
+  );
+
+  border: 1px dashed #e8bd70;
+  border-radius: 9px;
+  background: #fffaf0;
+
+  cursor: pointer;
+}
+
+.player-detail-favorite.active {
+  color: #ffbb47;
+  background:
+    rgba(255, 187, 71, .17);
+}
+
+.player-detail-favorite
+.favorite-star {
+  width: 23px;
+  height: 23px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.player-detail-favorite.active
+.favorite-star {
+  fill: currentColor;
+}
 }
 
 @media (prefers-reduced-motion: reduce) {
