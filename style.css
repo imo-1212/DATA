@@ -576,6 +576,7 @@ input[type="search"], select {
     width: 38px;
     min-width: 38px;
   }
+  
 
   /* ========================================
      プレーヤー展開部分
@@ -809,7 +810,7 @@ input[type="search"], select {
     place-items: center;
     justify-self: start;
 
-    margin: 0 0 0 54px;
+    margin: 0 0 0 88px;
     padding: 0;
 
     color: rgba(
@@ -853,6 +854,50 @@ input[type="search"], select {
   .favorite-star {
     fill: currentColor;
   }
+
+  /* プレーヤー：LINKボタン */
+
+.player-panel
+.player-detail-streaming-link {
+  position: static;
+
+  grid-column: 1;
+  grid-row: 2;
+
+  display: grid;
+
+  width: 36px;
+  height: 36px;
+
+  place-items: center;
+  justify-self: start;
+
+  /*
+   * 元配信ボタンの右へ配置
+   */
+  margin: 0 0 0 44px;
+  padding: 0;
+
+  color: var(--accent);
+
+  border:
+    1px solid var(--line);
+
+  border-radius: 8px;
+
+  background: #fff;
+
+  text-decoration: none;
+}
+
+.player-panel
+.player-detail-streaming-link
+img {
+  width: 19px;
+  height: 19px;
+
+  object-fit: contain;
+}
 
   /* プレーヤー開閉タブ */
 
@@ -1476,6 +1521,33 @@ input[type="search"], select {
 .favorite-star {
   fill: currentColor;
 }
+
+/* PCプレーヤー：LINKボタン */
+
+.player-detail-streaming-link {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  padding: 0;
+  color: var(--accent);
+  border:
+    1px solid var(--line);
+  border-radius: 9px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.player-detail-streaming-link
+img {
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+}
+
 }
 
 @media (prefers-reduced-motion: reduce) {
