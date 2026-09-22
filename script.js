@@ -155,6 +155,9 @@ function bindEvents() {
   on("#shuffle-btn", "click", () => playNextShuffleSong(true));
   on("#next-player", "click", () => playNextShuffleSong(true));
   on("#close-player", "click", closePlayer);
+  on("#player-favorite-button", "click", () => {
+    if (!currentSong) return; toggleFavorite( currentSong.id );
+  });
   on("#toggle-player-video", "click", event => {
     const isVisible = event.currentTarget.getAttribute("aria-expanded") === "true";
     setPlayerVideoVisible(!isVisible);
@@ -732,11 +735,51 @@ function platformLabel(platform) {
   return labels[platform] || "外部サイト";
 }
 
+function updatePlayerFavoriteButton() {
+  const button =
+    $("#player-favorite-button");
+
+  if (!button) return;
+
+  /*
+   * 再生中の曲があり、
+   * お気に入りに入っているか確認
+   */
+  const isFavorite =
+    Boolean(currentSong) &&
+    favorites.has(currentSong.id);
+
+  button.classList.toggle(
+    "active",
+    isFavorite
+  );
+
+  button.setAttribute(
+    "aria-pressed",
+    String(isFavorite)
+  );
+
+  const label = isFavorite
+    ? "お気に入りから削除"
+    : "お気に入りに追加";
+
+  button.setAttribute(
+    "aria-label",
+    label
+  );
+
+  button.setAttribute(
+    "title",
+    label
+  );
+}
+
 function toggleFavorite(id) {
   if (favorites.has(id)) favorites.delete(id);
   else favorites.add(id);
   saveFavorites();
   updateFavoriteCount();
+  updatePlayerFavoriteButton();
   render();
 }
 
@@ -860,14 +903,18 @@ function updatePlayerDetails(
    * 楽曲タイプ・形態
    */
   if (typeElement) {
-    typeElement.innerHTML =
-      asArray(song.type)
-        .map(value => `
-          <span class="player-detail-tag type">
-            ${escapeHtml(value)}
-          </span>
-        `)
-        .join("");
+typeElement.innerHTML =
+  asArray(song.type)
+    .map(value => `
+      <button
+        class="player-detail-tag type"
+        type="button"
+        data-player-tag="${escapeAttribute(value)}"
+      >
+        ${escapeHtml(value)}
+      </button>
+    `)
+    .join("");
   }
 
   /*
@@ -888,15 +935,34 @@ function updatePlayerDetails(
       ...asArray(song.keyword)
     ];
 
-    tagsElement.innerHTML =
-      tags
-        .map(value => `
-          <span class="player-detail-tag">
-            ${escapeHtml(value)}
-          </span>
-        `)
-        .join("");
+tagsElement.innerHTML =
+  tags
+    .map(value => `
+      <button
+        class="player-detail-tag"
+        type="button"
+        data-player-tag="${escapeAttribute(value)}"
+      >
+        ${escapeHtml(value)}
+      </button>
+    `)
+    .join("");
   }
+
+  document
+  .querySelectorAll(
+    ".player-desktop-details [data-player-tag]"
+  )
+  .forEach(button => {
+    button.addEventListener(
+      "click",
+      () => {
+        applyCardTagFilter(
+          button.dataset.playerTag
+        );
+      }
+    );
+  });
 
   /*
    * 元配信リンク
@@ -915,6 +981,7 @@ function updatePlayerDetails(
       linkElement.hidden = true;
     }
   }
+  updatePlayerFavoriteButton();
 }
 
 function setPlayerVideoVisible(visible) {
