@@ -806,6 +806,10 @@ function playSong(song, { preserveShuffle = false } = {}) {
   currentSong = song;
   currentSource = source;
   pendingSeekSeconds = getSourceStartSeconds(source);
+  updatePlayerDetails(
+  song,
+  source
+);
   queuedSong = song;
   const panel = $("#player-panel");
   if (panel) panel.hidden = false;
@@ -825,15 +829,148 @@ function playSong(song, { preserveShuffle = false } = {}) {
   loadSongIntoPlayer(song);
 }
 
+function updatePlayerDetails(
+  song,
+  source
+) {
+  const dateElement =
+    $("#player-detail-date");
+
+  const typeElement =
+    $("#player-detail-types");
+
+  const sourceElement =
+    $("#player-detail-source");
+
+  const tagsElement =
+    $("#player-detail-tags");
+
+  const linkElement =
+    $("#player-detail-link");
+
+  /*
+   * 日付
+   */
+  if (dateElement) {
+    dateElement.textContent =
+      song.date || "日付不明";
+  }
+
+  /*
+   * 楽曲タイプ・形態
+   */
+  if (typeElement) {
+    typeElement.innerHTML =
+      asArray(song.type)
+        .map(value => `
+          <span class="player-detail-tag type">
+            ${escapeHtml(value)}
+          </span>
+        `)
+        .join("");
+  }
+
+  /*
+   * 配信・動画タイトル
+   */
+  if (sourceElement) {
+    sourceElement.textContent =
+      song.sourceTitle || "";
+  }
+
+  /*
+   * sing・collabo・keyword
+   */
+  if (tagsElement) {
+    const tags = [
+      ...asArray(song.sing),
+      ...asArray(song.collabo),
+      ...asArray(song.keyword)
+    ];
+
+    tagsElement.innerHTML =
+      tags
+        .map(value => `
+          <span class="player-detail-tag">
+            ${escapeHtml(value)}
+          </span>
+        `)
+        .join("");
+  }
+
+  /*
+   * 元配信リンク
+   */
+  if (linkElement) {
+    if (source?.url) {
+      linkElement.href =
+        source.url;
+
+      linkElement.hidden = false;
+    } else {
+      linkElement.removeAttribute(
+        "href"
+      );
+
+      linkElement.hidden = true;
+    }
+  }
+}
+
 function setPlayerVideoVisible(visible) {
-  const videoArea = $("#player-video-area");
-  const toggleButton = $("#toggle-player-video");
-  if (!videoArea || !toggleButton) return;
-  videoArea.classList.toggle("is-collapsed", !visible);
-  toggleButton.setAttribute("aria-expanded", String(visible));
-  const label = visible ? "動画を収納" : "動画を表示";
-  toggleButton.setAttribute("aria-label", label);
-  toggleButton.setAttribute("title", label);
+  const panel =
+    $("#player-panel");
+
+  const videoArea =
+    $("#player-video-area");
+
+  const toggleButton =
+    $("#toggle-player-video");
+
+  if (
+    !videoArea ||
+    !toggleButton
+  ) {
+    return;
+  }
+
+  /*
+   * YouTube動画を収納
+   */
+  videoArea.classList.toggle(
+    "is-collapsed",
+    !visible
+  );
+
+  /*
+   * PC用詳細欄も同時に収納
+   */
+  if (panel) {
+    panel.classList.toggle(
+      "is-collapsed",
+      !visible
+    );
+  }
+
+  toggleButton.setAttribute(
+    "aria-expanded",
+    String(visible)
+  );
+
+  const label =
+    visible
+      ? "動画を収納"
+      : "動画を表示";
+
+  toggleButton.setAttribute(
+    "aria-label",
+    label
+  );
+
+  toggleButton.setAttribute(
+    "title",
+    label
+  );
 }
 
 function loadYouTubeApi() {
