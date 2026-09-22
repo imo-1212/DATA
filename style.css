@@ -442,6 +442,9 @@ input[type="search"], select {
 }
 }
 
+/* ========================================
+   スマホ表示
+======================================== */
 
 @media (max-width: 640px) {
   /* ========================================
@@ -451,12 +454,15 @@ input[type="search"], select {
   .site-header {
     padding: 28px 18px;
   }
+
   .header-inner {
     display: block;
   }
+
   .header-note {
     margin-top: 10px;
   }
+
   .page-shell {
     width: min(
       100% - 20px,
@@ -464,23 +470,29 @@ input[type="search"], select {
     );
     margin-top: 18px;
   }
+
   .mode-panel {
     align-items: stretch;
     flex-direction: column;
   }
+
   .segmented-control {
     width: 100%;
   }
+
   .segmented-control button {
     flex: 1;
   }
+
   .layout {
     gap: 18px;
     margin-top: 14px;
   }
+
   .results-header {
     align-items: flex-start;
   }
+
   .results-header
   .primary-button {
     min-height: 40px;
@@ -497,49 +509,68 @@ input[type="search"], select {
       0px,
       env(safe-area-inset-top)
     );
+
     overflow: visible;
+
     padding: 0 0 24px;
+
     border-radius: 14px;
     background: #351b23;
+
     box-shadow: var(--shadow);
   }
+
+  /* NOW PLAYINGバー */
+
   .player-panel
   .player-statusbar {
     position: relative;
     top: 0;
     left: 0;
+
     width: 100%;
     min-height: 78px;
+
     gap: 8px;
     padding: 9px 9px 8px;
+
     border: 0;
     border-radius:
       14px 14px 0 0;
+
     background: #351b23;
+
     transform: none;
   }
+
   .player-equalizer {
     gap: 2px;
   }
+
   .player-equalizer span {
     width: 3px;
   }
+
   .player-panel
   .player-info strong {
     font-size: .80rem;
   }
+
   .player-panel
   .player-info span {
     font-size: .66rem;
   }
+
   .player-controls {
     gap: 5px;
   }
+
   .player-button {
     min-height: 38px;
     padding: 0 8px;
     font-size: .66rem;
   }
+
   .icon-button {
     width: 38px;
     min-width: 38px;
@@ -552,30 +583,42 @@ input[type="search"], select {
   .player-panel
   .player-content {
     display: grid;
+
     grid-template-columns:
       minmax(0, 46%)
       minmax(0, 54%);
+
     grid-template-rows:
       auto
       auto
       minmax(0, 1fr);
+
     column-gap: 10px;
     row-gap: 7px;
+
     align-items: start;
+
     padding: 0 10px 12px;
   }
+
+  /* 左側：YouTube動画 */
+
   .player-panel
   .player-video-wrap {
     grid-column: 1;
     grid-row: 1;
+
     width: 100%;
     margin: 0;
   }
+
   .player-panel
   .player-frame-wrap {
     width: 100%;
+
     border: 0;
     border-radius: 6px;
+
     aspect-ratio: 16 / 9;
   }
 
@@ -588,153 +631,231 @@ input[type="search"], select {
   .player-desktop-details {
     display: contents;
   }
+
+  /* 右上：日付・楽曲タイプ */
+
   .player-panel
   .player-detail-meta {
     grid-column: 2;
     grid-row: 1;
+
     display: flex;
+
     min-width: 0;
+
     align-items: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
+
     gap: 5px;
+
     color: rgba(
       255,
       249,
       231,
       .72
     );
+
     font-size: .64rem;
   }
+
   .player-panel
   .player-detail-types {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
   }
+
+  /* 右中央：配信・動画タイトル */
+
   .player-panel
   .player-detail-source {
     grid-column: 2;
     grid-row: 2;
+
     min-width: 0;
+
     margin: 0;
+
     color: var(--canvas);
+
     font-size: .68rem;
     line-height: 1.5;
+
     overflow-wrap: anywhere;
   }
+
+  /* 右下：歌唱・コラボタグ */
+
   .player-panel
   .player-detail-tags {
     grid-column: 2;
     grid-row: 3;
+
     display: flex;
+
     min-width: 0;
+
     align-content: flex-start;
     flex-wrap: wrap;
+
     gap: 4px;
     margin: 0;
   }
+
+  /* プレーヤーのタグ */
+
   .player-panel
   .player-detail-tag {
     display: inline-flex;
+
     min-height: 22px;
+
     align-items: center;
+
     padding: 2px 6px;
+
     color: #62575b;
+
     border:
       1px solid transparent;
+
     border-radius: 5px;
+
     background: #f3eee9;
+
     font: inherit;
     font-size: .58rem;
     line-height: 1.2;
+
     cursor: pointer;
   }
+
   .player-panel
   .player-detail-tag.type {
     color: var(--accent);
     background: var(--accent-soft);
     font-weight: 700;
   }
+
+  /* 左下：元配信 */
+
   .player-panel
   .player-detail-link {
     position: static;
+
     grid-column: 1;
     grid-row: 2;
+
     display: grid;
+
     width: 44px;
     height: 44px;
+
     place-items: center;
     justify-self: start;
+
     margin: 0;
+
     color: #fff;
+
     border:
       1px solid var(--accent);
+
     border-radius: 8px;
+
     background: var(--accent);
+
     text-decoration: none;
     font-weight: 700;
   }
+
+  /* 左下：お気に入り */
+
   .player-panel
   .player-detail-favorite {
     position: static;
+
     grid-column: 1;
     grid-row: 2;
+
     display: grid;
+
     width: 44px;
     height: 44px;
+
     place-items: center;
     justify-self: start;
+
     margin: 0 0 0 54px;
     padding: 0;
+
     color: rgba(
       255,
       187,
       71,
       .55
     );
+
     border:
       1px dashed #e8bd70;
+
     border-radius: 8px;
+
     background: #fffaf0;
+
     cursor: pointer;
   }
+
   .player-panel
   .player-detail-favorite.active {
     color: #ffbb47;
     background: #fff2d9;
   }
+
   .player-panel
   .player-detail-favorite
   .favorite-star {
     width: 22px;
     height: 22px;
+
     fill: none;
     stroke: currentColor;
     stroke-width: 2.6;
     stroke-linejoin: round;
     stroke-linecap: round;
   }
+
   .player-panel
   .player-detail-favorite.active
   .favorite-star {
     fill: currentColor;
   }
+
+  /* プレーヤー開閉タブ */
+
   .player-panel
   .player-fold-row {
     position: absolute;
+
     right: 0;
     bottom: 0;
+
     z-index: 3;
+
     display: flex;
+
     width: 54px;
     height: 24px;
+
     margin: 0;
   }
+
   .player-panel
   .player-fold-button {
     width: 54px;
     height: 24px;
+
     border-radius:
       0 0 12px 12px;
   }
@@ -746,22 +867,29 @@ input[type="search"], select {
   .player-panel.is-collapsed {
     padding-bottom: 24px;
   }
+
   .player-panel.is-collapsed
   .player-content {
     display: block;
+
     height: 0;
+
     padding: 0;
   }
+
   .player-panel.is-collapsed
   .player-desktop-details {
     display: none;
   }
+
   .player-panel.is-collapsed
   .player-video-wrap {
     width: 100%;
     height: 0;
+
     margin: 0;
   }
+
   .player-panel.is-collapsed
   .player-statusbar {
     border-radius: 14px;
@@ -773,56 +901,92 @@ input[type="search"], select {
 
   .song-card {
     display: grid;
+
     grid-template-columns:
       minmax(0, 40%)
       minmax(0, 60%);
+
     grid-template-rows:
       auto
       minmax(125px, 1fr);
+
     width: 100%;
     min-height: 285px;
+
     overflow: hidden;
-    border: 2px solid var(--accent);
+
+    border:
+      2px solid var(--accent);
+
     border-radius: 12px;
   }
+
+  /* 左上：サムネイル */
+
   .song-card
   .thumbnail-button,
   .song-card
   .thumbnail-placeholder {
     grid-column: 1;
     grid-row: 1;
+
     align-self: start;
+
     width: 100%;
     margin: 0;
+
     border-radius: 0;
+
     aspect-ratio: 16 / 9;
   }
+
+  /* 右側：曲情報 */
+
   .song-card
   .card-body {
     grid-column: 2;
     grid-row: 1 / 3;
+
     min-width: 0;
+
     margin: 0;
     padding: 10px 11px 14px;
-    border-left: 1px dashed var(--line);
+
+    border-left:
+      1px dashed var(--line);
   }
+
+  /* 左下：操作ボタン */
+
   .song-card
   .card-actions {
     position: relative;
+
     grid-column: 1;
     grid-row: 2;
+
     display: grid;
-    grid-template-columns: 44px 44px;
+
+    grid-template-columns:
+      44px 44px;
+
     grid-auto-rows: 44px;
+
     width: 100%;
     height: 100%;
     min-height: 125px;
+
     align-content: start;
     justify-content: start;
+
     gap: 8px;
+
     margin: 0;
     padding: 12px;
-    border-top: 1px dashed var(--line);
+
+    border-top:
+      1px dashed var(--line);
+
     background: rgba(
       255,
       249,
@@ -830,65 +994,103 @@ input[type="search"], select {
       .52
     );
   }
+
+  /* 操作ボタン共通 */
+
   .song-card
   .card-actions > * {
     width: 44px;
     min-width: 44px;
     height: 44px;
     min-height: 44px;
+
     margin: 0;
     padding: 0;
+
     flex: none;
   }
+
   .song-card
   .action-label {
     display: none !important;
   }
+
+  /* 元配信：左上 */
+
   .song-card
   .icon-action {
     grid-column: 1;
     grid-row: 1;
+
     color: #fff;
-    border: 1px solid var(--accent);
+
+    border:
+      1px solid var(--accent);
+
     background: var(--accent);
   }
+
+  /* LINK：右上 */
+
   .song-card
   .link-icon-button {
     grid-column: 2;
     grid-row: 1;
-    border: 1px solid var(--line);
+
+    border:
+      1px solid var(--line);
+
     background: #fff;
   }
+
+  /* 歌詞：右側2段目 */
+
   .song-card
   .lyrics-action {
     grid-column: 2;
     grid-row: 2;
+
     color: var(--accent);
-    border: 1px solid var(--line);
+
+    border:
+      1px solid var(--line);
+
     background: #fff;
   }
+
+  /* お気に入り：左下へ固定 */
+
   .song-card
   .favorite-button {
     position: absolute;
+
     left: 12px;
     bottom: 12px;
+
     width: 44px;
     min-width: 44px;
     height: 44px;
     min-height: 44px;
+
     margin: 0;
+
     color: rgba(
       255,
       187,
       71,
       .55
     );
-    border: 1px dashed #e8bd70;
+
+    border:
+      1px dashed #e8bd70;
+
     background: #fffaf0;
   }
+
   .song-card
   .favorite-button.active {
     color: #ffbb47;
+
     background: rgba(
       255,
       187,
@@ -896,73 +1098,103 @@ input[type="search"], select {
       .17
     );
   }
+
+  /* アイコン */
+
   .song-card
   .link-icon-button img {
     width: 23px;
     height: 23px;
   }
+
   .song-card
   .favorite-star {
     width: 22px;
     height: 22px;
   }
+
   .song-card
   .action-symbol {
     display: block;
+
     font-size: 1rem;
     line-height: 1;
   }
+
+  /* 曲情報の文字 */
+
   .song-card
   .card-meta {
     gap: 5px;
     font-size: .63rem;
   }
+
   .song-card
   .song-title {
     margin-top: 7px;
+
     font-size: .95rem;
     line-height: 1.35;
   }
+
   .song-card
   .song-artist {
     font-size: .79rem;
     line-height: 1.4;
   }
+
   .song-card
   .song-source {
     margin-top: 6px;
+
     font-size: .68rem;
     line-height: 1.45;
+
     overflow-wrap: anywhere;
   }
+
   .song-card
   .tag-list {
     gap: 4px;
     margin-top: 7px;
   }
+
   .song-card
   .tag {
     padding: 2px 5px;
     font-size: .59rem;
   }
+
   .song-card
   .memo {
     margin-top: 7px;
+
     font-size: .68rem;
     line-height: 1.45;
   }
+
+  /* 再生マーク */
+
   .play-mark {
     right: 7px;
     bottom: 7px;
+
     width: 25px;
     height: 25px;
+
     padding-left: 3px;
+
     border: 0;
+
     font-size: .8rem;
   }
+
+  /* ページトップ */
+
   .page-top-button {
     right: 16px;
     bottom: 16px;
+
     width: 58px;
     height: 58px;
   }
