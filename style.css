@@ -438,6 +438,7 @@ input[type="search"], select {
    transform: translateX(-50%);
    border-radius: 14px 14px 0 0 ;  
 }
+}
 
 @media (max-width: 640px) {
   .site-header { padding: 28px 18px; }
