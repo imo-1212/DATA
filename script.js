@@ -891,6 +891,9 @@ function updatePlayerDetails(
   const linkElement =
     $("#player-detail-link");
 
+  const streamingLinkElement =
+  $("#player-detail-streaming-link");
+
   /*
    * 日付
    */
@@ -981,6 +984,24 @@ tagsElement.innerHTML =
       linkElement.hidden = true;
     }
   }
+  /*
+ * サブスク・配信サイトへのLINK
+ */
+if (streamingLinkElement) {
+  if (song.link) {
+    streamingLinkElement.href =
+      song.link;
+
+    streamingLinkElement.hidden =
+      false;
+  } else {
+    streamingLinkElement
+      .removeAttribute("href");
+
+    streamingLinkElement.hidden =
+      true;
+  }
+}
   updatePlayerFavoriteButton();
 }
 
