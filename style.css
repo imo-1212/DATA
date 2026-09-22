@@ -1110,23 +1110,17 @@ input[type="search"], select {
   background: #fffaf0;
 }
 
-    border:
-      1px dashed #e8bd70;
+.song-card
+.favorite-button.active {
+  color: #ffbb47;
 
-    background: #fffaf0;
-  }
-
-  .song-card
-  .favorite-button.active {
-    color: #ffbb47;
-
-    background: rgba(
-      255,
-      187,
-      71,
-      .17
-    );
-  }
+  background: rgba(
+    255,
+    187,
+    71,
+    .17
+  );
+}
 
   /* アイコン */
 
@@ -1233,7 +1227,7 @@ input[type="search"], select {
    PC専用プレーヤー
 ======================================== */
 
-@media (min-width: 881px) {
+@media (min-width: 641px) {
   .player-panel {
     position: sticky;
     top: 8px;
@@ -1271,15 +1265,16 @@ input[type="search"], select {
    * 左：動画
    * 右：楽曲情報
    */
-  .player-panel .player-content {
-    display: grid;
-    grid-template-columns:
-      minmax(360px, 46%)
-      minmax(0, 1fr);
-    gap: 18px;
-    align-items: stretch;
-    padding: 0 16px 16px;
-  }
+  
+.player-panel .player-content {
+  display: grid;
+  grid-template-columns:
+    minmax(260px, 46%)
+    minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+  padding: 0 16px 16px;
+}
 
   .player-panel .player-video-wrap {
     width: 100%;
