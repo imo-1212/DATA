@@ -315,6 +315,8 @@ input[type="search"], select {
 }
 .player-fold-icon::before { content: "▼"; display: block; font-size: .72rem; line-height: 1; }
 .player-fold-button[aria-expanded="false"] .player-fold-icon::before { content: "▲"; }
+.player-desktop-details { display: none; }
+.player-content { display: contents; }
 
 .song-grid { display: flex; flex-direction: column; gap: 12px; }
 .song-card {
@@ -606,6 +608,201 @@ input[type="search"], select {
   box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
   font-size: .80rem; 
 }
+}
+
+/* ========================================
+   PC専用プレーヤー
+======================================== */
+
+@media (min-width: 881px) {
+  .player-panel {
+    position: sticky;
+    top: 8px;
+    overflow: visible;
+    padding: 0 0 26px;
+    border-radius: 14px;
+    background: #351b23;
+    box-shadow: var(--shadow);
+  }
+
+  /*
+   * 上部のNOW PLAYINGバー
+   */
+  .player-panel .player-statusbar {
+    min-height: 76px;
+    padding: 12px 14px 10px 18px;
+    border: 0;
+    border-radius: 14px 14px 0 0;
+    background: #351b23;
+  }
+
+  .player-panel .player-label {
+    margin-bottom: 2px;
+  }
+
+  .player-panel .player-info strong {
+    font-size: 1rem;
+  }
+
+  .player-panel .player-info span {
+    font-size: .75rem;
+  }
+
+  /*
+   * 左：動画
+   * 右：楽曲情報
+   */
+  .player-panel .player-content {
+    display: grid;
+    grid-template-columns:
+      minmax(360px, 46%)
+      minmax(0, 1fr);
+    gap: 18px;
+    align-items: stretch;
+    padding: 0 16px 16px;
+  }
+
+  .player-panel .player-video-wrap {
+    width: 100%;
+    margin: 0;
+  }
+
+  .player-panel .player-frame-wrap {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+  }
+
+  /*
+   * PC用右側詳細欄
+   */
+  .player-panel .player-desktop-details {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    padding: 8px 62px 8px 0;
+    flex-direction: column;
+    color: var(--canvas);
+  }
+
+  .player-detail-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    color: rgba(
+      255,
+      249,
+      231,
+      .72
+    );
+    font-size: .74rem;
+  }
+
+  .player-detail-types,
+  .player-detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .player-detail-tag {
+    display: inline-flex;
+    min-height: 24px;
+    align-items: center;
+    padding: 3px 7px;
+    color: #62575b;
+    border-radius: 6px;
+    background: #f3eee9;
+    font-size: .68rem;
+  }
+
+  .player-detail-tag.type {
+    color: var(--accent);
+    background: var(--accent-soft);
+    font-weight: 700;
+  }
+
+  .player-detail-source {
+    margin: 18px 0 14px;
+    color: var(--canvas);
+    font-size: .82rem;
+    line-height: 1.65;
+  }
+
+  .player-detail-tags {
+    margin-top: auto;
+  }
+
+  /*
+   * 元配信ボタン
+   */
+  .player-detail-link {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    color: #fff;
+    border: 1px solid var(--accent);
+    border-radius: 9px;
+    background: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  /*
+   * 開閉タブをプレーヤー右下へ
+   */
+  .player-panel .player-fold-row {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    width: 58px;
+    height: 26px;
+    margin: 0;
+  }
+
+  .player-panel .player-fold-button {
+    width: 58px;
+    height: 26px;
+  }
+
+  /*
+   * 収納時は動画・詳細を非表示
+   */
+  .player-panel.is-collapsed {
+    padding-bottom: 26px;
+  }
+
+  .player-panel.is-collapsed
+  .player-content {
+    display: block;
+    height: 0;
+    padding: 0;
+  }
+
+  .player-panel.is-collapsed
+  .player-desktop-details {
+    display: none;
+  }
+
+  .player-panel.is-collapsed
+  .player-video-wrap {
+    width: 100%;
+    height: 0;
+    margin: 0;
+  }
+
+  .player-panel.is-collapsed
+  .player-statusbar {
+    border-radius: 14px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
