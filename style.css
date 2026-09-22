@@ -1127,18 +1127,8 @@ img {
 
 .song-card
 .favorite-button {
-  position: absolute;
-
-  left: 10px;
-  bottom: 28px;
-
-  width: 36px;
-  min-width: 36px;
-  height: 36px;
-  min-height: 36px;
-
-  margin: 0;
-  padding: 0;
+    grid-column: 3;
+    grid-row: 1;
 
   color: rgba(
     255,
