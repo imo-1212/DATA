@@ -107,7 +107,7 @@ transform: translateX(-40%);
 
 .eyebrow {
   margin: 0 0 7px;
-  color: var(--canvas);
+  color: var(--yellow);
   font-size: clamp(.68rem, .8vw, .8rem);
   font-weight: 800;
   letter-spacing: .14em;
@@ -655,7 +655,7 @@ input[type="search"], select {
 }
 .help-body a {
   color: var(--accent-dark);
-  font-weight: 700;
+  font-weight: 450;
   text-decoration-color: var(--line);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
