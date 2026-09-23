@@ -38,7 +38,9 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 .site-header {
   position: relative;
   display: flex;
-  min-height: clamp(150px, 14.4vw, 220px);
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 630.1164 / 90.675293;
   align-items: center;
   overflow: hidden;
   color: var(--canvas);
@@ -46,7 +48,7 @@ button:disabled { cursor: not-allowed; opacity: .48; }
   background-image: url("./header_pc.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 /* SVG装飾より前にタイトルを表示 */
@@ -62,8 +64,45 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 }
 
 .header-title {
+  position: relative;
+  display: inline-block;
   width: fit-content;
   max-width: min(680px, 72vw);
+}
+
+.header-title::after {
+  display: block;
+  width: calc(100% + clamp(40px, 8vw, 150px));
+  height: 13px;
+  margin-top: 14px;
+  content: "";
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 249, 231, .56) 0,
+      rgba(255, 249, 231, .56) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+
+  -webkit-mask-image:
+    linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
 }
 
 .eyebrow {
