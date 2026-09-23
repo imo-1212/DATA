@@ -36,57 +36,107 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 [hidden] { display: none !important; }
 
 .site-header {
- position: relative;
-  padding: 40px 24px 32px;
+  position: relative;
+  display: flex;
+  min-height: clamp(150px, 14.4vw, 220px);
+  align-items: center;
+  overflow: hidden;
   color: var(--canvas);
-  background: var(--accent);
-  border-top: 7px solid var(--coral);
-  border-bottom: 2px dashed rgba(255, 249, 231, .82);
+  background-color: var(--accent);
+  background-image: url("./header_pc.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+/* SVG装飾より前にタイトルを表示 */
+
+.header-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  padding:
+    26px
+    clamp(90px, 10vw, 152px);
+}
+
+.header-title {
+  width: fit-content;
+  max-width: min(680px, 72vw);
+}
+
+.eyebrow {
+  margin: 0 0 7px;
+  color: var(--canvas);
+  font-size: clamp(.68rem, .8vw, .8rem);
+  font-weight: 800;
+  letter-spacing: .14em;
+  line-height: 1.4;
+  opacity: 1;
+}
+
+.site-header h1 {
+  margin: 0;
+  color: var(--canvas);
+  font-size: clamp(2rem, 3.1vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: .01em;
+  text-shadow: 1px 2px 0 rgba(127, 31, 50, .2);
+}
+
+/* HELPボタン */
+
 .header-help-button {
   position: absolute;
-  top: 20px;
-  right: clamp(
-    18px,
-    4vw,
-    52px
-  );
-  z-index: 3;
+  top: clamp(16px, 2vw, 26px);
+  right: clamp(18px, 4vw, 52px);
+  z-index: 4;
+
   display: grid;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   place-items: center;
+
   padding: 0;
   border: 0;
   border-radius: 50%;
   background: transparent;
+
   cursor: pointer;
+
   transition:
     transform .18s ease,
     filter .18s ease;
 }
+
 .header-help-button img {
   display: block;
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
-  image-rendering: pixelated;
+
   filter:
     drop-shadow(
       1px 2px 0
       rgba(127, 31, 50, .3)
     );
 }
-.header-inner {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  width: min(1160px, 100%);
-  margin: auto;
+
+.header-help-button:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
 }
-.eyebrow { margin: 0; font-size: .72rem; font-weight: 800; letter-spacing: .14em; opacity: .72; }
-h1 { margin: 5px 0 0; font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.18; }
+
+@media (hover: hover) and (pointer: fine) {
+  .header-help-button:hover {
+    transform: translateY(-2px) scale(1.06);
+    filter: brightness(1.08);
+  }
+}
+
+
 .header-note { max-width: 380px; margin: 0; color: rgba(255, 249, 231, .76); font-size: .9rem; }
 
 .page-shell { width: min(1160px, calc(100% - 48px)); margin: 28px auto 64px; }
@@ -772,22 +822,50 @@ input[type="search"], select {
      サイト全体
   ======================================== */
 
-  .site-header {
-    padding: 28px 18px;
-  }
-.header-help-button {
-  top: 18px;
-  right: 28px;
-  width: 38px;
-  height: 38px;
+.site-header {
+  min-height: clamp(145px, 40vw, 180px);
+  padding: 0;
+  background-image: url("./header_mobile.svg");
+  background-position: center;
+  background-size: cover;
 }
-.header-help-button img {
-  width: 30px;
-  height: 30px;
-}
-  .header-inner {
-    display: block;
+ .header-inner {
+    width: 100%;
+    padding:
+      24px
+      72px
+      24px
+      20px;
   }
+
+  .header-title {
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    margin-bottom: 5px;
+    font-size: clamp(.56rem, 2.6vw, .68rem);
+    letter-spacing: .12em;
+    white-space: nowrap;
+  }
+
+  .site-header h1 {
+    font-size: clamp(1.45rem, 7vw, 1.85rem);
+    line-height: 1.22;
+  }
+
+  .header-help-button {
+    top: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .header-help-button img {
+    width: 34px;
+    height: 34px;
+  }
+  
 
   .header-note {
     margin-top: 10px;
