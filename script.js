@@ -168,6 +168,23 @@ function bindEvents() {
   });
   window.addEventListener("scroll", updatePageTopButton, { passive: true });
   updatePageTopButton();
+  const helpDialog = $("#help-dialog");
+
+  on("#help-open", "click", () => {
+  if (!helpDialog || helpDialog.open) return;
+  helpDialog.showModal();
+});
+
+on("#help-close", "click", () => {
+  if (!helpDialog) return;
+  helpDialog.close();
+});
+
+helpDialog?.addEventListener("click", event => {
+  if (event.target === helpDialog) {
+    helpDialog.close();
+  }
+});
 }
 
 function on(selector, eventName, handler) {
