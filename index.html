@@ -421,35 +421,86 @@
 
         <h4>アイコンについて</h4>
 
-        <ul class="icon-guide">
-          <li>
-            <span class="help-icon" aria-hidden="true">▶</span>
-            <span>
-              サイト内プレイヤーで再生します。
-              YouTube以外の動画はサイト内では再生できません。
-            </span>
-          </li>
+<ul class="icon-guide">
+  <!-- サイト内再生 -->
+  <li>
+    <span
+      class="help-play-preview"
+      aria-hidden="true"
+    >
+      ▶
+    </span>
 
-          <li>
-            <span class="help-icon" aria-hidden="true">↗</span>
-            <span>該当する動画・配信のページを別タブで開きます。</span>
-          </li>
+    <span>
+      サイト内プレイヤーで再生します。
+      YouTube以外の動画はサイト内では再生できません。
+    </span>
+  </li>
 
-          <li>
-            <img
-              class="help-link-icon"
-              src="./link-icon.svg"
-              alt=""
-              aria-hidden="true"
-            >
-            <span>各種音楽配信サイトを開きます。</span>
-          </li>
+  <!-- 元配信を開く -->
+  <li>
+    <span
+      class="action-button icon-action help-action-preview"
+      aria-hidden="true"
+    >
+      <span class="action-symbol">↗</span>
+    </span>
 
-          <li>
-            <span class="help-icon" aria-hidden="true">☆</span>
-            <span>楽曲をお気に入りに追加します。</span>
-          </li>
-        </ul>
+    <span>
+      該当する動画・配信のページを別タブで開きます。
+    </span>
+  </li>
+
+  <!-- 楽曲配信ページ -->
+  <li>
+    <span
+      class="action-button link-icon-button help-action-preview"
+      aria-hidden="true"
+    >
+      <img
+        src="./link-icon.svg"
+        alt=""
+      >
+    </span>
+
+    <span>
+      各種音楽配信サイトを開きます。
+    </span>
+  </li>
+
+  <!-- お気に入り -->
+  <li>
+    <span
+      class="favorite-button active help-action-preview help-favorite-preview"
+      aria-hidden="true"
+    >
+      <svg
+        class="favorite-star"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="
+            M12 3.5
+            L14.7 8.9
+            L20.7 9.8
+            L16.3 14
+            L17.4 20
+            L12 17.2
+            L6.6 20
+            L7.7 14
+            L3.3 9.8
+            L9.3 8.9
+            Z
+          "
+        ></path>
+      </svg>
+    </span>
+
+    <span>
+      楽曲をお気に入りに追加します。
+    </span>
+  </li>
+</ul>
 
         <h4>[タグ]</h4>
 
@@ -730,7 +781,8 @@
   
 
   <footer class="site-footer">
-     <p>このサイトは、にじさんじ所属バーチャルシンガーソングライター 夢追翔さんを応援する非公式ファンサイトです。当サイトはリンクフリーです。<p>
+     <p>このサイトは、にじさんじ所属バーチャルシンガーソングライター 夢追翔さんを応援する非公式ファンサイトです。<p>
+    <p>当サイトはリンクフリーです。<p>
        
      <p>個人が制作・運営しており、ANYCOLOR株式会社様 及び にじさんじプロジェクト、各種関係会社様とは一切関係ございません。<p>
      <p>サイトに関するお問い合わせは 
