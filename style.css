@@ -64,6 +64,7 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 }
 
 .header-title {
+  --header-line-extra: clamp(40px, 8vw, 150px);
   position: relative;
   display: inline-block;
   width: fit-content;
@@ -72,7 +73,7 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 
 .header-title::after {
   display: block;
-  width: calc(100% + clamp(40px, 8vw, 150px));
+  width: calc(100% + var(--header-line-extra));
   height: 13px;
   margin-top: 14px;
   content: "";
@@ -86,23 +87,22 @@ button:disabled { cursor: not-allowed; opacity: .48; }
       transparent 3px
     );
 
-  -webkit-mask-image:
-    linear-gradient(
-      to right,
-      transparent,
-      #000 8%,
-      #000 92%,
-      transparent
-    );
+}
 
-  mask-image:
-    linear-gradient(
-      to right,
-      transparent,
-      #000 8%,
-      #000 92%,
-      transparent
-    );
+.header-title::before {
+  position: absolute;
+  left: calc(100% + var(--header-line-extra));
+  bottom: -15px;
+  z-index: 2;
+  width: 32px;
+  height: 46px;
+  content: "";
+  background-image: url("./header_pc_mic.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+transform: translateX(-40%);
 }
 
 .eyebrow {
@@ -152,8 +152,8 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 
 .header-help-button img {
   display: block;
-  width: 38px;
-  height: 38px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 
   filter:
@@ -868,13 +868,20 @@ input[type="search"], select {
   background-position: center;
   background-size: cover;
 }
+  
+.header-title::after,
+.header-title::before {
+  display: none;
+  content: none;
+}
+  
  .header-inner {
     width: 100%;
     padding:
-      24px
+      5px
       72px
       24px
-      20px;
+      32px;
   }
 
   .header-title {
@@ -901,8 +908,8 @@ input[type="search"], select {
   }
 
   .header-help-button img {
-    width: 34px;
-    height: 34px;
+    width: 20px;
+    height: 20px;
   }
   
 
