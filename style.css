@@ -879,7 +879,7 @@ input[type="search"], select {
     width: 100%;
     padding:
       5px
-      72px
+      22px
       24px
       32px;
   }
@@ -896,7 +896,7 @@ input[type="search"], select {
   }
 
   .site-header h1 {
-    font-size: clamp(1.45rem, 7vw, 1.85rem);
+    font-size: clamp(1.45rem, 70vw, 1.85rem);
     line-height: 1.22;
   }
 
@@ -1134,7 +1134,7 @@ input[type="search"], select {
 .player-detail-types
 .player-detail-tag {
   min-height: 22px;
-  height: 22px;
+  height: 15px;
   align-items: center;
   padding: 2px 6px;
   line-height: 1;
@@ -1151,7 +1151,7 @@ input[type="search"], select {
 
     min-width: 0;
 
-    margin-top: -80px;
+    margin-top: -75px;
     padding-bottom: 40px;
     color: var(--canvas);
 
