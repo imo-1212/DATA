@@ -758,7 +758,7 @@ input[type="search"], select {
 }
 .icon-guide li {
   display: grid;
-  grid-template-columns: 38px minmax(0, 1fr);
+  grid-template-columns: 44px minmax(0, 1fr);
   align-items: center;
   gap: 11px;
   padding: 10px 12px;
@@ -766,17 +766,76 @@ input[type="search"], select {
   border-radius: 9px;
   background: #fffdf8;
 }
-.help-icon,
-.help-link-icon {
+/* HELP内のsong-cardアイコン見本 */
+
+.help-action-preview {
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+  min-height: 38px;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* サイト内再生 */
+
+.help-play-preview {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   place-items: center;
-  object-fit: contain;
+  padding-left: 3px;
+  color: var(--accent);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:
+    0 0 0 1px var(--line),
+    0 2px 8px rgba(0, 0, 0, .13);
+  font-size: .9rem;
+  line-height: 1;
+}
+
+/* 元配信 */
+
+.help-action-preview.icon-action {
   color: #fff;
-  border-radius: 8px;
+  border-color: var(--accent);
   background: var(--accent);
-  font-weight: 800;
+}
+
+/* 楽曲配信LINK */
+
+.help-action-preview.link-icon-button {
+  color: var(--accent);
+  border-color: var(--line);
+  background: #fff;
+}
+.help-action-preview.link-icon-button img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* お気に入り */
+
+.help-favorite-preview {
+  color: rgba(255, 187, 71, .55);
+  border: 1px dashed #e8bd70;
+  border-radius: 8px;
+  background: #fffaf0;
+}
+.help-favorite-preview .favorite-star {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .help-link-icon {
   padding: 6px;
@@ -1784,18 +1843,30 @@ img {
     padding: 11px 12px;
   }
 
-  .icon-guide li {
-    grid-template-columns: 34px minmax(0, 1fr);
-    gap: 9px;
-    padding: 9px;
-    font-size: .84rem;
-  }
+.icon-guide li {
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 9px;
+  padding: 9px;
+  font-size: .84rem;
+}
 
-  .help-icon,
-  .help-link-icon {
-    width: 31px;
-    height: 31px;
-  }
+.help-action-preview,
+.help-play-preview {
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  min-height: 34px;
+}
+
+.help-action-preview.link-icon-button img {
+  width: 19px;
+  height: 19px;
+}
+
+.help-favorite-preview .favorite-star {
+  width: 19px;
+  height: 19px;
+}
   
 }
 
