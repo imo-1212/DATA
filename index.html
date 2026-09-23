@@ -12,14 +12,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <div>
-        <p class="eyebrow">UNOFFICIAL SONG ARCHIVE</p>
-        <h1>夢追翔の歌った曲リスト</h1>
-      </div>
-      <p class="header-note"> </p>
-    </div>
+<header class="site-header">
+  <div class="header-inner">
+    <p class="eyebrow">UNOFFICIAL SONG ARCHIVE</p>
+    <h1>夢追翔の歌った曲リスト</h1>
+  </div>
+
   <button
     id="help-open"
     class="header-help-button"
@@ -27,12 +25,9 @@
     aria-label="サイトの説明を開く"
     title="サイトの説明を開く"
   >
-    <img
-      src="./info-icon.png"
-      alt=""
-      aria-hidden="true"
-    >
+    <img src="./info-icon.png" alt="" aria-hidden="true">
   </button>
+</header>
   </header>
 
   <main class="page-shell">
@@ -358,7 +353,389 @@
     </div>
   </main>
 
-  <footer class="site-footer">非公式ファンサイトです。各コンテンツの権利は権利者に帰属します。</footer>
+  
+<dialog
+  id="help-dialog"
+  class="help-dialog"
+  aria-labelledby="help-title"
+>
+  <div class="help-window">
+    <header class="help-header">
+      <div>
+        <p class="help-eyebrow">SITE GUIDE</p>
+        <h2 id="help-title">このサイトについて</h2>
+      </div>
+
+      <button
+        id="help-close"
+        class="help-close-button"
+        type="button"
+        aria-label="説明を閉じる"
+        title="説明を閉じる"
+      >
+        ×
+      </button>
+    </header>
+
+    <div class="help-body">
+      <section class="help-section">
+        <p>
+          このサイトは、にじさんじ所属バーチャルシンガーソングライター
+          夢追翔さんが今まで歌った曲を、記録としてまとめた非公式ファンサイトです。
+        </p>
+
+        <p>
+          曲名・アーティスト名・タグによる検索や、
+          サイト内プレイヤーでの視聴ができます。
+        </p>
+
+        <p>
+          プレイヤーはYouTube公式の埋め込み機能を使用しているため、
+          サイト内で再生した場合も元動画の再生数としてカウントされます。
+          広告が表示された場合の収益も、元動画の投稿者に入ります。
+        </p>
+      </section>
+
+      <section class="help-section">
+        <h3>〇サイトの使い方</h3>
+
+        <h4>モードについて</h4>
+
+        <dl class="help-definition-list">
+          <div>
+            <dt>【すぐ聴くモード】</dt>
+            <dd>
+              現在YouTube上で視聴できる楽曲を主に表示します。
+              アーカイブが非公開になっている楽曲や、
+              円盤にのみ収録されていて現在無料で視聴できない楽曲は表示されません。
+            </dd>
+          </div>
+
+          <div>
+            <dt>【全記録モード】</dt>
+            <dd>
+              現在視聴できない楽曲を含む、すべての歌唱記録を表示します。
+            </dd>
+          </div>
+        </dl>
+
+        <h4>アイコンについて</h4>
+
+        <ul class="icon-guide">
+          <li>
+            <span class="help-icon" aria-hidden="true">▶</span>
+            <span>
+              サイト内プレイヤーで再生します。
+              YouTube以外の動画はサイト内では再生できません。
+            </span>
+          </li>
+
+          <li>
+            <span class="help-icon" aria-hidden="true">↗</span>
+            <span>該当する動画・配信のページを別タブで開きます。</span>
+          </li>
+
+          <li>
+            <img
+              class="help-link-icon"
+              src="./link-icon.svg"
+              alt=""
+              aria-hidden="true"
+            >
+            <span>各種音楽配信サイトを開きます。</span>
+          </li>
+
+          <li>
+            <span class="help-icon" aria-hidden="true">☆</span>
+            <span>楽曲をお気に入りに追加します。</span>
+          </li>
+        </ul>
+
+        <h4>[タグ]</h4>
+
+        <p>
+          クリックすると、同じタグが付いている楽曲を抽出して表示します。
+          タグは同時に複数選択できます。
+        </p>
+
+        <p>
+          コラボライバーの個人名はタグフィルターに対応していません。
+          「キーワード検索」に手動で入力するか、
+          楽曲データに表示されているライバー名をクリックすると、
+          自動的にキーワード検索へ入力されます。
+        </p>
+
+        <h4>シャッフル再生</h4>
+
+        <p>
+          現在の検索条件に一致する楽曲の中から、
+          ランダムに楽曲を再生します。
+        </p>
+      </section>
+
+      <section class="help-section">
+        <h3>タグについて</h3>
+
+        <ul class="help-list">
+          <li>
+            <strong>オリジナル</strong><br>
+            夢追翔さん本人が作詞・作曲のいずれかで楽曲制作に携わっているもの。
+            にじさんじ公式が原曲の楽曲も「オリジナル」として分類しています。
+          </li>
+
+          <li>
+            <strong>歌ってみた</strong><br>
+            「オリジナル」に該当しない歌唱記録全てを分類しています。
+          </li>
+
+          <li>
+            <strong>他ライバー歌唱</strong><br>
+            夢追翔さんのオリジナル楽曲を、他ライバーが歌唱している場合。
+          </li>
+
+          <li>
+            <strong>コラボ</strong><br>
+            一緒に歌唱しているライバーがいる場合全てに付いています。
+            コラボ歌枠であっても、歌唱者が1人の場合は付いていません。
+          </li>
+        </ul>
+      </section>
+
+      <section class="help-section">
+        <h3>〇情報について</h3>
+
+        <p>
+          これまでの歌配信（メンバー限定配信を除く）・動画・ライブで
+          歌っている楽曲を入力しています。
+        </p>
+
+        <p>
+          ただしすべてのアーカイブを確認できているわけではないため、
+          配信・作業枠についてはカバーしきれていない楽曲もあります。
+          何卒ゆるい目で見ていただけると幸いです。
+        </p>
+
+        <p>
+          入っていない楽曲や入力ミスなどがありましたら、
+          <a
+            href="https://marshmallow-qa.com/oimo_manyparty"
+            target="_blank"
+            rel="noopener noreferrer"
+          >マシュマロ</a>
+          から教えていただけると大変助かります。
+        </p>
+      </section>
+
+      <section class="help-section">
+        <h3>〇参考サイト</h3>
+
+        <p>
+          非公式wiki様　各配信のタイムスタンプを押してくださるリスナー様
+        </p>
+
+        <ul class="reference-list">
+          <li>
+            <a
+              href="https://fvblog-2434.web.app/songs/#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >加賀美ハヤトの歌リスト 様</a>
+          </li>
+
+          <li>
+            <a
+              href="https://chimauta.pages.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >ちまうた 様</a>
+          </li>
+
+          <li>
+            <a
+              href="https://oukasui.com/about.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >桜華水｜長尾景非公式ファンサイト 様</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="help-section">
+        <h3>〇作成者</h3>
+
+        <ul class="reference-list">
+          <li>
+            <a
+              href="ttps://twitter.com/oimo_manyparty/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >X / Twitter</a>
+
+          <li>
+            <a
+              href="https://marshmallow-qa.com/oimo_manyparty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >マシュマロ</a>
+          </li>
+
+          <li>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1Ghag7roXXCgbSxANy20R4_0SNDXTRePMIfXc5XcEDJw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >スプレッドシート版</a>
+          </li>
+        </ul>
+
+        <p>
+          サイト作成にあたり、スプレッドシート版から一部のデータを
+          削除・整理している楽曲があります。
+        </p>
+
+        <p>
+          スプレッドシート版にはデジタルリリース単体の記録も含まれていたため、
+          サイト版とは登録楽曲数が若干異なります。
+        </p>
+      </section>
+
+      <section class="help-section">
+        <h3>🎤夢追翔さんについて🎤</h3>
+
+        <p>
+          <strong>PROFILE</strong><br>
+          声が大きい34歳の男性ミュージシャン。
+          潰れる寸前のライブハウスにお客さんを呼ぶため、配信を始めた。
+          楽器は苦手だが作曲と歌が得意で、
+          自分の曲を世界中の人に聴いてもらうのが夢。
+          お金がないのでライブハウスに住み込んでおり、
+          夜な夜なもやしを炒めて生活している。
+        </p>
+
+        <h4>〇公式リンク</h4>
+
+        <ul class="reference-list">
+          <li>
+            <a
+              href="https://www.nijisanji.jp/talents/l/kakeru-yumeoi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >公式サイト</a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@YumeoiKakeru"
+              target="_blank"
+              rel="noopener noreferrer"
+            >YouTube</a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/kakeru_yumeoi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >X（Twitter）</a>
+          </li>
+          <li>
+            <a
+              href="https://fanclub.nijisanji.jp/fanclubs/kakeru-yumeoi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >公式ファンクラブ</a>
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@kakeru_yumeoi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >TikTok</a>
+          </li>
+          <li>
+            <a
+              href="https://www.nicovideo.jp/user/85716459"
+              target="_blank"
+              rel="noopener noreferrer"
+            >ニコニコ動画</a>
+          </li>
+          <li>
+            <a
+              href="https://space.bilibili.com/511613154"
+              target="_blank"
+              rel="noopener noreferrer"
+            >bilibili</a>
+          </li>
+        </ul>
+
+        <h4>音楽配信</h4>
+
+        <ul class="reference-list">
+          <li>
+            <a
+              href="https://linkco.re/Cv3xTrg7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >1st prelude EP「絵空事への入り口」</a>
+          </li>
+          <li>
+            <a
+              href="https://linkco.re/bQ4fECN6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >1st Full Album「絵空事に生きる」</a>
+          </li>
+          <li>
+            <a
+              href="https://linkco.re/vZNHhXgB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >2nd Full Album「拝啓、匣庭の中より」</a>
+          </li>
+          <li>
+            <a
+              href="https://linkco.re/UR7AuqzF"
+              target="_blank"
+              rel="noopener noreferrer"
+            >1st Story Album「音楽が消えた街」</a>
+          </li>
+          <li>
+            <a
+              href="https://www.tunecore.co.jp/artists/Kakeru-Yumeoi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >各種配信サイト アーティストページ</a>
+          </li>
+        </ul>
+
+        <h4>〇オフィシャル楽譜集</h4>
+
+        <p>
+          「ピアノ・ソロ 夢追翔 Selection」発売中
+        </p>
+
+        <ul class="reference-list">
+          <li>
+            <a
+              href="https://www.shinko-music.co.jp/item/pid0042131/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >楽譜集の詳細ページ</a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/kakeru_yumeoi/status/1648962708103135232"
+              target="_blank"
+              rel="noopener noreferrer"
+            >夢追翔さんの告知ツイート</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</dialog>
+  
+
+  <footer class="site-footer">このサイトは、にじさんじ所属バーチャルシンガーソングライター 夢追翔を応援する非公式ファンサイトです。
+ANYCOLOR株式会社様 及び にじさんじプロジェクト、各種関係会社様とは一切関係ございません。</footer>
 
   <button id="page-top" class="page-top-button" type="button" aria-label="ページトップへ戻る" title="ページトップへ戻る">
     <span class="page-top-icon" aria-hidden="true"></span>
