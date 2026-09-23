@@ -5450,7 +5450,9 @@ const songsData = [
     "sourceTitle": "",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "イラスト・動画：轟京子",
     "recordStatus": "公開中",
     "sources": [
@@ -5487,7 +5489,9 @@ const songsData = [
     "sourceTitle": "",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -5524,7 +5528,9 @@ const songsData = [
     "sourceTitle": "【ロッテCM曲】VTuber17名で「ベイビーアイラブユーだぜ」をやってみた【ぴろぱる】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -7307,7 +7313,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】22_架空の商品で即興CMソング作るよ～バレンタイン編～【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -7342,7 +7350,9 @@ const songsData = [
     "sourceTitle": "【架空の商品にCMソング作った】ビターチョコ「YUMELTY」CMソング「夢見る口溶け」【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -8861,7 +8871,9 @@ const songsData = [
     "sourceTitle": "【VTuberが歌う】SAVIOR OF SONG - Covered by ぴろぱる＆夢追翔【蒼き鋼のアルペジオ・OP曲】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ホワイトデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -10339,7 +10351,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】35_夢追翔 27th Birthday One Man Live【誕生日配信】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -10374,7 +10388,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】35_夢追翔 27th Birthday One Man Live【誕生日配信】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -10412,7 +10428,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】35_夢追翔 27th Birthday One Man Live【誕生日配信】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -10447,7 +10465,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】35_夢追翔 27th Birthday One Man Live【誕生日配信】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -10514,9 +10534,7 @@ const songsData = [
       "ワンコーラス"
     ],
     "collabo": [
-      "黒井しば",
-      "家長むぎ",
-      "える"
+      "ほーじろ家"
     ],
     "sourceTitle": "【#もやしばラジオ】第８回 ゆめおとしばの雨にも負けず風にも負けず【にじさんじ】",
     "kasi": "",
@@ -13315,7 +13333,9 @@ const songsData = [
     "sourceTitle": "Alice in N.Y. / le jouet (Cover)",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -13349,7 +13369,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】聖夜だしクリスマスソング歌おう【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "現在視聴不可",
     "sources": [
@@ -13383,7 +13405,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】聖夜だしクリスマスソング歌おう【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "現在視聴不可",
     "sources": [
@@ -13417,7 +13441,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】聖夜だしクリスマスソング歌おう【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -13452,7 +13478,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】聖夜だしクリスマスソング歌おう【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -13487,7 +13515,9 @@ const songsData = [
     "sourceTitle": "【#翔onAir】聖夜だしクリスマスソング歌おう【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -14018,7 +14048,9 @@ const songsData = [
     "sourceTitle": "ロメオ / 夢追翔＆加賀美ハヤト with 緑仙 (Cover)",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -14058,7 +14090,9 @@ const songsData = [
     "sourceTitle": "バレンタイン・キッス / 国生さゆり (covered by 緑仙 with 加賀美ハヤト、夢追翔)",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -14132,7 +14166,9 @@ const songsData = [
     "sourceTitle": "P.F.M. / le jouet (Official Video)",
     "kasi": "",
     "link": "https://linkco.re/5yvyUPmF",
-    "keyword": [],
+    "keyword": [
+      "ホワイトデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -17228,7 +17264,9 @@ const songsData = [
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -17264,7 +17302,9 @@ const songsData = [
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -17300,7 +17340,9 @@ const songsData = [
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -17336,7 +17378,9 @@ const songsData = [
     "sourceTitle": "【LIVE】2周年。ピアノで歌ったり新衣装お披露目したり【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -18402,7 +18446,9 @@ const songsData = [
     "sourceTitle": "クリスマスソング / back number (Covered by 夢追翔)【歌ってみた】【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "現在視聴不可",
     "sources": [
@@ -18582,7 +18628,9 @@ const songsData = [
     "sourceTitle": "I LOVE... / Official髭男dism (Covered by 夢追翔)【歌ってみた】【にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -18854,7 +18902,8 @@ const songsData = [
     "kasi": "",
     "link": "",
     "keyword": [
-      "英語詞"
+      "英語詞",
+      "ホワイトデー"
     ],
     "memo": "",
     "recordStatus": "公開中",
@@ -20485,7 +20534,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20521,7 +20572,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20557,7 +20610,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20593,7 +20648,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20629,7 +20686,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20665,7 +20724,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20701,7 +20762,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20737,7 +20800,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20773,7 +20838,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -20809,7 +20876,9 @@ const songsData = [
     "sourceTitle": "【#夢追が生まれた日】29歳、バースデー3Dライブします。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21437,7 +21506,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21472,7 +21543,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21507,7 +21580,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21542,7 +21617,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21577,7 +21654,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21612,7 +21691,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21647,7 +21728,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21682,7 +21765,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21717,7 +21802,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "途中音飛びあり",
     "recordStatus": "公開中",
     "sources": [
@@ -21752,7 +21839,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3周年】4年目突入感謝！！！歌います。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -21788,7 +21877,9 @@ const songsData = [
     "sourceTitle": "夢追翔 MV「オリジナリティ欠乏症」（Kakeru Yumeoi - Originalityless)",
     "kasi": "",
     "link": "https://linkco.re/bQ4fECN6",
-    "keyword": [],
+    "keyword": [
+      "周年"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -22252,7 +22343,9 @@ const songsData = [
     "sourceTitle": "ゆめうつつ / 米津玄師 (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "3周年記念歌枠の動画化（再収録）",
     "recordStatus": "公開中",
     "sources": [
@@ -22472,7 +22565,9 @@ const songsData = [
     "sourceTitle": "ラヴィット / ピノキオピー (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -22507,7 +22602,8 @@ const songsData = [
     "kasi": "",
     "link": "",
     "keyword": [
-      "原キー"
+      "原キー",
+      "ホワイトデー"
     ],
     "memo": "",
     "recordStatus": "公開中",
@@ -22734,7 +22830,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "途中まで音無し",
     "recordStatus": "公開中",
     "sources": [
@@ -22770,7 +22868,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -22806,7 +22906,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -22842,7 +22944,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔さんじゅっさい】誕生日3Dミニライブ、告知もあるよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -22880,7 +22984,8 @@ const songsData = [
     "kasi": "",
     "link": "",
     "keyword": [
-      "#やめようインターネット"
+      "#やめようインターネット",
+      "誕生日"
     ],
     "memo": "楽曲初お披露目",
     "recordStatus": "公開中",
@@ -22917,7 +23022,9 @@ const songsData = [
     "sourceTitle": "夢追翔 MV「Stop the Internet」（Kakeru Yumeoi - #やめようインターネット )",
     "kasi": "",
     "link": "https://linkco.re/fCuGZy6u",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -23333,7 +23440,8 @@ const songsData = [
     "kasi": "",
     "link": "https://linkco.re/G2cR7hyv",
     "keyword": [
-      "#新曲_人間じゃないよな"
+      "#新曲_人間じゃないよな",
+      "周年"
     ],
     "memo": "",
     "recordStatus": "公開中",
@@ -23963,7 +24071,8 @@ const songsData = [
     "kasi": "",
     "link": "https://linkco.re/vZNHhXgB",
     "keyword": [
-      "#音楽なんざクソくらえ"
+      "#音楽なんざクソくらえ",
+      "クリスマス"
     ],
     "memo": "",
     "recordStatus": "公開中",
@@ -24267,7 +24376,9 @@ const songsData = [
     "sourceTitle": "怪獣の花唄 / Vaundy (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24737,7 +24848,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24773,7 +24886,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24809,7 +24924,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24845,7 +24962,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24881,7 +25000,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24917,7 +25038,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔生誕祭】FANTASIA衣装のにじ3Dで歌うよ【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "[過去にLINEMUSICにて夢追が作成したプレイリストに収録されていた楽曲](https://twitter.com/LINEMUSIC_JP/status/1411596390300635137)\n[｢どうしても生きたいと思った時に聴く楽曲｣　by 夢追翔](https://lin.ee/a17e9Hr)",
     "recordStatus": "公開中",
     "sources": [
@@ -24951,7 +25074,9 @@ const songsData = [
     "sourceTitle": "アイドル / YOASOBI (Covered by 夢追翔)【歌ってみた/にじさんじ】『推しの子』OP",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -25674,7 +25799,9 @@ const songsData = [
     "sourceTitle": "前説ADvance / 大森靖子 (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -26215,7 +26342,9 @@ const songsData = [
     "sourceTitle": "ジェヘナ(Gehenna) / wotaku (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ホワイトデー"
+    ],
     "memo": "貴族衣装お披露目記念",
     "recordStatus": "公開中",
     "sources": [
@@ -26824,7 +26953,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -26860,7 +26991,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -26896,7 +27029,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -26932,7 +27067,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -26968,7 +27105,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔32歳】歌と喋りと新作告知。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -28560,7 +28699,9 @@ const songsData = [
     "sourceTitle": "ダーリン / 須田景凪 (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -28861,7 +29002,9 @@ const songsData = [
     "sourceTitle": "Bunny Girl / AKASAKI (Covered by 夢追翔)【歌ってみた/にじさんじ/バニーガール】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -28937,7 +29080,9 @@ const songsData = [
     "sourceTitle": "ずうっといっしょ！ / キタニタツヤ (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ホワイトデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -29638,7 +29783,9 @@ const songsData = [
     "sourceTitle": "夢追翔 MV「The Stage Is Mine」（Kakeru Yumeoi - #TheStageIsMine )",
     "kasi": "",
     "link": "https://linkco.re/Y01UyQv0",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "[プレミア公開の本人同時視聴](https://www.youtube.com/watch?v=hHpkeWTmYKM&t=4344s)",
     "recordStatus": "公開中",
     "sources": [
@@ -30845,7 +30992,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -30884,7 +31033,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -30920,7 +31071,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -30959,7 +31112,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -30998,7 +31153,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -31033,7 +31190,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -31072,7 +31231,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -31111,7 +31272,9 @@ const songsData = [
     "sourceTitle": "🎄黒夢町クリスマスパーティ2025🎄　＃黒夢町クリパ",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -31145,7 +31308,9 @@ const songsData = [
     "sourceTitle": "モニタリング / DECO*27 (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "クリスマス"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -31322,7 +31487,9 @@ const songsData = [
     "sourceTitle": "お気に召すまま / Eve (Covered by 夢追翔)【歌ってみた/にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バレンタインデー"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -31435,7 +31602,8 @@ const songsData = [
     "kasi": "",
     "link": "",
     "keyword": [
-      "原キー"
+      "原キー",
+      "ホワイトデー"
     ],
     "memo": "",
     "recordStatus": "公開中",
@@ -31476,7 +31644,9 @@ const songsData = [
     "sourceTitle": "【MV】寿司でたまらない / 紫男【にじさんじ】",
     "kasi": "",
     "link": "https://nijisanjirecords.lnk.to/murasakidan_sushidetamaranai",
-    "keyword": [],
+    "keyword": [
+      "エイプリルフール"
+    ],
     "memo": "公式エイプリルフール企画",
     "recordStatus": "公開中",
     "sources": [
@@ -32594,7 +32764,9 @@ const songsData = [
     "sourceTitle": "【#森中花咲3D誕生日会 】誕生日だし！3Dカラオケパーティー開催だ～🎤🎉【える/榊ネス/夢追翔/ルンルン/森中花咲",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ほーじろ家"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32708,7 +32880,9 @@ const songsData = [
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32744,7 +32918,9 @@ const songsData = [
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32780,7 +32956,9 @@ const songsData = [
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32816,7 +32994,9 @@ const songsData = [
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32852,7 +33032,9 @@ const songsData = [
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32888,7 +33070,9 @@ const songsData = [
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32924,7 +33108,9 @@ const songsData = [
     "sourceTitle": "【歌枠/Singing Stream】オリ曲のみ歌う34回目のバースデー【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -32959,7 +33145,9 @@ const songsData = [
     "sourceTitle": "夢追翔 MV「鈍色に拍動めく」（Kakeru Yumeoi - Beating in Ash)",
     "kasi": "",
     "link": "https://linkco.re/mGeFTHtE",
-    "keyword": [],
+    "keyword": [
+      "誕生日"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -33537,6 +33725,420 @@ const songsData = [
         "platform": "youtube",
         "url": "https://www.youtube.com/watch?v=R8CP0-t2tHE&t=3950s",
         "startSeconds": 3950,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000900",
+    "date": "2026/09/23",
+    "title": "ずうっといっしょ！",
+    "titleYomi": "ずうっといっしょ！",
+    "artist": "キタニタツヤ",
+    "artistYomi": "キタニタツヤ",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "3人以上",
+      "コラボ"
+    ],
+    "collabo": [
+      "える",
+      "緋八マナ",
+      "司賀りこ"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=121s",
+        "startSeconds": 121,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000901",
+    "date": "2026/09/23",
+    "title": "パンダヒーロー",
+    "titleYomi": "パンダヒーロー",
+    "artist": "ハチ",
+    "artistYomi": "ハチ",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "2人",
+      "コラボ"
+    ],
+    "collabo": [
+      "司賀りこ"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=950s",
+        "startSeconds": 950,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000902",
+    "date": "2026/09/23",
+    "title": "ダブルラリアット",
+    "titleYomi": "ダブルラリアット",
+    "artist": "アゴアニキP",
+    "artistYomi": "アゴアニキP",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "1人"
+    ],
+    "collabo": [],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [
+      "原キー"
+    ],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=1694s",
+        "startSeconds": 1694,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000903",
+    "date": "2026/09/23",
+    "title": "Mela!",
+    "titleYomi": "Mela!",
+    "artist": "緑黄色社会",
+    "artistYomi": "りょくおうしょくしゃかい",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "コラボ",
+      "コーラス"
+    ],
+    "collabo": [
+      "える"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=2025s",
+        "startSeconds": 2025,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000904",
+    "date": "2026/09/23",
+    "title": "砂の惑星",
+    "titleYomi": "すなのわくせい",
+    "artist": "ハチ",
+    "artistYomi": "ハチ",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "3人以上",
+      "コラボ"
+    ],
+    "collabo": [
+      "緋八マナ",
+      "司賀りこ"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=2698s",
+        "startSeconds": 2698,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000905",
+    "date": "2026/09/23",
+    "title": "花瓶に触れた",
+    "titleYomi": "かびんにふれた",
+    "artist": "バルーン",
+    "artistYomi": "バルーン",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "2人",
+      "コラボ"
+    ],
+    "collabo": [
+      "緋八マナ"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=3020s",
+        "startSeconds": 3020,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000906",
+    "date": "2026/09/23",
+    "title": "くつずれ",
+    "titleYomi": "くつずれ",
+    "artist": "ちいかわ/ハチワレ",
+    "artistYomi": "ちいかわ/ハチワレ",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "コラボ",
+      "コーラス"
+    ],
+    "collabo": [
+      "える",
+      "緋八マナ",
+      "司賀りこ"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=3643s",
+        "startSeconds": 3643,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000907",
+    "date": "2026/09/23",
+    "title": "愛を伝えたいだとか",
+    "titleYomi": "あいをつたえたいだとか",
+    "artist": "あいみょん",
+    "artistYomi": "あいみょん",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "2人",
+      "コラボ"
+    ],
+    "collabo": [
+      "える"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [
+      "ほーじろ家"
+    ],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=4061s",
+        "startSeconds": 4061,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000908",
+    "date": "2026/09/23",
+    "title": "プロポーズ",
+    "titleYomi": "プロポーズ",
+    "artist": "内緒のピアス",
+    "artistYomi": "ないしょのピアス",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "1人"
+    ],
+    "collabo": [],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=5000s",
+        "startSeconds": 5000,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000909",
+    "date": "2026/09/23",
+    "title": "ロウワー",
+    "titleYomi": "ロウワー",
+    "artist": "ぬゆり",
+    "artistYomi": "ぬゆり",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "コラボ",
+      "コーラス"
+    ],
+    "collabo": [
+      "える",
+      "緋八マナ",
+      "司賀りこ"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=5537s",
+        "startSeconds": 5537,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000910",
+    "date": "2026/09/23",
+    "title": "KICK BACK",
+    "titleYomi": "KICK BACK",
+    "artist": "米津玄師",
+    "artistYomi": "よねづげんし",
+    "type": [
+      "歌ってみた",
+      "歌枠"
+    ],
+    "sing": [
+      "3人以上",
+      "コラボ"
+    ],
+    "collabo": [
+      "える",
+      "緋八マナ",
+      "司賀りこ"
+    ],
+    "sourceTitle": "【歌枠】雨続きの心を晴らしてくれる皆さんを呼ばせていただきました！【にじさんじ / 緋八マナ / 夢追翔 / える / 司賀りこ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=6161s",
+        "startSeconds": 6161,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
