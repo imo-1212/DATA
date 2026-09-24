@@ -7272,6 +7272,7 @@ const songsData = [
     ],
     "sing": [
       "1人",
+      "コラボ",
       "ラップ"
     ],
     "collabo": [
@@ -8869,7 +8870,9 @@ const songsData = [
       "2人",
       "コラボ"
     ],
-    "collabo": [],
+    "collabo": [
+      "字ぴろぱる"
+    ],
     "sourceTitle": "【VTuberが歌う】SAVIOR OF SONG - Covered by ぴろぱる＆夢追翔【蒼き鋼のアルペジオ・OP曲】",
     "kasi": "",
     "link": "",
@@ -12342,7 +12345,9 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "コラボ",
+      "ラップ"
     ],
     "collabo": [
       "緑仙"
@@ -13124,13 +13129,10 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "生演奏",
-      "le jouet"
+      "le jouet",
+      "生演奏"
     ],
-    "collabo": [
-      "緑仙",
-      "加賀美ハヤト"
-    ],
+    "collabo": [],
     "sourceTitle": "【 #le_jouet 】バイノーラル弾き語り生演奏オフコラボオンラインライブ【にじさんじ/加賀美ハヤト/緑仙/夢追翔】",
     "kasi": "",
     "link": "",
@@ -13208,8 +13210,7 @@ const songsData = [
       "生演奏"
     ],
     "collabo": [
-      "緑仙",
-      "加賀美ハヤト"
+      "緑仙"
     ],
     "sourceTitle": "【 #le_jouet 】バイノーラル弾き語り生演奏オフコラボオンラインライブ【にじさんじ/加賀美ハヤト/緑仙/夢追翔】",
     "kasi": "",
@@ -13838,14 +13839,10 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "コラボ",
       "le jouet",
       "生演奏"
     ],
-    "collabo": [
-      "緑仙",
-      "加賀美ハヤト"
-    ],
+    "collabo": [],
     "sourceTitle": "【 #le_jouet 】エレピ弾き語り生演奏オフコラボオンラインライブその２【にじさんじ/加賀美ハヤト/緑仙/夢追翔】",
     "kasi": "",
     "link": "",
@@ -17219,11 +17216,11 @@ const songsData = [
       "コラボ"
     ],
     "collabo": [
-      "森中花咲",
-      "三枝明那",
-      "星川サラ",
       "剣持刀也",
-      "戌亥とこ"
+      "森中花咲",
+      "戌亥とこ",
+      "三枝明那",
+      "星川サラ"
     ],
     "sourceTitle": "光るなら／翔花咲明那サラ刀也とこ(cover)【#にじさんじアオハル部】",
     "kasi": "",
@@ -17626,7 +17623,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バーチャルエアバンド"
+    ],
     "memo": "メンバーシップにて定点カメラ映像公開",
     "recordStatus": "公開中",
     "sources": [
@@ -17663,7 +17662,9 @@ const songsData = [
     "sourceTitle": "【#夢追翔3D】バーチャルシンガーソングライター、夢追翔です。【にじさんじ/夢追翔】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "バーチャルエアバンド"
+    ],
     "memo": "メンバーシップにて定点カメラ映像公開",
     "recordStatus": "公開中",
     "sources": [
@@ -20449,8 +20450,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "歌ってみた",
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -21094,7 +21095,9 @@ const songsData = [
       "Light up tones",
       "生演奏"
     ],
-    "collabo": [],
+    "collabo": [
+      "レヴィ・エリファ"
+    ],
     "sourceTitle": "ARライブ「Light up tones」",
     "kasi": "",
     "link": "https://va.lnk.to/dkSoTeR9",
@@ -21170,7 +21173,10 @@ const songsData = [
       "Light up tones",
       "生演奏"
     ],
-    "collabo": [],
+    "collabo": [
+      "緑仙",
+      "加賀美ハヤト"
+    ],
     "sourceTitle": "ARライブ「Light up tones」",
     "kasi": "",
     "link": "",
@@ -21208,7 +21214,11 @@ const songsData = [
       "Light up tones",
       "生演奏"
     ],
-    "collabo": [],
+    "collabo": [
+      "花畑チャイカ",
+      "ジョー・力一",
+      "加賀美ハヤト"
+    ],
     "sourceTitle": "ARライブ「Light up tones」",
     "kasi": "",
     "link": "https://va.lnk.to/dkSoTeR9",
@@ -21246,7 +21256,15 @@ const songsData = [
       "Light up tones",
       "生演奏"
     ],
-    "collabo": [],
+    "collabo": [
+      "樋口楓",
+      "緑仙",
+      "花畑チャイカ",
+      "ジョー・力一",
+      "町田ちま",
+      "レヴィ・エリファ",
+      "加賀美ハヤト"
+    ],
     "sourceTitle": "ARライブ「Light up tones」",
     "kasi": "",
     "link": "https://va.lnk.to/dkSoTeR9",
@@ -22264,7 +22282,7 @@ const songsData = [
     "artistYomi": "さいとうかずよし",
     "type": [
       "歌ってみた",
-      "サブスク"
+      "その他"
     ],
     "sing": [
       "1人"
@@ -22298,7 +22316,7 @@ const songsData = [
     "artistYomi": "D-51",
     "type": [
       "歌ってみた",
-      "サブスク"
+      "その他"
     ],
     "sing": [
       "2人",
@@ -22638,12 +22656,19 @@ const songsData = [
       "コラボ"
     ],
     "collabo": [
-      "アラサーランク帯"
+      "アンジュ・カトリーナ",
+      "戌亥とこ",
+      "リゼ・ヘルエスタ",
+      "花畑チャイカ",
+      "社築",
+      "加賀美ハヤト"
     ],
     "sourceTitle": "【#さんばか3周年】さんばか 3rd Anniversary LIVE みつぼしパレード【3DLIVE / にじさんじ】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "アラサーランク帯"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24640,7 +24665,7 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "3人以上",
+      "2人",
       "コラボ",
       "3D",
       "夢星家"
@@ -24680,7 +24705,6 @@ const songsData = [
     ],
     "sing": [
       "1人",
-      "コラボ",
       "3D"
     ],
     "collabo": [],
@@ -25210,7 +25234,9 @@ const songsData = [
       "コラボ",
       "歌リレー"
     ],
-    "collabo": [],
+    "collabo": [
+      "セフィナ"
+    ],
     "sourceTitle": "【#NIJIMelody2023】 もっと歌いたい💗 【にじさんじ | セフィナ】",
     "kasi": "",
     "link": "",
@@ -26906,7 +26932,7 @@ const songsData = [
       "動画"
     ],
     "sing": [
-      "3人以上",
+      "2人",
       "コラボ",
       "ゆめおいまちた"
     ],
@@ -27397,9 +27423,7 @@ const songsData = [
     "sing": [
       "1人"
     ],
-    "collabo": [
-      "レヴィ・エリファ"
-    ],
+    "collabo": [],
     "sourceTitle": "【 #倉持武者修業 】第1回!! お歌の武者修行だぁぁ！ 【夢追翔 / レヴィ・エリファ / 緋八マナ / 倉持めると にじさんじ】",
     "kasi": "",
     "link": "",
@@ -27653,7 +27677,7 @@ const songsData = [
       "配信"
     ],
     "sing": [
-      "3人以上",
+      "2人",
       "コラボ"
     ],
     "collabo": [
@@ -27691,13 +27715,14 @@ const songsData = [
       "サブスク"
     ],
     "sing": [
-      "2人",
+      "3人以上",
       "コラボ",
       "他ライバー歌唱",
       "音楽が消えた街"
     ],
     "collabo": [
-      "弦月藤士郎"
+      "弦月藤士郎",
+      "周央サンゴ"
     ],
     "sourceTitle": "【MV】Tr.05「嗚呼素晴らしき音楽」 - 夢追翔 feat. ジョシュア(CV:弦月藤士郎) and...【音楽が消えた街】",
     "kasi": "",
@@ -28228,7 +28253,8 @@ const songsData = [
       "サブスク"
     ],
     "sing": [
-      "大人数"
+      "大人数",
+      "コラボ"
     ],
     "collabo": [],
     "sourceTitle": "",
@@ -28375,7 +28401,7 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
-      "3人以上",
+      "大人数",
       "コラボ",
       "3D",
       "ANISAMA V神"
