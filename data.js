@@ -7066,7 +7066,9 @@ const songsData = [
     "sourceTitle": "2月3日を「にじさんじの日」ってことにしました。【緊急特番】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ほーじろ家"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -18892,7 +18894,7 @@ const songsData = [
     "artistYomi": "ちょうちょP",
     "type": [
       "歌ってみた",
-      "ライブ"
+      "動画"
     ],
     "sing": [
       "1人"
@@ -22037,7 +22039,9 @@ const songsData = [
     "sourceTitle": "NIJIROCK NEXT BEAT",
     "kasi": "",
     "link": "https://lemino.docomo.ne.jp/contents/Y3JpZDovL3BsYWxhLmlwdHZmLmpwL2dyb3VwL2IxMDM3NTU=",
-    "keyword": [],
+    "keyword": [
+      "ほーじろ家"
+    ],
     "memo": "",
     "recordStatus": "有料",
     "sources": [
@@ -22636,9 +22640,7 @@ const songsData = [
       "コラボ"
     ],
     "collabo": [
-      "アンジュ・カトリーナ",
-      "リゼ・ヘルエスタ",
-      "戌亥とこ"
+      "アラサーランク帯"
     ],
     "sourceTitle": "【#さんばか3周年】さんばか 3rd Anniversary LIVE みつぼしパレード【3DLIVE / にじさんじ】",
     "kasi": "",
@@ -22984,7 +22986,6 @@ const songsData = [
     "kasi": "",
     "link": "",
     "keyword": [
-      "#やめようインターネット",
       "誕生日"
     ],
     "memo": "楽曲初お披露目",
@@ -23206,7 +23207,7 @@ const songsData = [
     "kasi": "",
     "link": "",
     "keyword": [],
-    "memo": "Day2第一公演に出演",
+    "memo": "",
     "recordStatus": "公開中",
     "sources": [
       {
@@ -23440,7 +23441,6 @@ const songsData = [
     "kasi": "",
     "link": "https://linkco.re/G2cR7hyv",
     "keyword": [
-      "#新曲_人間じゃないよな",
       "周年"
     ],
     "memo": "",
@@ -23685,7 +23685,9 @@ const songsData = [
     "sourceTitle": "4th Anniversary LIVE 「FANTASIA」Day.2 振替公演",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ほーじろ家"
+    ],
     "memo": "",
     "recordStatus": "円盤収録",
     "sources": [
@@ -23998,9 +24000,7 @@ const songsData = [
     "sourceTitle": "夢追翔 MV「共感性終止」（Kakeru Yumeoi - End of sympathy)",
     "kasi": "",
     "link": "https://linkco.re/vZNHhXgB",
-    "keyword": [
-      "#共感性終止"
-    ],
+    "keyword": [],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -24071,7 +24071,6 @@ const songsData = [
     "kasi": "",
     "link": "https://linkco.re/vZNHhXgB",
     "keyword": [
-      "#音楽なんざクソくらえ",
       "クリスマス"
     ],
     "memo": "",
@@ -25839,7 +25838,9 @@ const songsData = [
     "sourceTitle": "【#にじローラン 】Sound Horizon縛りカラオケ【にじさんじ/鷹宮リオン 夢追翔 ドーラ フレン・E・ルスタリオ ベルモンド・バンデラス 鈴木勝 シスター・クレア オリバー・エバンス】",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ほーじろ家"
+    ],
     "memo": "",
     "recordStatus": "公開中",
     "sources": [
@@ -26345,7 +26346,7 @@ const songsData = [
     "keyword": [
       "ホワイトデー"
     ],
-    "memo": "貴族衣装お披露目記念",
+    "memo": "[貴族衣装お披露目記念](https://www.youtube.com/watch?v=fCpPo9dworQ)",
     "recordStatus": "公開中",
     "sources": [
       {
@@ -27621,7 +27622,7 @@ const songsData = [
     "collabo": [
       "レヴィ・エリファ",
       "倉持めると",
-      "伊波ライ"
+      "緋八マナ"
     ],
     "sourceTitle": "【 #倉持武者修業 】第1回!! お歌の武者修行だぁぁ！ 【夢追翔 / レヴィ・エリファ / 緋八マナ / 倉持めると にじさんじ】",
     "kasi": "",
@@ -28276,9 +28277,7 @@ const songsData = [
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [
-      "アニサマ"
-    ],
+    "keyword": [],
     "memo": "きただにひろし本人とのコラボ\nDAMにてアニサマV神の歌唱映像配信",
     "recordStatus": "円盤収録",
     "sources": [
@@ -28314,9 +28313,7 @@ const songsData = [
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [
-      "アニサマ"
-    ],
+    "keyword": [],
     "memo": "DAMにてアニサマV神の歌唱映像配信",
     "recordStatus": "円盤収録",
     "sources": [
@@ -28352,9 +28349,7 @@ const songsData = [
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [
-      "アニサマ"
-    ],
+    "keyword": [],
     "memo": "",
     "recordStatus": "円盤収録",
     "sources": [
@@ -28391,9 +28386,7 @@ const songsData = [
     "sourceTitle": "ANISAMA V神 2024",
     "kasi": "",
     "link": "",
-    "keyword": [
-      "アニサマ"
-    ],
+    "keyword": [],
     "memo": "全V出演者による歌唱",
     "recordStatus": "円盤収録",
     "sources": [
@@ -28520,7 +28513,7 @@ const songsData = [
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
-        "availability": "available",
+        "availability": "paid",
         "priority": null
       }
     ]
@@ -32327,7 +32320,9 @@ const songsData = [
     "sourceTitle": "にじさんじフェス2026 スペシャルステージ VACHSS LIVE “THE TAKEOVER”",
     "kasi": "",
     "link": "",
-    "keyword": [],
+    "keyword": [
+      "ほーじろ家"
+    ],
     "memo": "",
     "recordStatus": "配信終了",
     "sources": [
