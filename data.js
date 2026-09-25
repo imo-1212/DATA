@@ -4941,8 +4941,8 @@ const songsData = [
   {
     "id": "perf-000131",
     "date": "2018/12/12",
-    "title": "Butter－Fly",
-    "titleYomi": "Butter－Fly",
+    "title": "Butter-Fly",
+    "titleYomi": "Butter-Fly",
     "artist": "和田光司",
     "artistYomi": "わだこうじ",
     "type": [
@@ -7619,8 +7619,8 @@ const songsData = [
     "date": "2019/02/17",
     "title": "READY STEADY GO",
     "titleYomi": "READY STEADY GO",
-    "artist": "L'Arc〜en〜Ciel",
-    "artistYomi": "L'Arc～en～Ciel",
+    "artist": "L'Arc~en~Ciel",
+    "artistYomi": "L'Arc-en-Ciel",
     "type": [
       "歌ってみた",
       "歌枠"
@@ -8375,7 +8375,7 @@ const songsData = [
     "id": "perf-000220",
     "date": "2019/02/24",
     "title": "〈ハジマリ〉のChronicle",
-    "titleYomi": "〈ハジマリ〉のChronicle",
+    "titleYomi": "ハジマリのChronicle",
     "artist": "Sound Horizon",
     "artistYomi": "Sound Horizon",
     "type": [
@@ -9524,7 +9524,7 @@ const songsData = [
     "date": "2019/04/08",
     "title": "New World",
     "titleYomi": "new world",
-    "artist": "L'Arc-en-Ciel",
+    "artist": "L'Arc~en~Ciel",
     "artistYomi": "L'Arc-en-Ciel",
     "type": [
       "歌ってみた",
@@ -9905,7 +9905,7 @@ const songsData = [
     "id": "perf-000263",
     "date": "2019/05/12",
     "title": "（題名不明 テーマ:失恋）",
-    "titleYomi": "（だいめいふめい テーマ:しつれん）",
+    "titleYomi": "しつれん",
     "artist": "夢追翔 歌唱:戌亥とこ",
     "artistYomi": "ゆめおいかける かしょう:いぬいとこ",
     "type": [
@@ -10718,8 +10718,8 @@ const songsData = [
     "date": "2019/07/31",
     "title": "HONEY",
     "titleYomi": "HONEY",
-    "artist": "L'Arc～en～Ciel",
-    "artistYomi": "L'Arc～en～Ciel",
+    "artist": "L'Arc~en~Ciel",
+    "artistYomi": "L'Arc-en-Ciel",
     "type": [
       "歌ってみた",
       "歌枠"
@@ -10752,8 +10752,8 @@ const songsData = [
     "date": "2019/07/31",
     "title": "Killing Me",
     "titleYomi": "kIllIng mE",
-    "artist": "L'Arc～en～Ciel",
-    "artistYomi": "L'Arc～en～Ciel",
+    "artist": "L'Arc~en~Ciel",
+    "artistYomi": "L'Arc-en-Ciel",
     "type": [
       "歌ってみた",
       "歌枠"
@@ -10786,8 +10786,8 @@ const songsData = [
     "date": "2019/07/31",
     "title": "New World",
     "titleYomi": "new world",
-    "artist": "L'Arc～en～Ciel",
-    "artistYomi": "L'Arc～en～Ciel",
+    "artist": "L'Arc~en~Ciel",
+    "artistYomi": "L'Arc-en-Ciel",
     "type": [
       "歌ってみた",
       "歌枠"
@@ -10820,8 +10820,8 @@ const songsData = [
     "date": "2019/07/31",
     "title": "READY STEADY GO",
     "titleYomi": "READY STEADY GO",
-    "artist": "L'Arc～en～Ciel",
-    "artistYomi": "L'Arc～en～Ciel",
+    "artist": "L'Arc~en~Ciel",
+    "artistYomi": "L'Arc-en-Ciel",
     "type": [
       "歌ってみた",
       "歌枠"
@@ -17722,7 +17722,7 @@ const songsData = [
     "title": "ワタリドリ",
     "titleYomi": "ワタリドリ",
     "artist": "[Alexandros]",
-    "artistYomi": "[ALEXANDROS]",
+    "artistYomi": "ALEXANDROS",
     "type": [
       "歌ってみた",
       "歌枠"
@@ -21110,7 +21110,7 @@ const songsData = [
         "url": "",
         "startSeconds": null,
         "endSeconds": null,
-        "quickPlay": false,
+        "quickPlay": true,
         "embed": false,
         "availability": "paid",
         "priority": null
@@ -21231,7 +21231,7 @@ const songsData = [
         "url": "",
         "startSeconds": null,
         "endSeconds": null,
-        "quickPlay": false,
+        "quickPlay": true,
         "embed": false,
         "availability": "paid",
         "priority": null
@@ -21277,7 +21277,7 @@ const songsData = [
         "url": "",
         "startSeconds": null,
         "endSeconds": null,
-        "quickPlay": false,
+        "quickPlay": true,
         "embed": false,
         "availability": "paid",
         "priority": null
@@ -23183,7 +23183,8 @@ const songsData = [
     "artist": "夢追翔",
     "artistYomi": "ゆめおいかける",
     "type": [
-      "配信"
+      "配信",
+      "オリジナル"
     ],
     "sing": [
       "1人",
@@ -24272,7 +24273,7 @@ const songsData = [
     "title": "閃光",
     "titleYomi": "せんこう",
     "artist": "[Alexandros]",
-    "artistYomi": "[ALEXANDROS]",
+    "artistYomi": "ALEXANDROS",
     "type": [
       "歌ってみた",
       "ライブ"
@@ -24858,7 +24859,7 @@ const songsData = [
     "artistYomi": "cosMo（ぼうそうP）",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "1人",
@@ -24896,7 +24897,7 @@ const songsData = [
     "artistYomi": "いよわ",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "1人",
@@ -24934,7 +24935,7 @@ const songsData = [
     "artistYomi": "ピノキオピー",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "1人",
@@ -24968,11 +24969,11 @@ const songsData = [
     "date": "2023/06/28",
     "title": "瞳の住人",
     "titleYomi": "ひとみのじゅうにん",
-    "artist": "L'Arc～en～Ciel",
-    "artistYomi": "L'Arc～en～Ciel",
+    "artist": "L'Arc~en~Ciel",
+    "artistYomi": "L'Arc-en-Ciel",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "1人",
@@ -25010,7 +25011,7 @@ const songsData = [
     "artistYomi": "amazarashi",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "1人",
@@ -25048,7 +25049,7 @@ const songsData = [
     "artistYomi": "パスピエ",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "1人",
@@ -25849,7 +25850,7 @@ const songsData = [
     "artistYomi": "Sound Horizon",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "1人",
@@ -25889,7 +25890,7 @@ const songsData = [
     "artistYomi": "Sound Horizon",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "3人以上",
@@ -25929,7 +25930,7 @@ const songsData = [
     "artistYomi": "Sound Horizon",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "3人以上",
@@ -25972,7 +25973,7 @@ const songsData = [
     "artistYomi": "Sound Horizon",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "3人以上",
@@ -26012,7 +26013,7 @@ const songsData = [
     "artistYomi": "Sound Horizon",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "3人以上",
@@ -26055,7 +26056,7 @@ const songsData = [
     "artistYomi": "Sound Horizon",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "3人以上",
@@ -26098,7 +26099,7 @@ const songsData = [
     "artistYomi": "Sound Horizon",
     "type": [
       "歌ってみた",
-      "配信"
+      "歌枠"
     ],
     "sing": [
       "3人以上",
@@ -34158,6 +34159,127 @@ const songsData = [
         "platform": "youtube",
         "url": "https://www.youtube.com/watch?v=1wormzNLBFs&t=6161s",
         "startSeconds": 6161,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000911",
+    "date": "2026/09/25",
+    "title": "ココロオドル",
+    "titleYomi": "ココロオドル",
+    "artist": "Nobodyknows+",
+    "artistYomi": "Nobodyknows+",
+    "type": [
+      "歌ってみた",
+      "動画"
+    ],
+    "sing": [
+      "3人以上",
+      "コラボ",
+      "実は同期なんです",
+      "ラップ"
+    ],
+    "collabo": [
+      "矢車りね",
+      "ベルモンド・バンデラス",
+      "黒井しば"
+    ],
+    "sourceTitle": "ココロオドル / nobodyknows+ (covered by じつどう)【歌ってみた/矢車りね/黒井しば/ベルモンド・バンデラス/夢追翔】",
+    "kasi": "",
+    "link": "",
+    "keyword": [
+      "周年"
+    ],
+    "memo": "[告知配信](https://www.youtube.com/watch?v=ZAvRYJV7sXY)",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=8KJwN1vmNEo",
+        "startSeconds": null,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000912",
+    "date": "2026/09/25",
+    "title": "Party!!",
+    "titleYomi": "Party!!",
+    "artist": "緑黄色社会",
+    "artistYomi": "りょくおうしょくしゃかい",
+    "type": [
+      "歌ってみた",
+      "動画"
+    ],
+    "sing": [
+      "3人以上",
+      "コラボ",
+      "実は同期なんです"
+    ],
+    "collabo": [
+      "矢車りね",
+      "ベルモンド・バンデラス",
+      "黒井しば"
+    ],
+    "sourceTitle": "Party!!/緑黄色社会(covered by #じつどう)【歌ってみた/ベルモンド・バンデラス/夢追翔/矢車りね/黒井しば】",
+    "kasi": "",
+    "link": "",
+    "keyword": [
+      "周年"
+    ],
+    "memo": "[告知配信](https://www.youtube.com/watch?v=ZAvRYJV7sXY)",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=3jSaOsIlvCM",
+        "startSeconds": null,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000913",
+    "date": "2026/09/26",
+    "title": "セレナーデ",
+    "titleYomi": "セレナーデ",
+    "artist": "なとり",
+    "artistYomi": "なとり",
+    "type": [
+      "歌ってみた",
+      "動画"
+    ],
+    "sing": [
+      "1人"
+    ],
+    "collabo": [],
+    "sourceTitle": "セレナーデ / なとり (Covered by 夢追翔)【歌ってみた/にじさんじ】",
+    "kasi": "",
+    "link": "",
+    "keyword": [
+      "周年"
+    ],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=VROcHjAJ_yE",
+        "startSeconds": null,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
