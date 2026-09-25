@@ -512,6 +512,7 @@ input[type="search"], select {
 .action-button { width: 44px; min-width: 44px; padding: 0; color: var(--accent); border: 1px solid var(--line); background: var(--accent); font-size: .82rem; font-weight: 700; }
 .action-label { display: none; }
 .icon-action { color: #fff; border-color: var(--accent); background: var(--accent); font-size: 1rem; }
+.url-icon { display: block; width: 24px; height: 24px; object-fit: contain; }
 .link-icon-button img { width: 30px; height: 30px; object-fit: contain; }
 .favorite-button { width: 44px; margin-top: auto; padding: 0; color: rgba(255, 187, 71, .48); border: 1px dotted #ffbb47; background: #fff; }
 .favorite-button.active { color: #ffbb47; background: rgba(255, 187, 71, .17); }
@@ -1310,6 +1311,13 @@ input[type="search"], select {
   /* 左下：お気に入り */
 
   .player-panel
+  .player-detail-link
+  .url-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .player-panel
   .player-detail-favorite {
     position: static;
 
@@ -1686,11 +1694,9 @@ img {
 }
 
 .song-card
-.action-symbol {
-  display: block;
-
-  font-size: .88rem;
-  line-height: 1;
+.url-icon {
+  width: 19px;
+  height: 19px;
 }
 
   /* 曲情報の文字 */
