@@ -588,12 +588,12 @@ function createCard(song) {
       title="${sourceLabel}"
       data-tooltip="${sourceLabel}"
     >
-      <span
-        class="action-symbol"
+      <img
+        class="url-icon"
+        src="./url-icon.svg"
+        alt=""
         aria-hidden="true"
       >
-        ↗
-      </span>
 
       <span class="action-label">
         元配信
