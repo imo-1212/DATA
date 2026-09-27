@@ -29196,7 +29196,7 @@ const songsData = [
     "id": "perf-000783",
     "date": "2025/05/14",
     "title": "主人公になろう！",
-    "titleYomi": "しゅじんおおやけになろう！",
+    "titleYomi": "しゅじんこうになろう！",
     "artist": "オーイシマサヨシ feat.鈴木愛理",
     "artistYomi": "オーイシマサヨシ feat.すずきあいり",
     "type": [
@@ -29293,8 +29293,8 @@ const songsData = [
     "sources": [
       {
         "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=1869s",
-        "startSeconds": 1869,
+        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=1550s",
+        "startSeconds": 1550,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
@@ -29330,8 +29330,8 @@ const songsData = [
     "sources": [
       {
         "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=2505s",
-        "startSeconds": 2505,
+        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=2186s",
+        "startSeconds": 2186,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
@@ -29367,8 +29367,8 @@ const songsData = [
     "sources": [
       {
         "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=2805s",
-        "startSeconds": 2805,
+        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=2485s",
+        "startSeconds": 2485,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
@@ -29404,8 +29404,8 @@ const songsData = [
     "sources": [
       {
         "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=3430s",
-        "startSeconds": 3430,
+        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=3111s",
+        "startSeconds": 3111,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
@@ -29441,8 +29441,8 @@ const songsData = [
     "sources": [
       {
         "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=4098s",
-        "startSeconds": 4098,
+        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=3775s",
+        "startSeconds": 3775,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
@@ -29480,8 +29480,8 @@ const songsData = [
     "sources": [
       {
         "platform": "youtube",
-        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=4948s",
-        "startSeconds": 4948,
+        "url": "https://www.youtube.com/watch?v=2P4W_7qaT98&t=4628s",
+        "startSeconds": 4628,
         "endSeconds": null,
         "quickPlay": true,
         "embed": true,
@@ -33432,11 +33432,9 @@ const songsData = [
       "3D"
     ],
     "collabo": [
-      "甲斐田晴",
-      "伊波ライ",
-      "五木左京",
-      "花籠つばさ",
-      "皇れお"
+      "ドーラ",
+      "町田ちま",
+      "レヴィ・エリファ"
     ],
     "sourceTitle": "【3D歌枠】今夜は3Dでカラオケだ～～～ッ！！！【にじさんじ/ドーラ/夢追翔/レヴィ・エリファ/町田ちま】",
     "kasi": "",
