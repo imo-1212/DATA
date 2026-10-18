@@ -30342,8 +30342,9 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
+      "ラップ",
       "3D",
-      "Singin’ in the Rainbow！　福岡公演"
+      "Singin’ in the Rainbow！　福岡公演",
     ],
     "collabo": [
       "不破湊",
@@ -34277,6 +34278,46 @@ const songsData = [
       {
         "platform": "youtube",
         "url": "https://www.youtube.com/watch?v=VROcHjAJ_yE",
+        "startSeconds": null,
+        "endSeconds": null,
+        "quickPlay": true,
+        "embed": true,
+        "availability": "available",
+        "priority": null
+      }
+    ]
+  },
+  {
+    "id": "perf-000914",
+    "date": "2026/10/18",
+    "title": "ファイアダンス",
+    "titleYomi": "ファイアダンス",
+    "artist": "Giga&DECO*27/プロセカ",
+    "artistYomi": "Giga&DECO*27/プロセカ",
+    "type": [
+      "歌ってみた",
+      "動画"
+    ],
+    "sing": [
+      "3人以上",
+      "コラボ",
+      "ラップ",
+    ],
+    "collabo": [
+      "町田ちま",
+      "ときのそら",
+      "春希"
+    ],  
+    "sourceTitle": "【cover】ファイアダンス【歌ってみた/ときのそら/町田ちま/夢追翔/春希】",
+    "kasi": "",
+    "link": "",
+    "keyword": [],
+    "memo": "",
+    "recordStatus": "",
+    "sources": [
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=kZlHh0uCdtg",
         "startSeconds": null,
         "endSeconds": null,
         "quickPlay": true,
