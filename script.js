@@ -92,7 +92,6 @@ const SING_OTHER_TAGS = [
   "夢追ボーカルへの道",
   "サンホラ",
   "プリティシリーズ"
-  "プロセカ"
 ];
 
 const state = {
