@@ -9916,7 +9916,9 @@ const songsData = [
       "コラボ",
       "他ライバー歌唱"
     ],
-    "collabo": [],
+    "collabo": [
+      "戌亥とこ"
+    ],
     "sourceTitle": "にじさんじ格付けチェック",
     "kasi": "",
     "link": "",
@@ -25262,8 +25264,8 @@ const songsData = [
     "date": "2023/09/14",
     "title": "Ready Steady",
     "titleYomi": "Ready Steady",
-    "artist": "Giga/プロセカ",
-    "artistYomi": "Giga/プロセカ",
+    "artist": "Vivid BAD SQUAD / Giga",
+    "artistYomi": "Vivid BAD SQUAD / Giga",
     "type": [
       "歌ってみた",
       "動画"
@@ -25271,7 +25273,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "黒夢町"
+      "黒夢町",
+      "プロセカ"
     ],
     "collabo": [
       "黒井しば",
@@ -26391,8 +26394,8 @@ const songsData = [
     "date": "2024/04/19",
     "title": "トンデモワンダーズ",
     "titleYomi": "トンデモワンダーズ",
-    "artist": "sasakure.‌UK/プロセカ",
-    "artistYomi": "sasakure.‌UK/プロセカ",
+    "artist": "ワンダーランズ×ショウタイム / sasakure.‌UK",
+    "artistYomi": "ワンダーランズ×ショウタイム / sasakure.‌UK",
     "type": [
       "歌ってみた",
       "動画"
@@ -26400,7 +26403,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "夢星家"
+      "夢星家",
+      "プロセカ"
     ],
     "collabo": [
       "犬山たまき",
@@ -26511,15 +26515,16 @@ const songsData = [
     "date": "2024/04/28",
     "title": "にっこり^^調査隊のテーマ",
     "titleYomi": "にっこり^^ちょうさたいのテーマ",
-    "artist": "じーざすP/プロセカ",
-    "artistYomi": "じーざすP/プロセカ",
+    "artist": "ワンダーランズ×ショウタイム / じーざすP",
+    "artistYomi": "ワンダーランズ×ショウタイム / じーざすP",
     "type": [
       "歌ってみた",
       "歌枠"
     ],
     "sing": [
       "3人以上",
-      "コラボ"
+      "コラボ",
+      "プロセカ"
     ],
     "collabo": [
       "森中花咲",
@@ -26926,8 +26931,8 @@ const songsData = [
     "date": "2024/06/12",
     "title": "仮死化",
     "titleYomi": "かしか",
-    "artist": "遼遼/プロセカ",
-    "artistYomi": "はるかりょう/プロセカ",
+    "artist": "Vivid BAD SQUAD / 遼遼",
+    "artistYomi": "Vivid BAD SQUAD / 遼遼",
     "type": [
       "歌ってみた",
       "動画"
@@ -26935,7 +26940,8 @@ const songsData = [
     "sing": [
       "2人",
       "コラボ",
-      "ゆめおいまちた"
+      "ゆめおいまちた",
+      "プロセカ"
     ],
     "collabo": [
       "町田ちま"
@@ -28165,8 +28171,8 @@ const songsData = [
     "date": "2024/10/31",
     "title": "サイバーパンクデッドボーイ",
     "titleYomi": "サイバーパンクデッドボーイ",
-    "artist": "マイキ/プロセカ",
-    "artistYomi": "マイキ/プロセカ",
+    "artist": "ワンダーランズ×ショウタイム / マイキ",
+    "artistYomi": "ワンダーランズ×ショウタイム / マイキ",
     "type": [
       "歌ってみた",
       "配信"
@@ -28175,7 +28181,8 @@ const songsData = [
       "2人",
       "コラボ",
       "3D",
-      "夢星家"
+      "夢星家",
+      "プロセカ"
     ],
     "collabo": [
       "星川サラ"
@@ -28204,8 +28211,8 @@ const songsData = [
     "date": "2024/10/31",
     "title": "トンデモワンダーズ",
     "titleYomi": "トンデモワンダーズ",
-    "artist": "sasakure.‌UK/プロセカ",
-    "artistYomi": "sasakure.‌UK/プロセカ",
+    "artist": "ワンダーランズ×ショウタイム / sasakure.‌UK",
+    "artistYomi": "ワンダーランズ×ショウタイム / sasakure.‌UK",
     "type": [
       "歌ってみた",
       "配信"
@@ -28214,7 +28221,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "3D",
-      "夢星家"
+      "夢星家",
+      "プロセカ"
     ],
     "collabo": [
       "樋口楓",
@@ -28548,8 +28556,8 @@ const songsData = [
     "date": "2024/12/21",
     "title": "RAD DOGS",
     "titleYomi": "RAD DOGS",
-    "artist": "八王子P/プロセカ",
-    "artistYomi": "はちおうじP/プロセカ",
+    "artist": "Vivid BAD SQUAD / 八王子P",
+    "artistYomi": "Vivid BAD SQUAD / 八王子P",
     "type": [
       "歌ってみた",
       "ライブ"
@@ -28559,7 +28567,8 @@ const songsData = [
       "コラボ",
       "黒夢町",
       "3D",
-      "にじさんじ歌謡祭2024"
+      "にじさんじ歌謡祭2024",
+      "プロセカ"
     ],
     "collabo": [
       "黒井しば",
@@ -29158,15 +29167,16 @@ const songsData = [
     "date": "2025/05/14",
     "title": "成敗いたAAAAAす！",
     "titleYomi": "せいばいいたAAAAAす！",
-    "artist": "じーざすP/プロセカ",
-    "artistYomi": "じーざすP/プロセカ",
+    "artist": "ワンダーランズ×ショウタイム / じーざすP",
+    "artistYomi": "ワンダーランズ×ショウタイム / じーざすP",
     "type": [
       "歌ってみた",
       "歌枠"
     ],
     "sing": [
       "3人以上",
-      "コラボ"
+      "コラボ",
+      "プロセカ"
     ],
     "collabo": [
       "森中花咲",
@@ -29345,15 +29355,16 @@ const songsData = [
     "date": "2025/05/14",
     "title": "ひつじがいっぴき",
     "titleYomi": "ひつじがいっぴき",
-    "artist": "Peg/プロセカ",
-    "artistYomi": "Peg/プロセカ",
+    "artist": "Vivid BAD SQUAD / Peg",
+    "artistYomi": "Vivid BAD SQUAD / Peg",
     "type": [
       "歌ってみた",
       "歌枠"
     ],
     "sing": [
       "2人",
-      "コラボ"
+      "コラボ",
+      "プロセカ"
     ],
     "collabo": [
       "森中花咲"
@@ -29495,8 +29506,8 @@ const songsData = [
     "date": "2025/05/16",
     "title": "Mr. Showtime",
     "titleYomi": "Mr. Showtime",
-    "artist": "ひとしずく×やま△/プロセカ",
-    "artistYomi": "ひとしずく×やま△/プロセカ",
+    "artist": "ワンダーランズ×ショウタイム / ひとしずく×やま△",
+    "artistYomi": "ワンダーランズ×ショウタイム / ひとしずく×やま△",
     "type": [
       "歌ってみた",
       "動画"
@@ -29504,7 +29515,8 @@ const songsData = [
     "sing": [
       "2人",
       "コラボ",
-      "夢星家"
+      "夢星家",
+      "プロセカ"
     ],
     "collabo": [
       "星川サラ"
@@ -29824,8 +29836,8 @@ const songsData = [
     "date": "2025/07/19",
     "title": "アンチユー",
     "titleYomi": "アンチユー",
-    "artist": "Chinozo/プロセカ",
-    "artistYomi": "Chinozo/プロセカ",
+    "artist": "MORE MORE JUMP！ / Chinozo",
+    "artistYomi": "MORE MORE JUMP！ / Chinozo",
     "type": [
       "歌ってみた",
       "動画"
@@ -29833,7 +29845,8 @@ const songsData = [
     "sing": [
       "2人",
       "コラボ",
-      "ゆめおいまちた"
+      "ゆめおいまちた",
+      "プロセカ"
     ],
     "collabo": [
       "町田ちま"
@@ -29979,8 +29992,8 @@ const songsData = [
     "date": "2025/08/22",
     "title": "Flyer!",
     "titleYomi": "Flyer!",
-    "artist": "Chinozo/プロセカ",
-    "artistYomi": "Chinozo/プロセカ",
+    "artist": "Vivid BAD SQUAD / hinozo",
+    "artistYomi": "Vivid BAD SQUAD / hinozo",
     "type": [
       "歌ってみた",
       "動画"
@@ -29988,7 +30001,8 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "黒夢町"
+      "黒夢町",
+      "プロセカ"
     ],
     "collabo": [
       "黒井しば",
@@ -30097,8 +30111,8 @@ const songsData = [
     "date": "2025/09/13",
     "title": "Beyond the way",
     "titleYomi": "Beyond the way",
-    "artist": "Giga/プロセカ",
-    "artistYomi": "Giga/プロセカ",
+    "artist": "Vivid BAD SQUAD / Giga",
+    "artistYomi": "Vivid BAD SQUAD / Giga",
     "type": [
       "歌ってみた",
       "ライブ"
@@ -30107,7 +30121,8 @@ const songsData = [
       "3人以上",
       "コラボ",
       "3D",
-      "Singin’ in the Rainbow！　福岡公演"
+      "Singin’ in the Rainbow！　福岡公演",
+      "プロセカ"
     ],
     "collabo": [
       "不破湊",
@@ -30333,8 +30348,8 @@ const songsData = [
     "date": "2025/09/13",
     "title": "ファイアダンス",
     "titleYomi": "ファイアダンス",
-    "artist": "Giga&DECO*27/プロセカ",
-    "artistYomi": "Giga&DECO*27/プロセカ",
+    "artist": "Vivid BAD SQUAD / Giga&DECO*27",
+    "artistYomi": "Vivid BAD SQUAD / Giga&DECO*27",
     "type": [
       "歌ってみた",
       "ライブ"
@@ -30342,9 +30357,10 @@ const songsData = [
     "sing": [
       "3人以上",
       "コラボ",
-      "ラップ",
       "3D",
       "Singin’ in the Rainbow！　福岡公演",
+      "ラップ",
+      "プロセカ"
     ],
     "collabo": [
       "不破湊",
@@ -30382,7 +30398,9 @@ const songsData = [
       "オリジナル"
     ],
     "sing": [
+      "3人以上",
       "コラボ",
+      "ラップ",
       "3D",
       "Singin’ in the Rainbow！　福岡公演"
     ],
@@ -31607,14 +31625,15 @@ const songsData = [
     "date": "2026/03/14",
     "title": "イフ",
     "titleYomi": "イフ",
-    "artist": "月詠み(ユリイ・カノン)/プロセカ",
-    "artistYomi": "つきよみ(ユリイ・カノン)/プロセカ",
+    "artist": "MORE MORE JUMP！×初音ミク / 月詠み(ユリイ・カノン)",
+    "artistYomi": "MORE MORE JUMP！×初音ミク / 月詠み(ユリイ・カノン)",
     "type": [
       "歌ってみた",
       "動画"
     ],
     "sing": [
-      "1人"
+      "1人",
+      "プロセカ"
     ],
     "collabo": [],
     "sourceTitle": "【男性が原キーで】イフ / 月詠み (Covered by 夢追翔)【歌ってみた/にじさんじ】",
@@ -31720,8 +31739,8 @@ const songsData = [
     "date": "2026/04/26",
     "title": "月光",
     "titleYomi": "げっこう",
-    "artist": "キタニタツヤ×はるまきごはん/プロセカ",
-    "artistYomi": "キタニタツヤ×はるまきごはん/プロセカ",
+    "artist": "Vivid BAD SQUAD / キタニタツヤ×はるまきごはん",
+    "artistYomi": "Vivid BAD SQUAD / キタニタツヤ×はるまきごはん",
     "type": [
       "歌ってみた",
       "歌枠"
@@ -31731,7 +31750,8 @@ const songsData = [
       "コラボ",
       "黒夢町",
       "3D",
-      "記念枠"
+      "記念枠",
+      "プロセカ"
     ],
     "collabo": [
       "黒井しば",
@@ -34292,8 +34312,8 @@ const songsData = [
     "date": "2026/10/18",
     "title": "ファイアダンス",
     "titleYomi": "ファイアダンス",
-    "artist": "Giga&DECO*27/プロセカ",
-    "artistYomi": "Giga&DECO*27/プロセカ",
+    "artist": "Vivid BAD SQUAD / Giga&DECO*27",
+    "artistYomi": "Vivid BAD SQUAD / Giga&DECO*27",
     "type": [
       "歌ってみた",
       "動画"
@@ -34302,12 +34322,13 @@ const songsData = [
       "3人以上",
       "コラボ",
       "ラップ",
+      "プロセカ"
     ],
     "collabo": [
       "町田ちま",
       "ときのそら",
       "春希"
-    ],  
+    ],
     "sourceTitle": "【cover】ファイアダンス【歌ってみた/ときのそら/町田ちま/夢追翔/春希】",
     "kasi": "",
     "link": "",
